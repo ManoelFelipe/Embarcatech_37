@@ -1,0 +1,972 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s6\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs12\cgrid \sbasedon0 \snext0 heading 6;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\*\listtable
+{\list\listtemplateid1
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u8226 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li360 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9702 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li720 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9642 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1080 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u8226 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1440 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9702 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1800 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9642 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2160 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u8662 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2520 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9702 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2880 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9642 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li3600 }
+\listid1}
+{\list\listtemplateid2
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li360 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li720 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1080 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1440 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1800 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2160 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2520 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2880 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li3600 }
+\listid2}
+{\list\listtemplateid3
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li360 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li720 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1080 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1440 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1800 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2160 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2520 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2880 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li3600 }
+\listid3}
+}
+{\listoverridetable
+{\listoverride\listid1\listoverridecount0\ls1}
+{\listoverride\listid2\listoverridecount0\ls2}
+{\listoverride\listid3\listoverridecount0\ls3}
+}
+{\info 
+{\title {\comment My Project }My Project}
+{\comment Generated by doxygen 1.13.2.}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt My Project}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+Version \par\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Table of Contents\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Data Structure Index\par \pard\plain 
+{\tc \v Data Structure Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Data Structures\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here are the data structures with brief descriptions:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b render_area} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAP \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b ssd1306_t} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAV \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Index\par \pard\plain 
+{\tc \v File Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+File List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here is a list of all documented files with brief descriptions:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_05/Atividade_05/build/generated/pico_base/pico/{\b config_autogen.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_05/Atividade_05/build/generated/pico_base/pico/{\b version.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAB \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_05/Atividade_05/build/pico-sdk/src/extra_doxygen/{\b dreq.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAC \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_05/Atividade_05/build/pico-sdk/src/extra_doxygen/{\b intctrl.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAD \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_05/Atividade_05/lib/{\b ssd1306.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAE \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_05/Atividade_05/lib/{\b ssd1306_font.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAF \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_05/Atividade_05/lib/{\b ssd1306_i2c.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAG \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_05/Atividade_05/src/{\b Atividade_05.c} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sistema de Aquisi\'E7\'E3o de Temperatura com DMA e Interface I2C em Microcontrolador RP2040 })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAH \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Data Structure Documentation{\tc \v Data Structure Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+render_area Struct Reference\par \pard\plain 
+{\tc\tcl2 \v render_area}
+{\xe \v render_area}
+{\bkmkstart AAAAAAAAAP}
+{\bkmkend AAAAAAAAAP}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Fields\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b start_column}{\bkmkstart AAAAAAAAAQ}
+{\bkmkend AAAAAAAAAQ}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b end_column}{\bkmkstart AAAAAAAAAR}
+{\bkmkend AAAAAAAAAR}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b start_page}{\bkmkstart AAAAAAAAAS}
+{\bkmkend AAAAAAAAAS}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b end_page}{\bkmkstart AAAAAAAAAT}
+{\bkmkend AAAAAAAAAT}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+int {\b buffer_length}{\bkmkstart AAAAAAAAAU}
+{\bkmkend AAAAAAAAAU}
+\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this struct was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_05/Atividade_05/lib/ssd1306_i2c.h\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ssd1306_t Struct Reference\par \pard\plain 
+{\tc\tcl2 \v ssd1306_t}
+{\xe \v ssd1306_t}
+{\bkmkstart AAAAAAAAAV}
+{\bkmkend AAAAAAAAAV}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Fields\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b width}{\bkmkstart AAAAAAAAAW}
+{\bkmkend AAAAAAAAAW}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b height}{\bkmkstart AAAAAAAAAX}
+{\bkmkend AAAAAAAAAX}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b pages}{\bkmkstart AAAAAAAAAY}
+{\bkmkend AAAAAAAAAY}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b address}{\bkmkstart AAAAAAAAAZ}
+{\bkmkend AAAAAAAAAZ}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+i2c_inst_t * {\b i2c_port}{\bkmkstart AAAAAAAABA}
+{\bkmkend AAAAAAAABA}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+bool {\b external_vcc}{\bkmkstart AAAAAAAABB}
+{\bkmkend AAAAAAAABB}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t * {\b ram_buffer}{\bkmkstart AAAAAAAABC}
+{\bkmkend AAAAAAAABC}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+size_t {\b bufsize}{\bkmkstart AAAAAAAABD}
+{\bkmkend AAAAAAAABD}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b port_buffer} [2]{\bkmkstart AAAAAAAABE}
+{\bkmkend AAAAAAAABE}
+\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this struct was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_05/Atividade_05/lib/ssd1306_i2c.h\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Documentation{\tc \v File Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+config_autogen.h\par \pard\plain 
+{\tc\tcl2 \v C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_05/Atividade_05/build/generated/pico_base/pico/config_autogen.h}
+{\xe \v C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_05/Atividade_05/build/generated/pico_base/pico/config_autogen.h}
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf20 // AUTOGENERATED FROM PICO_CONFIG_HEADER_FILES and then PICO_<PLATFORM>_CONFIG_HEADER_FILES}\par
+2 {\cf20 // DO NOT EDIT!}\par
+3 \par
+4 \par
+5 {\cf20 // based on PICO_CONFIG_HEADER_FILES:}\par
+6 \par
+7 {\cf21 #include "C:/Users/manoe/.pico-sdk/sdk/2.1.1/src/boards/include/boards/pico_w.h"}\par
+8 {\cf21 #include "C:/Users/manoe/.pico-sdk/sdk/2.1.1/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h"}\par
+9 \par
+10 {\cf20 // based on PICO_RP2040_CONFIG_HEADER_FILES:}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+version.h\par \pard\plain 
+{\tc\tcl2 \v C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_05/Atividade_05/build/generated/pico_base/pico/version.h}
+{\xe \v C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_05/Atividade_05/build/generated/pico_base/pico/version.h}
+{\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf20 /*}\par
+2 {\cf20  * Copyright (c) 2020 Raspberry Pi (Trading) Ltd.}\par
+3 {\cf20  *}\par
+4 {\cf20  * SPDX-License-Identifier: BSD-3-Clause}\par
+5 {\cf20  */}\par
+6 \par
+7 {\cf20 // ---------------------------------------}\par
+8 {\cf20 // THIS FILE IS AUTOGENERATED; DO NOT EDIT}\par
+9 {\cf20 // ---------------------------------------}\par
+10 \par
+11 {\cf21 #ifndef _PICO_VERSION_H}\par
+12 {\cf21 #define _PICO_VERSION_H}\par
+13 \par
+14 {\cf21 #define PICO_SDK_VERSION_MAJOR    2}\par
+15 {\cf21 #define PICO_SDK_VERSION_MINOR    1}\par
+16 {\cf21 #define PICO_SDK_VERSION_REVISION 1}\par
+17 {\cf21 #define PICO_SDK_VERSION_STRING   "2.1.1"}\par
+18 \par
+19 {\cf21 #endif}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+dreq.h\par \pard\plain 
+{\tc\tcl2 \v C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_05/Atividade_05/build/pico-sdk/src/extra_doxygen/dreq.h}
+{\xe \v C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_05/Atividade_05/build/pico-sdk/src/extra_doxygen/dreq.h}
+{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf20 // THIS HEADER FILE IS AUTOMATICALLY GENERATED -- DO NOT EDIT}\par
+2 \par
+8 {\cf21 #ifndef _DREQ_H}\par
+9 {\cf21 #define _DREQ_H}\par
+10 \par
+14 \par
+15 {\cf21 #ifdef __ASSEMBLER__}\par
+16 {\cf21 #define DREQ_PIO0_TX0 0}\par
+17 {\cf21 #define DREQ_PIO0_TX1 1}\par
+18 {\cf21 #define DREQ_PIO0_TX2 2}\par
+19 {\cf21 #define DREQ_PIO0_TX3 3}\par
+20 {\cf21 #define DREQ_PIO0_RX0 4}\par
+21 {\cf21 #define DREQ_PIO0_RX1 5}\par
+22 {\cf21 #define DREQ_PIO0_RX2 6}\par
+23 {\cf21 #define DREQ_PIO0_RX3 7}\par
+24 {\cf21 #define DREQ_PIO1_TX0 8}\par
+25 {\cf21 #define DREQ_PIO1_TX1 9}\par
+26 {\cf21 #define DREQ_PIO1_TX2 10}\par
+27 {\cf21 #define DREQ_PIO1_TX3 11}\par
+28 {\cf21 #define DREQ_PIO1_RX0 12}\par
+29 {\cf21 #define DREQ_PIO1_RX1 13}\par
+30 {\cf21 #define DREQ_PIO1_RX2 14}\par
+31 {\cf21 #define DREQ_PIO1_RX3 15}\par
+32 {\cf21 #define DREQ_SPI0_TX 16}\par
+33 {\cf21 #define DREQ_SPI0_RX 17}\par
+34 {\cf21 #define DREQ_SPI1_TX 18}\par
+35 {\cf21 #define DREQ_SPI1_RX 19}\par
+36 {\cf21 #define DREQ_UART0_TX 20}\par
+37 {\cf21 #define DREQ_UART0_RX 21}\par
+38 {\cf21 #define DREQ_UART1_TX 22}\par
+39 {\cf21 #define DREQ_UART1_RX 23}\par
+40 {\cf21 #define DREQ_PWM_WRAP0 24}\par
+41 {\cf21 #define DREQ_PWM_WRAP1 25}\par
+42 {\cf21 #define DREQ_PWM_WRAP2 26}\par
+43 {\cf21 #define DREQ_PWM_WRAP3 27}\par
+44 {\cf21 #define DREQ_PWM_WRAP4 28}\par
+45 {\cf21 #define DREQ_PWM_WRAP5 29}\par
+46 {\cf21 #define DREQ_PWM_WRAP6 30}\par
+47 {\cf21 #define DREQ_PWM_WRAP7 31}\par
+48 {\cf21 #define DREQ_I2C0_TX 32}\par
+49 {\cf21 #define DREQ_I2C0_RX 33}\par
+50 {\cf21 #define DREQ_I2C1_TX 34}\par
+51 {\cf21 #define DREQ_I2C1_RX 35}\par
+52 {\cf21 #define DREQ_ADC 36}\par
+53 {\cf21 #define DREQ_XIP_STREAM 37}\par
+54 {\cf21 #define DREQ_XIP_SSITX 38}\par
+55 {\cf21 #define DREQ_XIP_SSIRX 39}\par
+56 {\cf21 #define DREQ_DMA_TIMER0 59}\par
+57 {\cf21 #define DREQ_DMA_TIMER1 60}\par
+58 {\cf21 #define DREQ_DMA_TIMER2 61}\par
+59 {\cf21 #define DREQ_DMA_TIMER3 62}\par
+60 {\cf21 #define DREQ_FORCE 63}\par
+61 {\cf21 #else}{\cf21 }\par
+66 {\cf17 typedef} {\cf17 enum} dreq_num_rp2040 \{\par
+67     DREQ_PIO0_TX0 = 0, \par
+68     DREQ_PIO0_TX1 = 1, \par
+69     DREQ_PIO0_TX2 = 2, \par
+70     DREQ_PIO0_TX3 = 3, \par
+71     DREQ_PIO0_RX0 = 4, \par
+72     DREQ_PIO0_RX1 = 5, \par
+73     DREQ_PIO0_RX2 = 6, \par
+74     DREQ_PIO0_RX3 = 7, \par
+75     DREQ_PIO1_TX0 = 8, \par
+76     DREQ_PIO1_TX1 = 9, \par
+77     DREQ_PIO1_TX2 = 10, \par
+78     DREQ_PIO1_TX3 = 11, \par
+79     DREQ_PIO1_RX0 = 12, \par
+80     DREQ_PIO1_RX1 = 13, \par
+81     DREQ_PIO1_RX2 = 14, \par
+82     DREQ_PIO1_RX3 = 15, \par
+83     DREQ_SPI0_TX = 16, \par
+84     DREQ_SPI0_RX = 17, \par
+85     DREQ_SPI1_TX = 18, \par
+86     DREQ_SPI1_RX = 19, \par
+87     DREQ_UART0_TX = 20, \par
+88     DREQ_UART0_RX = 21, \par
+89     DREQ_UART1_TX = 22, \par
+90     DREQ_UART1_RX = 23, \par
+91     DREQ_PWM_WRAP0 = 24, \par
+92     DREQ_PWM_WRAP1 = 25, \par
+93     DREQ_PWM_WRAP2 = 26, \par
+94     DREQ_PWM_WRAP3 = 27, \par
+95     DREQ_PWM_WRAP4 = 28, \par
+96     DREQ_PWM_WRAP5 = 29, \par
+97     DREQ_PWM_WRAP6 = 30, \par
+98     DREQ_PWM_WRAP7 = 31, \par
+99     DREQ_I2C0_TX = 32, \par
+100     DREQ_I2C0_RX = 33, \par
+101     DREQ_I2C1_TX = 34, \par
+102     DREQ_I2C1_RX = 35, \par
+103     DREQ_ADC = 36, \par
+104     DREQ_XIP_STREAM = 37, \par
+105     DREQ_XIP_SSITX = 38, \par
+106     DREQ_XIP_SSIRX = 39, \par
+107     DREQ_DMA_TIMER0 = 59, \par
+108     DREQ_DMA_TIMER1 = 60, \par
+109     DREQ_DMA_TIMER2 = 61, \par
+110     DREQ_DMA_TIMER3 = 62, \par
+111     DREQ_FORCE = 63, \par
+112     DREQ_COUNT\par
+113 \} dreq_num_t;\par
+114 {\cf21 #endif}\par
+115 \par
+116 {\cf21 #endif }{\cf20 // _DREQ_H}\par
+117 \par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+intctrl.h\par \pard\plain 
+{\tc\tcl2 \v C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_05/Atividade_05/build/pico-sdk/src/extra_doxygen/intctrl.h}
+{\xe \v C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_05/Atividade_05/build/pico-sdk/src/extra_doxygen/intctrl.h}
+{\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf20 // THIS HEADER FILE IS AUTOMATICALLY GENERATED -- DO NOT EDIT}\par
+2 \par
+8 {\cf21 #ifndef _INTCTRL_H}\par
+9 {\cf21 #define _INTCTRL_H}\par
+10 \par
+14 \par
+15 {\cf21 #ifdef __ASSEMBLER__}\par
+16 {\cf21 #define TIMER_IRQ_0 0}\par
+17 {\cf21 #define TIMER_IRQ_1 1}\par
+18 {\cf21 #define TIMER_IRQ_2 2}\par
+19 {\cf21 #define TIMER_IRQ_3 3}\par
+20 {\cf21 #define PWM_IRQ_WRAP 4}\par
+21 {\cf21 #define USBCTRL_IRQ 5}\par
+22 {\cf21 #define XIP_IRQ 6}\par
+23 {\cf21 #define PIO0_IRQ_0 7}\par
+24 {\cf21 #define PIO0_IRQ_1 8}\par
+25 {\cf21 #define PIO1_IRQ_0 9}\par
+26 {\cf21 #define PIO1_IRQ_1 10}\par
+27 {\cf21 #define DMA_IRQ_0 11}\par
+28 {\cf21 #define DMA_IRQ_1 12}\par
+29 {\cf21 #define IO_IRQ_BANK0 13}\par
+30 {\cf21 #define IO_IRQ_QSPI 14}\par
+31 {\cf21 #define SIO_IRQ_PROC0 15}\par
+32 {\cf21 #define SIO_IRQ_PROC1 16}\par
+33 {\cf21 #define CLOCKS_IRQ 17}\par
+34 {\cf21 #define SPI0_IRQ 18}\par
+35 {\cf21 #define SPI1_IRQ 19}\par
+36 {\cf21 #define UART0_IRQ 20}\par
+37 {\cf21 #define UART1_IRQ 21}\par
+38 {\cf21 #define ADC_IRQ_FIFO 22}\par
+39 {\cf21 #define I2C0_IRQ 23}\par
+40 {\cf21 #define I2C1_IRQ 24}\par
+41 {\cf21 #define RTC_IRQ 25}\par
+42 {\cf21 #else}{\cf21 }\par
+47 {\cf17 typedef} {\cf17 enum} irq_num_rp2040 \{\par
+48     TIMER_IRQ_0 = 0, \par
+49     TIMER_IRQ_1 = 1, \par
+50     TIMER_IRQ_2 = 2, \par
+51     TIMER_IRQ_3 = 3, \par
+52     PWM_IRQ_WRAP = 4, \par
+53     USBCTRL_IRQ = 5, \par
+54     XIP_IRQ = 6, \par
+55     PIO0_IRQ_0 = 7, \par
+56     PIO0_IRQ_1 = 8, \par
+57     PIO1_IRQ_0 = 9, \par
+58     PIO1_IRQ_1 = 10, \par
+59     DMA_IRQ_0 = 11, \par
+60     DMA_IRQ_1 = 12, \par
+61     IO_IRQ_BANK0 = 13, \par
+62     IO_IRQ_QSPI = 14, \par
+63     SIO_IRQ_PROC0 = 15, \par
+64     SIO_IRQ_PROC1 = 16, \par
+65     CLOCKS_IRQ = 17, \par
+66     SPI0_IRQ = 18, \par
+67     SPI1_IRQ = 19, \par
+68     UART0_IRQ = 20, \par
+69     UART1_IRQ = 21, \par
+70     ADC_IRQ_FIFO = 22, \par
+71     I2C0_IRQ = 23, \par
+72     I2C1_IRQ = 24, \par
+73     RTC_IRQ = 25, \par
+74     IRQ_COUNT\par
+75 \} irq_num_t;\par
+76 {\cf21 #endif}\par
+77 \par
+78 {\cf21 #define isr_timer_0 isr_irq0}\par
+79 {\cf21 #define isr_timer_1 isr_irq1}\par
+80 {\cf21 #define isr_timer_2 isr_irq2}\par
+81 {\cf21 #define isr_timer_3 isr_irq3}\par
+82 {\cf21 #define isr_pwm_wrap isr_irq4}\par
+83 {\cf21 #define isr_usbctrl isr_irq5}\par
+84 {\cf21 #define isr_xip isr_irq6}\par
+85 {\cf21 #define isr_pio0_0 isr_irq7}\par
+86 {\cf21 #define isr_pio0_1 isr_irq8}\par
+87 {\cf21 #define isr_pio1_0 isr_irq9}\par
+88 {\cf21 #define isr_pio1_1 isr_irq10}\par
+89 {\cf21 #define isr_dma_0 isr_irq11}\par
+90 {\cf21 #define isr_dma_1 isr_irq12}\par
+91 {\cf21 #define isr_io_bank0 isr_irq13}\par
+92 {\cf21 #define isr_io_qspi isr_irq14}\par
+93 {\cf21 #define isr_sio_proc0 isr_irq15}\par
+94 {\cf21 #define isr_sio_proc1 isr_irq16}\par
+95 {\cf21 #define isr_clocks isr_irq17}\par
+96 {\cf21 #define isr_spi0 isr_irq18}\par
+97 {\cf21 #define isr_spi1 isr_irq19}\par
+98 {\cf21 #define isr_uart0 isr_irq20}\par
+99 {\cf21 #define isr_uart1 isr_irq21}\par
+100 {\cf21 #define isr_adc_fifo isr_irq22}\par
+101 {\cf21 #define isr_i2c0 isr_irq23}\par
+102 {\cf21 #define isr_i2c1 isr_irq24}\par
+103 {\cf21 #define isr_rtc isr_irq25}\par
+104 \par
+105 {\cf21 #endif }{\cf20 // _INTCTRL_H}\par
+106 \par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ssd1306.h\par \pard\plain 
+{\tc\tcl2 \v C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_05/Atividade_05/lib/ssd1306.h}
+{\xe \v C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_05/Atividade_05/lib/ssd1306.h}
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf21 #include "ssd1306_i2c.h"}\par
+2 {\cf17 extern} {\cf18 void} calculate_render_area_buffer_length({\cf17 struct} render_area *area);\par
+3 {\cf17 extern} {\cf18 void} ssd1306_send_command(uint8_t cmd);\par
+4 {\cf17 extern} {\cf18 void} ssd1306_send_command_list(uint8_t *ssd, {\cf18 int} number);\par
+5 {\cf17 extern} {\cf18 void} ssd1306_send_buffer(uint8_t ssd[], {\cf18 int} buffer_length);\par
+6 {\cf17 extern} {\cf18 void} ssd1306_init();\par
+7 {\cf17 extern} {\cf18 void} ssd1306_scroll({\cf18 bool} set);\par
+8 {\cf17 extern} {\cf18 void} render_on_display(uint8_t *ssd, {\cf17 struct} render_area *area);\par
+9 {\cf17 extern} {\cf18 void} ssd1306_set_pixel(uint8_t *ssd, {\cf18 int} x, {\cf18 int} y, {\cf18 bool} set);\par
+10 {\cf17 extern} {\cf18 void} ssd1306_draw_line(uint8_t *ssd, {\cf18 int} x_0, {\cf18 int} y_0, {\cf18 int} x_1, {\cf18 int} y_1, {\cf18 bool} set);\par
+11 {\cf17 extern} {\cf18 void} ssd1306_draw_char(uint8_t *ssd, int16_t x, int16_t y, uint8_t character);\par
+12 {\cf17 extern} {\cf18 void} ssd1306_draw_string(uint8_t *ssd, int16_t x, int16_t y, {\cf18 char} *{\cf18 string});\par
+13 {\cf17 extern} {\cf18 void} ssd1306_command(ssd1306_t *ssd, uint8_t command);\par
+14 {\cf17 extern} {\cf18 void} ssd1306_config(ssd1306_t *ssd);\par
+15 {\cf17 extern} {\cf18 void} ssd1306_init_bm(ssd1306_t *ssd, uint8_t width, uint8_t height, {\cf18 bool} external_vcc, uint8_t address, i2c_inst_t *i2c);\par
+16 {\cf17 extern} {\cf18 void} ssd1306_send_data(ssd1306_t *ssd);\par
+17 {\cf17 extern} {\cf18 void} ssd1306_draw_bitmap(ssd1306_t *ssd, {\cf17 const} uint8_t *bitmap);\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ssd1306_font.h\par \pard\plain 
+{\tc\tcl2 \v C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_05/Atividade_05/lib/ssd1306_font.h}
+{\xe \v C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_05/Atividade_05/lib/ssd1306_font.h}
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 \par
+2 {\cf17 static} uint8_t font[] = \{\par
+3     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, {\cf20 // Nothing}\par
+4     0x78, 0x14, 0x12, 0x11, 0x12, 0x14, 0x78, 0x00, {\cf20 // A}\par
+5     0x7f, 0x49, 0x49, 0x49, 0x49, 0x49, 0x7f, 0x00, {\cf20 // B}\par
+6     0x7e, 0x41, 0x41, 0x41, 0x41, 0x41, 0x41, 0x00, {\cf20 // C}\par
+7     0x7f, 0x41, 0x41, 0x41, 0x41, 0x41, 0x7e, 0x00, {\cf20 // D}\par
+8     0x7f, 0x49, 0x49, 0x49, 0x49, 0x49, 0x49, 0x00, {\cf20 // E}\par
+9     0x7f, 0x09, 0x09, 0x09, 0x09, 0x01, 0x01, 0x00, {\cf20 // F}\par
+10     0x7f, 0x41, 0x41, 0x41, 0x51, 0x51, 0x73, 0x00, {\cf20 // G}\par
+11     0x7f, 0x08, 0x08, 0x08, 0x08, 0x08, 0x7f, 0x00, {\cf20 // H}\par
+12     0x00, 0x00, 0x00, 0x7f, 0x00, 0x00, 0x00, 0x00, {\cf20 // I}\par
+13     0x21, 0x41, 0x41, 0x3f, 0x01, 0x01, 0x01, 0x00, {\cf20 // J}\par
+14     0x00, 0x7f, 0x08, 0x08, 0x14, 0x22, 0x41, 0x00, {\cf20 // K}\par
+15     0x7f, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x00, {\cf20 // L}\par
+16     0x7f, 0x02, 0x04, 0x08, 0x04, 0x02, 0x7f, 0x00, {\cf20 // M}\par
+17     0x7f, 0x02, 0x04, 0x08, 0x10, 0x20, 0x7f, 0x00, {\cf20 // N}\par
+18     0x3e, 0x41, 0x41, 0x41, 0x41, 0x41, 0x3e, 0x00, {\cf20 // O}\par
+19     0x7f, 0x11, 0x11, 0x11, 0x11, 0x11, 0x0e, 0x00, {\cf20 // P}\par
+20     0x3e, 0x41, 0x41, 0x49, 0x51, 0x61, 0x7e, 0x00, {\cf20 // Q}\par
+21     0x7f, 0x11, 0x11, 0x11, 0x31, 0x51, 0x0e, 0x00, {\cf20 // R}\par
+22     0x46, 0x49, 0x49, 0x49, 0x49, 0x30, 0x00, 0x00, {\cf20 // S}\par
+23     0x01, 0x01, 0x01, 0x7f, 0x01, 0x01, 0x01, 0x00, {\cf20 // T}\par
+24     0x3f, 0x40, 0x40, 0x40, 0x40, 0x40, 0x3f, 0x00, {\cf20 // U}\par
+25     0x0f, 0x10, 0x20, 0x40, 0x20, 0x10, 0x0f, 0x00, {\cf20 // V}\par
+26     0x7f, 0x20, 0x10, 0x08, 0x10, 0x20, 0x7f, 0x00, {\cf20 // W}\par
+27     0x00, 0x41, 0x22, 0x14, 0x14, 0x22, 0x41, 0x00, {\cf20 // X}\par
+28     0x01, 0x02, 0x04, 0x78, 0x04, 0x02, 0x01, 0x00, {\cf20 // Y}\par
+29     0x41, 0x61, 0x59, 0x45, 0x43, 0x41, 0x00, 0x00, {\cf20 // Z}\par
+30     0x3e, 0x41, 0x41, 0x49, 0x41, 0x41, 0x3e, 0x00, {\cf20 // 0}\par
+31     0x00, 0x00, 0x42, 0x7f, 0x40, 0x00, 0x00, 0x00, {\cf20 // 1}\par
+32     0x30, 0x49, 0x49, 0x49, 0x49, 0x46, 0x00, 0x00, {\cf20 // 2}\par
+33     0x49, 0x49, 0x49, 0x49, 0x49, 0x49, 0x36, 0x00, {\cf20 // 3}\par
+34     0x3f, 0x20, 0x20, 0x78, 0x20, 0x20, 0x00, 0x00, {\cf20 // 4}\par
+35     0x4f, 0x49, 0x49, 0x49, 0x49, 0x30, 0x00, 0x00, {\cf20 // 5}\par
+36     0x3f, 0x48, 0x48, 0x48, 0x48, 0x48, 0x30, 0x00, {\cf20 // 6}\par
+37     0x01, 0x01, 0x01, 0x61, 0x31, 0x0d, 0x03, 0x00, {\cf20 // 7}\par
+38     0x36, 0x49, 0x49, 0x49, 0x49, 0x49, 0x36, 0x00, {\cf20 // 8}\par
+39     0x06, 0x09, 0x09, 0x09, 0x09, 0x09, 0x7f, 0x00, {\cf20 // 9}\par
+40 \};\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ssd1306_i2c.h\par \pard\plain 
+{\tc\tcl2 \v C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_05/Atividade_05/lib/ssd1306_i2c.h}
+{\xe \v C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_05/Atividade_05/lib/ssd1306_i2c.h}
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf21 #include <stdlib.h>}\par
+2 {\cf21 #include "pico/stdlib.h"}\par
+3 {\cf21 #include "hardware/i2c.h"}\par
+4 \par
+5 {\cf21 #ifndef ssd1306_inc_h}\par
+6 {\cf21 #define ssd1306_inc_h}\par
+7 \par
+8 {\cf21 #define ssd1306_height 64 }{\cf20 // Define a altura do display (32 pixels)}\par
+9 {\cf21 #define ssd1306_width 128 }{\cf20 // Define a largura do display (128 pixels)}\par
+10 \par
+11 {\cf21 #define ssd1306_i2c_address _u(0x3C) }{\cf20 // Define o endere\'E7o do i2c do display}\par
+12 \par
+13 {\cf21 #define ssd1306_i2c_clock 400 }{\cf20 // Define o tempo do clock (pode ser aumentado)}\par
+14 \par
+15 {\cf20 // Comandos de configura\'E7\'E3o (endere\'E7os)}\par
+16 {\cf21 #define ssd1306_set_memory_mode _u(0x20)}\par
+17 {\cf21 #define ssd1306_set_column_address _u(0x21)}\par
+18 {\cf21 #define ssd1306_set_page_address _u(0x22)}\par
+19 {\cf21 #define ssd1306_set_horizontal_scroll _u(0x26)}\par
+20 {\cf21 #define ssd1306_set_scroll _u(0x2E)}\par
+21 \par
+22 {\cf21 #define ssd1306_set_display_start_line _u(0x40)}\par
+23 \par
+24 {\cf21 #define ssd1306_set_contrast _u(0x81)}\par
+25 {\cf21 #define ssd1306_set_charge_pump _u(0x8D)}\par
+26 \par
+27 {\cf21 #define ssd1306_set_segment_remap _u(0xA0)}\par
+28 {\cf21 #define ssd1306_set_entire_on _u(0xA4)}\par
+29 {\cf21 #define ssd1306_set_all_on _u(0xA5)}\par
+30 {\cf21 #define ssd1306_set_normal_display _u(0xA6)}\par
+31 {\cf21 #define ssd1306_set_inverse_display _u(0xA7)}\par
+32 {\cf21 #define ssd1306_set_mux_ratio _u(0xA8)}\par
+33 {\cf21 #define ssd1306_set_display _u(0xAE)}\par
+34 {\cf21 #define ssd1306_set_common_output_direction _u(0xC0)}\par
+35 {\cf21 #define ssd1306_set_common_output_direction_flip _u(0xC0)}\par
+36 \par
+37 {\cf21 #define ssd1306_set_display_offset _u(0xD3)}\par
+38 {\cf21 #define ssd1306_set_display_clock_divide_ratio _u(0xD5)}\par
+39 {\cf21 #define ssd1306_set_precharge _u(0xD9)}\par
+40 {\cf21 #define ssd1306_set_common_pin_configuration _u(0xDA)}\par
+41 {\cf21 #define ssd1306_set_vcomh_deselect_level _u(0xDB)}\par
+42 \par
+43 {\cf21 #define ssd1306_page_height _u(8)}\par
+44 {\cf21 #define ssd1306_n_pages (ssd1306_height / ssd1306_page_height)}\par
+45 {\cf21 #define ssd1306_buffer_length (ssd1306_n_pages * ssd1306_width)}\par
+46 \par
+47 {\cf21 #define ssd1306_write_mode _u(0xFE)}\par
+48 {\cf21 #define ssd1306_read_mode _u(0xFF)}\par
+49 \par
+50 {\cf17 struct }render_area \{\par
+51     uint8_t start_column;\par
+52     uint8_t end_column;\par
+53     uint8_t start_page;\par
+54     uint8_t end_page;\par
+55 \par
+56     {\cf18 int} buffer_length;\par
+57 \};\par
+58 \par
+59 {\cf17 typedef} {\cf17 struct }\{\par
+60   uint8_t width, height, pages, address;\par
+61   i2c_inst_t * i2c_port;\par
+62   {\cf18 bool} external_vcc;\par
+63   uint8_t *ram_buffer;\par
+64   {\cf18 size_t} bufsize;\par
+65   uint8_t port_buffer[2];\par
+66 \} ssd1306_t;\par
+67 \par
+68 {\cf21 #endif}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_05/Atividade_05/src/Atividade_05.c File Reference\par \pard\plain 
+{\tc\tcl2 \v C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_05/Atividade_05/src/Atividade_05.c}
+{\xe \v C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_05/Atividade_05/src/Atividade_05.c}
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sistema de Aquisi\'E7\'E3o de Temperatura com DMA e Interface I2C em Microcontrolador RP2040. }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <stdio.h>}\par
+{\f2 #include <string.h>}\par
+{\f2 #include "pico/stdlib.h"}\par
+{\f2 #include "hardware/adc.h"}\par
+{\f2 #include "hardware/dma.h"}\par
+{\f2 #include "hardware/i2c.h"}\par
+{\f2 #include "ssd1306_i2c.h"}\par
+{\f2 #include "ssd1306.h"}\par
+{\f2 #include "ssd1306_font.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macros\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b SAMPLES}\~ 100\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b TEMP_UPDATE_MS}\~ 500\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b I2C_PORT}\~ i2c1\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b I2C_BAUDRATE}\~ 400000\par
+}
+{
+\pard\plain \s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid OLED I\'B2C Mapping\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Pinos utilizados pelo barramento I\'B2C dedicado ao display. \par
+}}\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b OLED_I2C_SDA_PIN}\~ 14\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b OLED_I2C_SCL_PIN}\~ 15\par
+}
+}\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+int {\b main} (void){\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sistema de Aquisi\'E7\'E3o de Temperatura com DMA e Interface I2C em Microcontrolador RP2040. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid      Este progrma tem como objetivo demonstar como utilizar:\par
+        * ADC interno (canal 4) para ler o sensor de temperatura\par
+        * Controlador DMA para transferir automaticamente as amostras do FIFO do ADC para a RAM\par
+        * Barramento I2C para atualizar um display OLED SSD1306\par
+\par
+     O ciclo de trabalho \'E9:\par
+        1. O ADC \'E9 configurado para amostragem cont\'EDnua do canal 4.\par
+        2. Um canal de DMA l\'EA amostras(SAMPLES) do FIFO e armazena em um buffer.\par
+        3. Quando o bloco de DMA termina, calculamos a m\'E9dia, convertemos em \'B0C e\par
+           enviamos o valor formatado para o display.\par
+        4. O DMA \'E9 usado sem interven\'E7\'E3o intensiva da CPU, permitindo que o n\'FAcleo possa\par
+           ficar em espera reduzindo consumo.\par
+}
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Note\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Tamb\'C3\'A9m foi esclarecida a raz\'C3\'A3o de se utilizar {\f2 memset()}  + {\f2 render_on_display()}  em vez dos atalhos {\f2 ssd1306_clear()}  e {\f2 ssd1306_show()} . O uso direto do frame\'E2\'80\'91buffer permite:{
+\par
+\pard\plain \s141\fi-360\li720\widctlpar\fs20\cgrid 
+1.\tab Renderizar apenas regi\'F5es espec\'EDficas da tela, economizando tr\'E1fego I\'B2C quando necess\'E1rio;\par
+\pard\plain \s141\fi-360\li720\widctlpar\fs20\cgrid 
+2.\tab Manter a l\'C3\'B3gica did\'C3\'A1tica de {\i clear \'E2\'86\'92 draw \'E2\'86\'92 show}  expl\'C3\'ADcita;\par
+\pard\plain \s141\fi-360\li720\widctlpar\fs20\cgrid 
+3.\tab Suportar m\'C3\'BAltiplos frame\'E2\'80\'91buffers simult\'C3\'A2neos caso o projeto evolua para anima\'C3\'A7\'C3\'B5es ou janelas sobrepostas. Caso deseje simplificar, basta substituir o bloco marcado em display_temperature() pelos atalhos da biblioteca.\par}
+}}N\'E3o foi tratado os caracteres especiais que apace no display OLED ent\'E3o, a temperatura m\'E9dida a exemplo 26 55 c --> 26,55 \'BAc A blibioteca atual {\b ssd1306_font.h} e ssd1306_i2c.c s\'F3 reconhece acaracteres simples mai\'FAsculas.\par
+@hardware Requisitos de hardware: \'E2\'80\'A2 Raspberry\'C2\'A0Pi\'C2\'A0Pico\'C2\'A0/\'C2\'A0Pico\'C2\'A0W \'E2\'80\'A2 Display\'C2\'A0OLED\'C2\'A0SSD1306 conectado aos pinos I2C: \'E2\'80\'93 SDA \'E2\'86\'92 GP14\'C2\'A0 (GPIO\'C2\'A014) \'E2\'80\'93 SCL \'E2\'86\'92 GP55\'C2\'A0 (GPIO\'C2\'A015)\par
+@compile Compila\'E7\'E3o (exemplo de CMake): add_executable(Atividade_05 {\b src/Atividade_05.c} lib/ssd1306_i2c.c )\par
+IMPORTANTE: \'95 Todas as fun\'E7\'F5es est\'E3o extensivamente comentadas, estilo Doxygen para fins did\'E1ticos. \'95 O c\'F3digo assume Vref\'A0=\'A03,3\'A0V (padr\'E3o do RP2040) para a convers\'E3o do ADC. \'95 Ajuste SAMPLES e TEMP_UPDATE_MS conforme necessidade.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Author\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Manoel Furtado \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Date\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+18 mai 2025 \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Copyright\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+2025 Manoel Furtado (MIT License) (veja LICENSE.md) \par
+}}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macro Definition Documentation\par
+\pard\plain 
+{\xe \v I2C_BAUDRATE\:Atividade_05.c}
+{\xe \v Atividade_05.c\:I2C_BAUDRATE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define I2C_BAUDRATE\~ 400000}}
+\par
+{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+400\'A0kHz \'96 modo Fast I\'B2C \par
+}}
+{\xe \v I2C_PORT\:Atividade_05.c}
+{\xe \v Atividade_05.c\:I2C_PORT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define I2C_PORT\~ i2c1}}
+\par
+{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Porta I\'B2C utilizada pinos GP4/GP5 no Pico \par
+}}
+{\xe \v OLED_I2C_SCL_PIN\:Atividade_05.c}
+{\xe \v Atividade_05.c\:OLED_I2C_SCL_PIN}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define OLED_I2C_SCL_PIN\~ 15}}
+\par
+{\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+GPIO que carrega o sinal SCL \par
+}}
+{\xe \v OLED_I2C_SDA_PIN\:Atividade_05.c}
+{\xe \v Atividade_05.c\:OLED_I2C_SDA_PIN}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define OLED_I2C_SDA_PIN\~ 14}}
+\par
+{\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+GPIO que carrega o sinal SDA \par
+}}
+{\xe \v SAMPLES\:Atividade_05.c}
+{\xe \v Atividade_05.c\:SAMPLES}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define SAMPLES\~ 100}}
+\par
+{\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+N\'BA de amostras que comp\'F5em cada bloco de DMA \par
+}}
+{\xe \v TEMP_UPDATE_MS\:Atividade_05.c}
+{\xe \v Atividade_05.c\:TEMP_UPDATE_MS}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define TEMP_UPDATE_MS\~ 500}}
+\par
+{\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Intervalo (ms) entre atualiza\'E7\'F5es do display \par
+}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Index\par 
+\pard\plain 
+{\tc \v Index}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}

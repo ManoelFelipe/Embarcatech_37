@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="group__hardware" kind="group">
+    <compoundname>hardware</compoundname>
+    <title>GPIO e periféricos</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__hardware_1gaf75dc8bf5891f41c539ef9b8ebd3d1c3" prot="public" static="no">
+        <name>WS2812_PIN</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>GPIO para DIN da fita WS2812b </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Atividade_Cap_03.c" line="72" column="9" bodyfile="Atividade_Cap_03.c" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__hardware_1ga893011783fefc21f30baf08142cd3c35" prot="public" static="no">
+        <name>NUM_PIXELS</name>
+        <initializer>25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LEDs na matriz 5×5 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Atividade_Cap_03.c" line="73" column="9" bodyfile="Atividade_Cap_03.c" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__hardware_1ga365e814d1721b7c36d633430b13e3515" prot="public" static="no">
+        <name>MIC_ADC_CH</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Canal ADC (GPIO 28) do microfone </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Atividade_Cap_03.c" line="74" column="9" bodyfile="Atividade_Cap_03.c" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__hardware_1ga493b9b7cc0c4de9e5d832a5b9c8fe0f0" prot="public" static="no">
+        <name>IS_RGBW</name>
+        <initializer>false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Matriz RGB (false) ou RGBW (true) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Atividade_Cap_03.c" line="75" column="9" bodyfile="Atividade_Cap_03.c" bodystart="75" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

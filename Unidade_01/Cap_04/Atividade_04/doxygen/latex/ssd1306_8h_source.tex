@@ -1,0 +1,23 @@
+\doxysection{ssd1306.\+h}
+\hypertarget{ssd1306_8h_source}{}\label{ssd1306_8h_source}\index{C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01\_Unid.01\_Microcontrolador/Atividades/Cap\_04/Atividade\_04/Atividade\_04/lib/ssd1306.h@{C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01\_Unid.01\_Microcontrolador/Atividades/Cap\_04/Atividade\_04/Atividade\_04/lib/ssd1306.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}ssd1306\_i2c.h"{}}}
+\DoxyCodeLine{00002\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ calculate\_render\_area\_buffer\_length(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structrender__area}{render\_area}}\ *area);}
+\DoxyCodeLine{00003\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ ssd1306\_send\_command(uint8\_t\ cmd);}
+\DoxyCodeLine{00004\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ ssd1306\_send\_command\_list(uint8\_t\ *ssd,\ \textcolor{keywordtype}{int}\ number);}
+\DoxyCodeLine{00005\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ ssd1306\_send\_buffer(uint8\_t\ ssd[],\ \textcolor{keywordtype}{int}\ buffer\_length);}
+\DoxyCodeLine{00006\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ ssd1306\_init();}
+\DoxyCodeLine{00007\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ ssd1306\_scroll(\textcolor{keywordtype}{bool}\ set);}
+\DoxyCodeLine{00008\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ render\_on\_display(uint8\_t\ *ssd,\ \textcolor{keyword}{struct}\ \mbox{\hyperlink{structrender__area}{render\_area}}\ *area);}
+\DoxyCodeLine{00009\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ ssd1306\_set\_pixel(uint8\_t\ *ssd,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{bool}\ set);}
+\DoxyCodeLine{00010\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ ssd1306\_draw\_line(uint8\_t\ *ssd,\ \textcolor{keywordtype}{int}\ x\_0,\ \textcolor{keywordtype}{int}\ y\_0,\ \textcolor{keywordtype}{int}\ x\_1,\ \textcolor{keywordtype}{int}\ y\_1,\ \textcolor{keywordtype}{bool}\ set);}
+\DoxyCodeLine{00011\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ ssd1306\_draw\_char(uint8\_t\ *ssd,\ int16\_t\ x,\ int16\_t\ y,\ uint8\_t\ character);}
+\DoxyCodeLine{00012\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ ssd1306\_draw\_string(uint8\_t\ *ssd,\ int16\_t\ x,\ int16\_t\ y,\ \textcolor{keywordtype}{char}\ *\textcolor{keywordtype}{string});}
+\DoxyCodeLine{00013\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ ssd1306\_command(\mbox{\hyperlink{structssd1306__t}{ssd1306\_t}}\ *ssd,\ uint8\_t\ command);}
+\DoxyCodeLine{00014\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ ssd1306\_config(\mbox{\hyperlink{structssd1306__t}{ssd1306\_t}}\ *ssd);}
+\DoxyCodeLine{00015\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ ssd1306\_init\_bm(\mbox{\hyperlink{structssd1306__t}{ssd1306\_t}}\ *ssd,\ uint8\_t\ width,\ uint8\_t\ height,\ \textcolor{keywordtype}{bool}\ external\_vcc,\ uint8\_t\ address,\ i2c\_inst\_t\ *i2c);}
+\DoxyCodeLine{00016\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ ssd1306\_send\_data(\mbox{\hyperlink{structssd1306__t}{ssd1306\_t}}\ *ssd);}
+\DoxyCodeLine{00017\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ ssd1306\_draw\_bitmap(\mbox{\hyperlink{structssd1306__t}{ssd1306\_t}}\ *ssd,\ \textcolor{keyword}{const}\ uint8\_t\ *bitmap);}
+
+\end{DoxyCode}

@@ -1,0 +1,499 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="ws2812_8pio_8h" kind="file" language="C++">
+    <compoundname>ws2812.pio.h</compoundname>
+    <includes local="yes">hardware/pio.h</includes>
+    <includes local="yes">hardware/clocks.h</includes>
+    <includedby refid="_atividade___cap__03_8c" local="yes">Atividade_Cap_03.c</includedby>
+    <includedby refid="ws2812_8c" local="yes">ws2812.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>ws2812.pio.h</label>
+        <link refid="ws2812_8pio_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>hardware/clocks.h</label>
+      </node>
+      <node id="2">
+        <label>hardware/pio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>Atividade_Cap_03.c</label>
+        <link refid="_atividade___cap__03_8c"/>
+      </node>
+      <node id="1">
+        <label>ws2812.pio.h</label>
+        <link refid="ws2812_8pio_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="ws2812_8pio_8h_1abf06adf2afef479a93bc15758b26491e" prot="public" static="no">
+        <name>ws2812_wrap_target</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ws2812.pio.h" line="15" column="9" bodyfile="ws2812.pio.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ws2812_8pio_8h_1abec411212fc51a42b1b9e741ef50916c" prot="public" static="no">
+        <name>ws2812_wrap</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ws2812.pio.h" line="16" column="9" bodyfile="ws2812.pio.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ws2812_8pio_8h_1a90b6be51b02e3d6a1c81f9ff0083efe4" prot="public" static="no">
+        <name>ws2812_pio_version</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ws2812.pio.h" line="17" column="9" bodyfile="ws2812.pio.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ws2812_8pio_8h_1add4c28498a010b0f0f82008c778531d4" prot="public" static="no">
+        <name>ws2812_T1</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ws2812.pio.h" line="19" column="9" bodyfile="ws2812.pio.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ws2812_8pio_8h_1a012a8a957212c5746db3258cd19d1f0f" prot="public" static="no">
+        <name>ws2812_T2</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ws2812.pio.h" line="20" column="9" bodyfile="ws2812.pio.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ws2812_8pio_8h_1a7488dfcd2f37624c92b9e1ddc2100277" prot="public" static="no">
+        <name>ws2812_T3</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ws2812.pio.h" line="21" column="9" bodyfile="ws2812.pio.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ws2812_8pio_8h_1a54e98b6fc73e77f96df6426d2ded1a31" prot="public" static="no">
+        <name>ws2812_parallel_wrap_target</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ws2812.pio.h" line="71" column="9" bodyfile="ws2812.pio.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ws2812_8pio_8h_1a73fe32407bd7a459c3f3f46371e9a9c2" prot="public" static="no">
+        <name>ws2812_parallel_wrap</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ws2812.pio.h" line="72" column="9" bodyfile="ws2812.pio.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ws2812_8pio_8h_1ad2e4cacba07cd608fe1b38063ed51ad5" prot="public" static="no">
+        <name>ws2812_parallel_pio_version</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ws2812.pio.h" line="73" column="9" bodyfile="ws2812.pio.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ws2812_8pio_8h_1a81b4730a6b930d668a7f8449f79c1ac9" prot="public" static="no">
+        <name>ws2812_parallel_T1</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ws2812.pio.h" line="75" column="9" bodyfile="ws2812.pio.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ws2812_8pio_8h_1af9da2fa537c957203f523a14bd3edbac" prot="public" static="no">
+        <name>ws2812_parallel_T2</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ws2812.pio.h" line="76" column="9" bodyfile="ws2812.pio.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ws2812_8pio_8h_1a552f0e986654508ae5868a03c7764458" prot="public" static="no">
+        <name>ws2812_parallel_T3</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ws2812.pio.h" line="77" column="9" bodyfile="ws2812.pio.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="ws2812_8pio_8h_1a5b57b783765a7b5cc24fc330edcfe167" prot="public" static="yes" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t ws2812_program_instructions[]</definition>
+        <argsstring>[]</argsstring>
+        <name>ws2812_program_instructions</name>
+        <initializer>= {
+            
+    0x6321, 
+    0x1223, 
+    0x1200, 
+    0xa242, 
+            
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ws2812.pio.h" line="23" column="23" bodyfile="ws2812.pio.h" bodystart="23" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="variable" id="ws2812_8pio_8h_1a55e4cbdb9411683b8a5655f4454d000c" prot="public" static="yes" mutable="no">
+        <type>const struct pio_program</type>
+        <definition>const struct pio_program ws2812_program</definition>
+        <argsstring></argsstring>
+        <name>ws2812_program</name>
+        <initializer>= {
+    .instructions = ws2812_program_instructions,
+    .length = 4,
+    .origin = -1,
+    .pio_version = ws2812_pio_version,
+
+
+
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ws2812.pio.h" line="33" column="31" bodyfile="ws2812.pio.h" bodystart="33" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="variable" id="ws2812_8pio_8h_1ac7bac5ef999e632c91881c48b911a22f" prot="public" static="yes" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t ws2812_parallel_program_instructions[]</definition>
+        <argsstring>[]</argsstring>
+        <name>ws2812_parallel_program_instructions</name>
+        <initializer>= {
+            
+    0x6020, 
+    0xa20b, 
+    0xa201, 
+    0xa203, 
+            
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ws2812.pio.h" line="79" column="23" bodyfile="ws2812.pio.h" bodystart="79" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="variable" id="ws2812_8pio_8h_1a43f3648710207eb40798826e7c65c80f" prot="public" static="yes" mutable="no">
+        <type>const struct pio_program</type>
+        <definition>const struct pio_program ws2812_parallel_program</definition>
+        <argsstring></argsstring>
+        <name>ws2812_parallel_program</name>
+        <initializer>= {
+    .instructions = ws2812_parallel_program_instructions,
+    .length = 4,
+    .origin = -1,
+    .pio_version = ws2812_parallel_pio_version,
+
+
+
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ws2812.pio.h" line="89" column="31" bodyfile="ws2812.pio.h" bodystart="89" bodyend="97"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="ws2812_8pio_8h_1a5808861bc6522a8125498463bc5e9f6c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>pio_sm_config</type>
+        <definition>static pio_sm_config ws2812_program_get_default_config</definition>
+        <argsstring>(uint offset)</argsstring>
+        <name>ws2812_program_get_default_config</name>
+        <param>
+          <type>uint</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ws2812.pio.h" line="43" column="29" bodyfile="ws2812.pio.h" bodystart="43" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="ws2812_8pio_8h_1a7cc3cfcf374474bf4515d9fe0fa27af1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ws2812_program_init</definition>
+        <argsstring>(PIO pio, uint sm, uint offset, uint pin, float freq, bool rgbw)</argsstring>
+        <name>ws2812_program_init</name>
+        <param>
+          <type>PIO</type>
+          <declname>pio</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>sm</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>pin</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>freq</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>rgbw</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ws2812.pio.h" line="51" column="20" bodyfile="ws2812.pio.h" bodystart="51" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="ws2812_8pio_8h_1add870a68b6c5369f320512429ed17887" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>pio_sm_config</type>
+        <definition>static pio_sm_config ws2812_parallel_program_get_default_config</definition>
+        <argsstring>(uint offset)</argsstring>
+        <name>ws2812_parallel_program_get_default_config</name>
+        <param>
+          <type>uint</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ws2812.pio.h" line="99" column="29" bodyfile="ws2812.pio.h" bodystart="99" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="ws2812_8pio_8h_1aa0cdd27235063ad1280b76af81b98517" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ws2812_parallel_program_init</definition>
+        <argsstring>(PIO pio, uint sm, uint offset, uint pin_base, uint pin_count, float freq)</argsstring>
+        <name>ws2812_parallel_program_init</name>
+        <param>
+          <type>PIO</type>
+          <declname>pio</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>sm</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>pin_base</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>pin_count</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>freq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ws2812.pio.h" line="106" column="20" bodyfile="ws2812.pio.h" bodystart="106" bodyend="120"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>--------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>autogenerated<sp/>by<sp/>pioasm;<sp/>do<sp/>not<sp/>edit!<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>--------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!PICO_NO_HARDWARE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hardware/pio.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ws2812<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ws2812_wrap_target<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ws2812_wrap<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ws2812_pio_version<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ws2812_T1<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ws2812_T2<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ws2812_T3<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/>ws2812_program_instructions[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>.wrap_target</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>0x6321,<sp/></highlight><highlight class="comment">//<sp/><sp/>0:<sp/>out<sp/><sp/><sp/><sp/>x,<sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>side<sp/>0<sp/>[3]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>0x1223,<sp/></highlight><highlight class="comment">//<sp/><sp/>1:<sp/>jmp<sp/><sp/><sp/><sp/>!x,<sp/>3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>side<sp/>1<sp/>[2]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>0x1200,<sp/></highlight><highlight class="comment">//<sp/><sp/>2:<sp/>jmp<sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>side<sp/>1<sp/>[2]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>0xa242,<sp/></highlight><highlight class="comment">//<sp/><sp/>3:<sp/>nop<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>side<sp/>0<sp/>[2]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>.wrap</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!PICO_NO_HARDWARE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">pio_program<sp/>ws2812_program<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>.instructions<sp/>=<sp/>ws2812_program_instructions,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>.length<sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>.origin<sp/>=<sp/>-1,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>.pio_version<sp/>=<sp/>ws2812_pio_version,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>PICO_PIO_VERSION<sp/>&gt;<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>.used_gpio_ranges<sp/>=<sp/>0x0</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>pio_sm_config<sp/>ws2812_program_get_default_config(uint<sp/>offset)<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>pio_sm_config<sp/>c<sp/>=<sp/>pio_get_default_sm_config();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>sm_config_set_wrap(&amp;c,<sp/>offset<sp/>+<sp/>ws2812_wrap_target,<sp/>offset<sp/>+<sp/>ws2812_wrap);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>sm_config_set_sideset(&amp;c,<sp/>1,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>c;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hardware/clocks.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ws2812_program_init(PIO<sp/>pio,<sp/>uint<sp/>sm,<sp/>uint<sp/>offset,<sp/>uint<sp/>pin,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>freq,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>rgbw)<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>pio_gpio_init(pio,<sp/>pin);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>pio_sm_set_consecutive_pindirs(pio,<sp/>sm,<sp/>pin,<sp/>1,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>pio_sm_config<sp/>c<sp/>=<sp/>ws2812_program_get_default_config(offset);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>sm_config_set_sideset_pins(&amp;c,<sp/>pin);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>sm_config_set_out_shift(&amp;c,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>rgbw<sp/>?<sp/>32<sp/>:<sp/>24);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>sm_config_set_fifo_join(&amp;c,<sp/>PIO_FIFO_JOIN_TX);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cycles_per_bit<sp/>=<sp/>ws2812_T1<sp/>+<sp/>ws2812_T2<sp/>+<sp/>ws2812_T3;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>div<sp/>=<sp/>clock_get_hz(clk_sys)<sp/>/<sp/>(freq<sp/>*<sp/>cycles_per_bit);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>sm_config_set_clkdiv(&amp;c,<sp/>div);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>pio_sm_init(pio,<sp/>sm,<sp/>offset,<sp/>&amp;c);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>pio_sm_set_enabled(pio,<sp/>sm,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ws2812_parallel<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ws2812_parallel_wrap_target<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ws2812_parallel_wrap<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ws2812_parallel_pio_version<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ws2812_parallel_T1<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ws2812_parallel_T2<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ws2812_parallel_T3<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/>ws2812_parallel_program_instructions[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>.wrap_target</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>0x6020,<sp/></highlight><highlight class="comment">//<sp/><sp/>0:<sp/>out<sp/><sp/><sp/><sp/>x,<sp/>32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>0xa20b,<sp/></highlight><highlight class="comment">//<sp/><sp/>1:<sp/>mov<sp/><sp/><sp/><sp/>pins,<sp/>~null<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[2]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>0xa201,<sp/></highlight><highlight class="comment">//<sp/><sp/>2:<sp/>mov<sp/><sp/><sp/><sp/>pins,<sp/>x<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[2]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>0xa203,<sp/></highlight><highlight class="comment">//<sp/><sp/>3:<sp/>mov<sp/><sp/><sp/><sp/>pins,<sp/>null<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[2]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>.wrap</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!PICO_NO_HARDWARE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">pio_program<sp/>ws2812_parallel_program<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>.instructions<sp/>=<sp/>ws2812_parallel_program_instructions,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>.length<sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>.origin<sp/>=<sp/>-1,</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>.pio_version<sp/>=<sp/>ws2812_parallel_pio_version,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>PICO_PIO_VERSION<sp/>&gt;<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>.used_gpio_ranges<sp/>=<sp/>0x0</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>pio_sm_config<sp/>ws2812_parallel_program_get_default_config(uint<sp/>offset)<sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>pio_sm_config<sp/>c<sp/>=<sp/>pio_get_default_sm_config();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>sm_config_set_wrap(&amp;c,<sp/>offset<sp/>+<sp/>ws2812_parallel_wrap_target,<sp/>offset<sp/>+<sp/>ws2812_parallel_wrap);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>c;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hardware/clocks.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ws2812_parallel_program_init(PIO<sp/>pio,<sp/>uint<sp/>sm,<sp/>uint<sp/>offset,<sp/>uint<sp/>pin_base,<sp/>uint<sp/>pin_count,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>freq)<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(uint<sp/>i=pin_base;<sp/>i&lt;pin_base+pin_count;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pio_gpio_init(pio,<sp/>i);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>pio_sm_set_consecutive_pindirs(pio,<sp/>sm,<sp/>pin_base,<sp/>pin_count,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>pio_sm_config<sp/>c<sp/>=<sp/>ws2812_parallel_program_get_default_config(offset);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>sm_config_set_out_shift(&amp;c,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>32);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>sm_config_set_out_pins(&amp;c,<sp/>pin_base,<sp/>pin_count);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>sm_config_set_fifo_join(&amp;c,<sp/>PIO_FIFO_JOIN_TX);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cycles_per_bit<sp/>=<sp/>ws2812_parallel_T1<sp/>+<sp/>ws2812_parallel_T2<sp/>+<sp/>ws2812_parallel_T3;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>div<sp/>=<sp/>clock_get_hz(clk_sys)<sp/>/<sp/>(freq<sp/>*<sp/>cycles_per_bit);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>sm_config_set_clkdiv(&amp;c,<sp/>div);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>pio_sm_init(pio,<sp/>sm,<sp/>offset,<sp/>&amp;c);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>pio_sm_set_enabled(pio,<sp/>sm,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="ws2812.pio.h"/>
+  </compounddef>
+</doxygen>

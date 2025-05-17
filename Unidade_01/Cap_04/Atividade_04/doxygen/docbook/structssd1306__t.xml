@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structssd1306__t" xml:lang="en-US">
+<title>ssd1306_t Struct Reference</title>
+<indexterm><primary>ssd1306_t</primary></indexterm>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structssd1306__t_1a09a2a45f731b02946ff6d3cd15c1a476"/>uint8_t <emphasis role="strong">width</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structssd1306__t_1adcf201a8aabf55cb352ec05331242594"/>uint8_t <emphasis role="strong">height</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structssd1306__t_1a249087c071f547a50c74805580b39e71"/>uint8_t <emphasis role="strong">pages</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structssd1306__t_1af3f726014b044194def151079f1f2d89"/>uint8_t <emphasis role="strong">address</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structssd1306__t_1a5c4c209f7c10dc443700e101121ba182"/>i2c_inst_t * <emphasis role="strong">i2c_port</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structssd1306__t_1a75116ef7be7de2fe207621a3c356f5f4"/>bool <emphasis role="strong">external_vcc</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structssd1306__t_1ac74167571d66f4215dd6096e8fc44839"/>uint8_t * <emphasis role="strong">ram_buffer</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structssd1306__t_1aa228557f03b26a638d3beae5da93f530"/>size_t <emphasis role="strong">bufsize</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structssd1306__t_1abdd549379f4db8df877589bd509c11a9"/>uint8_t <emphasis role="strong">port_buffer</emphasis> [2]</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.h</section>

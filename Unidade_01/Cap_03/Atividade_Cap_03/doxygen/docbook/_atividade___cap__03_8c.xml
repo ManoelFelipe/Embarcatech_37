@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__atividade___cap__03_8c" xml:lang="en-US">
+<title>Atividade_Cap_03.c File Reference</title>
+<indexterm><primary>Atividade_Cap_03.c</primary></indexterm>
+<para>
+
+<para>Detector de som com animação do nome &quot;MANOEL&quot; – Pico W. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &lt;stdio.h&gt;<?linebreak?>#include &lt;stdlib.h&gt;<?linebreak?>#include &quot;pico/stdlib.h&quot;<?linebreak?>#include &quot;hardware/adc.h&quot;<?linebreak?>#include &quot;hardware/timer.h&quot;<?linebreak?>#include &quot;hardware/sync.h&quot;<?linebreak?>#include &quot;hardware/pio.h&quot;<?linebreak?>#include &quot;ws2812.pio.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_group__parameters_1gafde0a91566f74d38cdffe80c6635576d">SAMPLE_PERIOD_MS</link>&#160;&#160;&#160;5</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group__parameters_1ga4679d8ea8690999a6c6c7c0cb245c879">THRESHOLD</link>&#160;&#160;&#160;800</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group__parameters_1gac67fd92467a346691c3e2754f7eb93eb">NAME_DURATION_MS</link>&#160;&#160;&#160;3000</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">NAME_LETTERS</emphasis>&#160;&#160;&#160;6</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">NAME_TOTAL_TICKS</emphasis>&#160;&#160;&#160;(<link linkend="_group__parameters_1gac67fd92467a346691c3e2754f7eb93eb">NAME_DURATION_MS</link> / <link linkend="_group__parameters_1gafde0a91566f74d38cdffe80c6635576d">SAMPLE_PERIOD_MS</link>)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">TICKS_PER_LETTER</emphasis>&#160;&#160;&#160;(NAME_TOTAL_TICKS / NAME_LETTERS)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group__hardware_1gaf75dc8bf5891f41c539ef9b8ebd3d1c3">WS2812_PIN</link>&#160;&#160;&#160;7</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group__hardware_1ga893011783fefc21f30baf08142cd3c35">NUM_PIXELS</link>&#160;&#160;&#160;25</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group__hardware_1ga365e814d1721b7c36d633430b13e3515">MIC_ADC_CH</link>&#160;&#160;&#160;2</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group__hardware_1ga493b9b7cc0c4de9e5d832a5b9c8fe0f0">IS_RGBW</link>&#160;&#160;&#160;false</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="__atividade___cap__03_8c_1a840291bc02cba5474a4cb46a9b9566fe">main</link> (void)</para>
+
+<para>Inicializa hardware e executa loop principal. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Detector de som com animação do nome &quot;MANOEL&quot; – Pico W. </para>
+
+<para>Este programa lê o sinal de microfone analógico periodicamente e, ao ultrapassar o limiar, exibe o nome &quot;MANOEL&quot; letra por letra em uma matriz 5×5 de LEDs WS2812b dentro de 3000 ms. Cada letra recebe uma cor aleatória fixa durante sua exibição, e a cor é renovada aleatoriamente a cada troca de letra. Mantém estilo Doxygen e comentários completos. <formalpara><title>Author</title>
+
+<para>Manoel Furtado </para>
+</formalpara>
+<formalpara><title>Date</title>
+
+<para>2025-05-09 </para>
+</formalpara>
+<formalpara><title>Copyright</title>
+
+<para>2025 Manoel Furtado (MIT License) (veja LICENSE.md) </para>
+</formalpara>
+</para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="__atividade___cap__03_8c_1a840291bc02cba5474a4cb46a9b9566fe"/><section>
+    <title>main()</title>
+<indexterm><primary>main</primary><secondary>Atividade_Cap_03.c</secondary></indexterm>
+<indexterm><primary>Atividade_Cap_03.c</primary><secondary>main</secondary></indexterm>
+<para><computeroutput>int main (void )</computeroutput></para><para>
+
+<para>Inicializa hardware e executa loop principal. </para>
+</para>
+
+<para>Etapas:<orderedlist>
+<listitem>
+<para>Inicializa USB CDC para debug.</para>
+</listitem><listitem>
+<para>Semeia rand() com time_us_32().</para>
+</listitem><listitem>
+<para>Configura PIO/state-machine p/ WS2812.</para>
+</listitem><listitem>
+<para>Inicializa ADC e GPIO do microfone.</para>
+</listitem><listitem>
+<para>Configura timer periódico para amostragem.</para>
+</listitem><listitem>
+<para>Loop infinito: atualiza animação ou apaga LEDs. <formalpara><title>Returns</title>
+
+<para>Nunca retorna (loop infinito). </para>
+</formalpara>
+</para>
+</listitem></orderedlist>
+</para>
+
+<para>&lt; Habilita USB/Serial</para>
+
+<para>&lt; Seed baseada no tempo de inicialização</para>
+
+<para>&lt; Assegura LEDs apagados</para>
+
+<para>&lt; Contador de frames para índice</para>
+</section>
+</section>
+</section>

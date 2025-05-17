@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_37abd4778359905fce5d2fc500108f10" kind="dir">
+    <compoundname>C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build</compoundname>
+    <innerdir refid="dir_eab664d7d55cce4beca5ec6570c094b7">C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/CMakeFiles</innerdir>
+    <innerdir refid="dir_277dfd41aedc94517c063167d10ebafd">C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/generated</innerdir>
+    <innerdir refid="dir_91f56505bc180d6bef4550c9ae91dad6">C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/"/>
+  </compounddef>
+</doxygen>

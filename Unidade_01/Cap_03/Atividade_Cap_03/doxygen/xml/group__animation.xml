@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="group__animation" kind="group">
+    <compoundname>animation</compoundname>
+    <title>Nome &quot;MANOEL&quot;</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__animation_1gab7f8ac8cf2d53ef2f4931f9587019f80" prot="public" static="no">
+        <name>NAME_LETTERS</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Atividade_Cap_03.c" line="62" column="9" bodyfile="Atividade_Cap_03.c" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__animation_1ga4c3871bd8a0cd6896fdf1f56dbdbb6a1" prot="public" static="no">
+        <name>NAME_TOTAL_TICKS</name>
+        <initializer>(<ref refid="group__parameters_1gac67fd92467a346691c3e2754f7eb93eb" kindref="member">NAME_DURATION_MS</ref> / <ref refid="group__parameters_1gafde0a91566f74d38cdffe80c6635576d" kindref="member">SAMPLE_PERIOD_MS</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Atividade_Cap_03.c" line="63" column="9" bodyfile="Atividade_Cap_03.c" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__animation_1gaf3b7826e4321bf571156eab7ed7fb9a6" prot="public" static="no">
+        <name>TICKS_PER_LETTER</name>
+        <initializer>(NAME_TOTAL_TICKS / NAME_LETTERS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Atividade_Cap_03.c" line="64" column="9" bodyfile="Atividade_Cap_03.c" bodystart="64" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Configura duração e subdivisão por letra </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

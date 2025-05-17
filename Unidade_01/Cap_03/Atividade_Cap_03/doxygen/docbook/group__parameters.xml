@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group__parameters" xml:lang="en-US">
+<title>Configurações de amostragem e limiar</title>
+<indexterm><primary>Configurações de amostragem e limiar</primary></indexterm>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_group__parameters_1gafde0a91566f74d38cdffe80c6635576d">SAMPLE_PERIOD_MS</link>&#160;&#160;&#160;5</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group__parameters_1ga4679d8ea8690999a6c6c7c0cb245c879">THRESHOLD</link>&#160;&#160;&#160;800</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group__parameters_1gac67fd92467a346691c3e2754f7eb93eb">NAME_DURATION_MS</link>&#160;&#160;&#160;3000</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Pode mudar em THRESHOLD que é o Limiar de detecção de som alto (0-4095) Este firmware bare‑metal lê um microfone (GPIO 28 / ADC 2) a cada SAMPLE_PERIOD_MS ms através de um timer periódico com interrupção. Se o sinal ultrapassar <link linkend="_group__parameters_1ga4679d8ea8690999a6c6c7c0cb245c879">THRESHOLD</link>, uma animação colorida é exibida na matriz 5 × 5 de LEDs NeoPixel ligada ao GPIO 7, controlada por PIO. Essa animação é o nome &quot;MANOEL&quot; letra por letra, dentro da duração de 3000ms. A cada letra terá uma cor de forma aletória fixa por todo seu tempo de exebição. E toda vez que mudar a letra cor deve mudar de forma aleatória.</para>
+
+<para>Pinagem: – GPIO 7 → DIN da fita/matriz WS2812b (saída PIO) <?linebreak?> – GPIO 28 → Saída do microfone eletreto (entrada ADC 2)</para>
+
+<para>Principais recursos: – ADC + Timer IRQ para amostragem periódica <?linebreak?> – PIO para protocolo de 800 kHz dos WS2812 <?linebreak?> – Código todo comentado em Doxygen para fins didáticos </para>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_group__parameters_1gac67fd92467a346691c3e2754f7eb93eb"/><section>
+    <title>NAME_DURATION_MS</title>
+<indexterm><primary>NAME_DURATION_MS</primary><secondary>Configurações de amostragem e limiar</secondary></indexterm>
+<indexterm><primary>Configurações de amostragem e limiar</primary><secondary>NAME_DURATION_MS</secondary></indexterm>
+<para><computeroutput>#define NAME_DURATION_MS&#160;&#160;&#160;3000</computeroutput></para>
+<para>Duração total da animação (ms) </para>
+</section>
+<anchor xml:id="_group__parameters_1gafde0a91566f74d38cdffe80c6635576d"/><section>
+    <title>SAMPLE_PERIOD_MS</title>
+<indexterm><primary>SAMPLE_PERIOD_MS</primary><secondary>Configurações de amostragem e limiar</secondary></indexterm>
+<indexterm><primary>Configurações de amostragem e limiar</primary><secondary>SAMPLE_PERIOD_MS</secondary></indexterm>
+<para><computeroutput>#define SAMPLE_PERIOD_MS&#160;&#160;&#160;5</computeroutput></para>
+<para>Intervalo entre leituras ADC (ms) </para>
+</section>
+<anchor xml:id="_group__parameters_1ga4679d8ea8690999a6c6c7c0cb245c879"/><section>
+    <title>THRESHOLD</title>
+<indexterm><primary>THRESHOLD</primary><secondary>Configurações de amostragem e limiar</secondary></indexterm>
+<indexterm><primary>Configurações de amostragem e limiar</primary><secondary>THRESHOLD</secondary></indexterm>
+<para><computeroutput>#define THRESHOLD&#160;&#160;&#160;800</computeroutput></para>
+<para>Limiar de som alto (0–4095) </para>
+</section>
+</section>
+</section>

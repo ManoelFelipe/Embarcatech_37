@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group__animation" xml:lang="en-US">
+<title>Nome &quot;MANOEL&quot;</title>
+<indexterm><primary>Nome &quot;MANOEL&quot;</primary></indexterm>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_group__animation_1gab7f8ac8cf2d53ef2f4931f9587019f80"/>#define <emphasis role="strong">NAME_LETTERS</emphasis>&#160;&#160;&#160;6</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group__animation_1ga4c3871bd8a0cd6896fdf1f56dbdbb6a1"/>#define <emphasis role="strong">NAME_TOTAL_TICKS</emphasis>&#160;&#160;&#160;(<link linkend="_group__parameters_1gac67fd92467a346691c3e2754f7eb93eb">NAME_DURATION_MS</link> / <link linkend="_group__parameters_1gafde0a91566f74d38cdffe80c6635576d">SAMPLE_PERIOD_MS</link>)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group__animation_1gaf3b7826e4321bf571156eab7ed7fb9a6"/>#define <emphasis role="strong">TICKS_PER_LETTER</emphasis>&#160;&#160;&#160;(NAME_TOTAL_TICKS / NAME_LETTERS)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Configura duração e subdivisão por letra </para>
+</section>
+</section>

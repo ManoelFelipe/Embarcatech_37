@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index" xml:lang="en-US">
+    <info>
+    <title>My Project</title>
+    </info>
+<chapter>
+    <title>Topic Documentation</title>
+    <xi:include href="group__parameters.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="group__animation.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="group__hardware.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="group__globals.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>File Documentation</title>
+    <xi:include href="_atividade___cap__03_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="ws2812_8pio_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group__globals" xml:lang="en-US">
+<title>Variáveis de controle</title>
+<indexterm><primary>Variáveis de controle</primary></indexterm>
+<para>
+
+<para>Variáveis utilizadas para controle interno do sistema. </para>
+ 
+</para>
+<section>
+<title>Detailed Description</title>
+
+<para>Variáveis utilizadas para controle interno do sistema. </para>
+</section>
+</section>

@@ -1,0 +1,111 @@
+\doxysection{dreq.\+h}
+\hypertarget{dreq_8h_source}{}\label{dreq_8h_source}\index{C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01\_Unid.01\_Microcontrolador/Atividades/Cap\_04/Atividade\_04/Atividade\_04/build/pico-\/sdk/src/extra\_doxygen/dreq.h@{C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01\_Unid.01\_Microcontrolador/Atividades/Cap\_04/Atividade\_04/Atividade\_04/build/pico-\/sdk/src/extra\_doxygen/dreq.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ THIS\ HEADER\ FILE\ IS\ AUTOMATICALLY\ GENERATED\ -\/-\/\ DO\ NOT\ EDIT}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ \_DREQ\_H}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ \_DREQ\_H}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#ifdef\ \_\_ASSEMBLER\_\_}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ DREQ\_PIO0\_TX0\ 0}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ DREQ\_PIO0\_TX1\ 1}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ DREQ\_PIO0\_TX2\ 2}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ DREQ\_PIO0\_TX3\ 3}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ DREQ\_PIO0\_RX0\ 4}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ DREQ\_PIO0\_RX1\ 5}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ DREQ\_PIO0\_RX2\ 6}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ DREQ\_PIO0\_RX3\ 7}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ DREQ\_PIO1\_TX0\ 8}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#define\ DREQ\_PIO1\_TX1\ 9}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ DREQ\_PIO1\_TX2\ 10}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ DREQ\_PIO1\_TX3\ 11}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#define\ DREQ\_PIO1\_RX0\ 12}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ DREQ\_PIO1\_RX1\ 13}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#define\ DREQ\_PIO1\_RX2\ 14}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#define\ DREQ\_PIO1\_RX3\ 15}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#define\ DREQ\_SPI0\_TX\ 16}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#define\ DREQ\_SPI0\_RX\ 17}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#define\ DREQ\_SPI1\_TX\ 18}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#define\ DREQ\_SPI1\_RX\ 19}}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#define\ DREQ\_UART0\_TX\ 20}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#define\ DREQ\_UART0\_RX\ 21}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#define\ DREQ\_UART1\_TX\ 22}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#define\ DREQ\_UART1\_RX\ 23}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ DREQ\_PWM\_WRAP0\ 24}}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#define\ DREQ\_PWM\_WRAP1\ 25}}
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#define\ DREQ\_PWM\_WRAP2\ 26}}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#define\ DREQ\_PWM\_WRAP3\ 27}}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#define\ DREQ\_PWM\_WRAP4\ 28}}
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#define\ DREQ\_PWM\_WRAP5\ 29}}
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#define\ DREQ\_PWM\_WRAP6\ 30}}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#define\ DREQ\_PWM\_WRAP7\ 31}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#define\ DREQ\_I2C0\_TX\ 32}}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#define\ DREQ\_I2C0\_RX\ 33}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#define\ DREQ\_I2C1\_TX\ 34}}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#define\ DREQ\_I2C1\_RX\ 35}}
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#define\ DREQ\_ADC\ 36}}
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#define\ DREQ\_XIP\_STREAM\ 37}}
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#define\ DREQ\_XIP\_SSITX\ 38}}
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#define\ DREQ\_XIP\_SSIRX\ 39}}
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#define\ DREQ\_DMA\_TIMER0\ 59}}
+\DoxyCodeLine{00057\ \textcolor{preprocessor}{\#define\ DREQ\_DMA\_TIMER1\ 60}}
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#define\ DREQ\_DMA\_TIMER2\ 61}}
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\#define\ DREQ\_DMA\_TIMER3\ 62}}
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#define\ DREQ\_FORCE\ 63}}
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#else}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00066\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ dreq\_num\_rp2040\ \{}
+\DoxyCodeLine{00067\ \ \ \ \ DREQ\_PIO0\_TX0\ =\ 0,\ }
+\DoxyCodeLine{00068\ \ \ \ \ DREQ\_PIO0\_TX1\ =\ 1,\ }
+\DoxyCodeLine{00069\ \ \ \ \ DREQ\_PIO0\_TX2\ =\ 2,\ }
+\DoxyCodeLine{00070\ \ \ \ \ DREQ\_PIO0\_TX3\ =\ 3,\ }
+\DoxyCodeLine{00071\ \ \ \ \ DREQ\_PIO0\_RX0\ =\ 4,\ }
+\DoxyCodeLine{00072\ \ \ \ \ DREQ\_PIO0\_RX1\ =\ 5,\ }
+\DoxyCodeLine{00073\ \ \ \ \ DREQ\_PIO0\_RX2\ =\ 6,\ }
+\DoxyCodeLine{00074\ \ \ \ \ DREQ\_PIO0\_RX3\ =\ 7,\ }
+\DoxyCodeLine{00075\ \ \ \ \ DREQ\_PIO1\_TX0\ =\ 8,\ }
+\DoxyCodeLine{00076\ \ \ \ \ DREQ\_PIO1\_TX1\ =\ 9,\ }
+\DoxyCodeLine{00077\ \ \ \ \ DREQ\_PIO1\_TX2\ =\ 10,\ }
+\DoxyCodeLine{00078\ \ \ \ \ DREQ\_PIO1\_TX3\ =\ 11,\ }
+\DoxyCodeLine{00079\ \ \ \ \ DREQ\_PIO1\_RX0\ =\ 12,\ }
+\DoxyCodeLine{00080\ \ \ \ \ DREQ\_PIO1\_RX1\ =\ 13,\ }
+\DoxyCodeLine{00081\ \ \ \ \ DREQ\_PIO1\_RX2\ =\ 14,\ }
+\DoxyCodeLine{00082\ \ \ \ \ DREQ\_PIO1\_RX3\ =\ 15,\ }
+\DoxyCodeLine{00083\ \ \ \ \ DREQ\_SPI0\_TX\ =\ 16,\ }
+\DoxyCodeLine{00084\ \ \ \ \ DREQ\_SPI0\_RX\ =\ 17,\ }
+\DoxyCodeLine{00085\ \ \ \ \ DREQ\_SPI1\_TX\ =\ 18,\ }
+\DoxyCodeLine{00086\ \ \ \ \ DREQ\_SPI1\_RX\ =\ 19,\ }
+\DoxyCodeLine{00087\ \ \ \ \ DREQ\_UART0\_TX\ =\ 20,\ }
+\DoxyCodeLine{00088\ \ \ \ \ DREQ\_UART0\_RX\ =\ 21,\ }
+\DoxyCodeLine{00089\ \ \ \ \ DREQ\_UART1\_TX\ =\ 22,\ }
+\DoxyCodeLine{00090\ \ \ \ \ DREQ\_UART1\_RX\ =\ 23,\ }
+\DoxyCodeLine{00091\ \ \ \ \ DREQ\_PWM\_WRAP0\ =\ 24,\ }
+\DoxyCodeLine{00092\ \ \ \ \ DREQ\_PWM\_WRAP1\ =\ 25,\ }
+\DoxyCodeLine{00093\ \ \ \ \ DREQ\_PWM\_WRAP2\ =\ 26,\ }
+\DoxyCodeLine{00094\ \ \ \ \ DREQ\_PWM\_WRAP3\ =\ 27,\ }
+\DoxyCodeLine{00095\ \ \ \ \ DREQ\_PWM\_WRAP4\ =\ 28,\ }
+\DoxyCodeLine{00096\ \ \ \ \ DREQ\_PWM\_WRAP5\ =\ 29,\ }
+\DoxyCodeLine{00097\ \ \ \ \ DREQ\_PWM\_WRAP6\ =\ 30,\ }
+\DoxyCodeLine{00098\ \ \ \ \ DREQ\_PWM\_WRAP7\ =\ 31,\ }
+\DoxyCodeLine{00099\ \ \ \ \ DREQ\_I2C0\_TX\ =\ 32,\ }
+\DoxyCodeLine{00100\ \ \ \ \ DREQ\_I2C0\_RX\ =\ 33,\ }
+\DoxyCodeLine{00101\ \ \ \ \ DREQ\_I2C1\_TX\ =\ 34,\ }
+\DoxyCodeLine{00102\ \ \ \ \ DREQ\_I2C1\_RX\ =\ 35,\ }
+\DoxyCodeLine{00103\ \ \ \ \ DREQ\_ADC\ =\ 36,\ }
+\DoxyCodeLine{00104\ \ \ \ \ DREQ\_XIP\_STREAM\ =\ 37,\ }
+\DoxyCodeLine{00105\ \ \ \ \ DREQ\_XIP\_SSITX\ =\ 38,\ }
+\DoxyCodeLine{00106\ \ \ \ \ DREQ\_XIP\_SSIRX\ =\ 39,\ }
+\DoxyCodeLine{00107\ \ \ \ \ DREQ\_DMA\_TIMER0\ =\ 59,\ }
+\DoxyCodeLine{00108\ \ \ \ \ DREQ\_DMA\_TIMER1\ =\ 60,\ }
+\DoxyCodeLine{00109\ \ \ \ \ DREQ\_DMA\_TIMER2\ =\ 61,\ }
+\DoxyCodeLine{00110\ \ \ \ \ DREQ\_DMA\_TIMER3\ =\ 62,\ }
+\DoxyCodeLine{00111\ \ \ \ \ DREQ\_FORCE\ =\ 63,\ }
+\DoxyCodeLine{00112\ \ \ \ \ DREQ\_COUNT}
+\DoxyCodeLine{00113\ \}\ dreq\_num\_t;}
+\DoxyCodeLine{00114\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00116\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ \_DREQ\_H}}
+\DoxyCodeLine{00117\ }
+
+\end{DoxyCode}

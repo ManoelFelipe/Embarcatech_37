@@ -1,0 +1,47 @@
+.TH "parameters" 3 "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+parameters \- Configurações de amostragem e limiar
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSAMPLE_PERIOD_MS\fP   5"
+.br
+.ti -1c
+.RI "#define \fBTHRESHOLD\fP   800"
+.br
+.ti -1c
+.RI "#define \fBNAME_DURATION_MS\fP   3000"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Pode mudar em THRESHOLD que é o Limiar de detecção de som alto (0-4095) Este firmware bare‑metal lê um microfone (GPIO 28 / ADC 2) a cada \fBSAMPLE_PERIOD_MS ms\fP através de um timer periódico com interrupção\&. Se o sinal ultrapassar \fBTHRESHOLD\fP, uma animação colorida é exibida na matriz 5 × 5 de LEDs NeoPixel ligada ao GPIO 7, controlada por PIO\&. Essa animação é o nome "MANOEL" letra por letra, dentro da duração de 3000ms\&. A cada letra terá uma cor de forma aletória fixa por todo seu tempo de exebição\&. E toda vez que mudar a letra cor deve mudar de forma aleatória\&.
+
+.PP
+Pinagem: – GPIO 7 → DIN da fita/matriz WS2812b (saída PIO) 
+.br
+ – GPIO 28 → Saída do microfone eletreto (entrada ADC 2)
+
+.PP
+Principais recursos: – ADC + Timer IRQ para amostragem periódica 
+.br
+ – PIO para protocolo de 800 kHz dos WS2812 
+.br
+ – Código todo comentado em Doxygen para fins didáticos 
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define NAME_DURATION_MS   3000"
+Duração total da animação (ms) 
+.SS "#define SAMPLE_PERIOD_MS   5"
+Intervalo entre leituras ADC (ms) 
+.SS "#define THRESHOLD   800"
+Limiar de som alto (0–4095) 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

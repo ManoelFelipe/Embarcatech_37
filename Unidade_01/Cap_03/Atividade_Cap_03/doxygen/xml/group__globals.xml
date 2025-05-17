@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="group__globals" kind="group">
+    <compoundname>globals</compoundname>
+    <title>Variáveis de controle</title>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="group__globals_1gac79a43604cef3e167780e935276174d0" prot="public" static="yes" mutable="no">
+        <type>PIO</type>
+        <definition>PIO pio</definition>
+        <argsstring></argsstring>
+        <name>pio</name>
+        <initializer>= pio0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bloco PIO utilizado </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Atividade_Cap_03.c" line="107" column="20" bodyfile="Atividade_Cap_03.c" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__globals_1gabeba240b99c2caa6556ccab58b8c8ebb" prot="public" static="yes" mutable="no">
+        <type>uint</type>
+        <definition>uint sm</definition>
+        <argsstring></argsstring>
+        <name>sm</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Índice de state-machine </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Atividade_Cap_03.c" line="108" column="20" bodyfile="Atividade_Cap_03.c" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__globals_1ga6a090f0a68d963640f1c6f3a4fb1ed3f" prot="public" static="yes" mutable="no">
+        <type>volatile int32_t</type>
+        <definition>volatile int32_t pattern_ticks</definition>
+        <argsstring></argsstring>
+        <name>pattern_ticks</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Ticks restantes da animação </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Atividade_Cap_03.c" line="109" column="25" bodyfile="Atividade_Cap_03.c" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__globals_1gaeac0130ae8f2120890c3c6a12957d4a6" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int prev_idx</definition>
+        <argsstring></argsstring>
+        <name>prev_idx</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Índice da letra anterior </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Atividade_Cap_03.c" line="110" column="19" bodyfile="Atividade_Cap_03.c" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__globals_1ga3c9432c4858a826df7bf9fee2408b7ce" prot="public" static="yes" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t letter_color</definition>
+        <argsstring></argsstring>
+        <name>letter_color</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cor atual da letra (GRB) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Atividade_Cap_03.c" line="111" column="19" bodyfile="Atividade_Cap_03.c" bodystart="111" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Variáveis utilizadas para controle interno do sistema. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

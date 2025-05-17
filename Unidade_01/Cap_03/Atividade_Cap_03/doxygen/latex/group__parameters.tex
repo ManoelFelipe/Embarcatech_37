@@ -1,0 +1,43 @@
+\doxysection{Configurações de amostragem e limiar}
+\label{group__parameters}\index{Configurações de amostragem e limiar@{Configurações de amostragem e limiar}}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \textbf{ SAMPLE\+\_\+\+PERIOD\+\_\+\+MS}~5
+\item 
+\#define \textbf{ THRESHOLD}~800
+\item 
+\#define \textbf{ NAME\+\_\+\+DURATION\+\_\+\+MS}~3000
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Pode mudar em THRESHOLD que é o Limiar de detecção de som alto (0-\/4095) Este firmware bare‑metal lê um microfone (GPIO 28 / ADC 2) a cada SAMPLE\+\_\+\+PERIOD\+\_\+\+MS ms através de um timer periódico com interrupção.\+ \+Se o sinal ultrapassar \doxyref{THRESHOLD}{p.}{group__parameters_ga4679d8ea8690999a6c6c7c0cb245c879}, uma animação colorida é exibida na matriz 5 × 5 de LEDs Neo\+Pixel ligada ao GPIO 7, controlada por PIO. Essa animação é o nome "{}\+MANOEL"{} letra por letra, dentro da duração de 3000ms. A cada letra terá uma cor de forma aletória fixa por todo seu tempo de exebição. E toda vez que mudar a letra cor deve mudar de forma aleatória.
+
+Pinagem\+: – \+GPIO 7 → \+DIN da fita/matriz WS2812b (saída \+PIO) ~\newline
+ – \+GPIO 28 → \+Saída do microfone eletreto (entrada \+ADC 2)
+
+Principais recursos\+: – \+ADC + Timer IRQ para amostragem periódica ~\newline
+ – \+PIO para protocolo de 800 k\+Hz dos WS2812 ~\newline
+ – \+Código todo comentado em Doxygen para fins didáticos 
+
+\doxysubsection{Macro Definition Documentation}
+\index{Configurações de amostragem e limiar@{Configurações de amostragem e limiar}!NAME\_DURATION\_MS@{NAME\_DURATION\_MS}}
+\index{NAME\_DURATION\_MS@{NAME\_DURATION\_MS}!Configurações de amostragem e limiar@{Configurações de amostragem e limiar}}
+\doxysubsubsection{NAME\_DURATION\_MS}
+{\footnotesize\ttfamily \label{group__parameters_gac67fd92467a346691c3e2754f7eb93eb} 
+\#define NAME\+\_\+\+DURATION\+\_\+\+MS~3000}
+
+Duração total da animação (ms) \index{Configurações de amostragem e limiar@{Configurações de amostragem e limiar}!SAMPLE\_PERIOD\_MS@{SAMPLE\_PERIOD\_MS}}
+\index{SAMPLE\_PERIOD\_MS@{SAMPLE\_PERIOD\_MS}!Configurações de amostragem e limiar@{Configurações de amostragem e limiar}}
+\doxysubsubsection{SAMPLE\_PERIOD\_MS}
+{\footnotesize\ttfamily \label{group__parameters_gafde0a91566f74d38cdffe80c6635576d} 
+\#define SAMPLE\+\_\+\+PERIOD\+\_\+\+MS~5}
+
+Intervalo entre leituras ADC (ms) \index{Configurações de amostragem e limiar@{Configurações de amostragem e limiar}!THRESHOLD@{THRESHOLD}}
+\index{THRESHOLD@{THRESHOLD}!Configurações de amostragem e limiar@{Configurações de amostragem e limiar}}
+\doxysubsubsection{THRESHOLD}
+{\footnotesize\ttfamily \label{group__parameters_ga4679d8ea8690999a6c6c7c0cb245c879} 
+\#define THRESHOLD~800}
+
+Limiar de som alto (0–4095) 
