@@ -1,1 +1,3 @@
 build
+# Ignora toda a pasta "minha_pasta"
+**/Unidade_01/Cap_06
