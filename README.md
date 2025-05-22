@@ -16,13 +16,9 @@ Criar um sistema de dois núcleos que simula uma estação de monitoramento
 com  sensores  e  atuadores.  Os  núcleos  se  comunicam  entre  si  utilizando  FIFO, compartilham estado com flags e usam alarmes para executar tarefas periódicas. \
 A solução está explicada nos comentários no código.  [Link](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Unidade_01/Cap_02/Atividade_01)
 
-Capítulo 03: Tratamento de Interrupções \ 
+Capítulo 03: Tratamento de Interrupções \
 Enunciado: Monitoramento de Som com Interrupção de Timer 
-Você deve criar um programa em C/C++ utilizando o SDK oficial do Raspberry Pi Pico 
-(pico-sdk)  no  VSCode,  que  configure  um  timer  periódico  para  realizar  leituras  do 
-microfone analógico. Sempre que o som captado ultrapassar um limiar definido (nível de 
-ruído  considerado  “alto”),  a  matriz  de  LED  WS2812  deverá  ser  ativada  com  uma 
-animação ou padrão de cores.  \
+Configure  um  timer  periódico  para  realizar  leituras  do microfone analógico. Sempre que o som captado ultrapassar um limiar definido (nível de  ruído  considerado  “alto”),  a  matriz  de  LED  WS2812  deverá  ser  ativada  com  uma  animação ou padrão de cores.  \
 A solução está explicada nos comentários no código.  [Link](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Unidade_01/Cap_03/Atividade_03)
 
 Capítulo 04: Periféricos Avançados: Temporizadores \
