@@ -26,7 +26,7 @@ Enunciado: Semáforo de Trânsito Interativo.
 - Criar um semáforo de trânsito, com acionamento de travessia para pedestres e indicação de tempo restante. \
 A solução está explicada nos comentários no código.  [Link](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Unidade_01/Cap_04/Atividade_04)
 
-### Capítulo 05: Periféricos Avançados: DMA \
+### Capítulo 05: Periféricos Avançados: DMA
 Enunciado: Sistema de Aquisição de Temperatura com DMA e Interface I2C em 
 Microcontrolador RP2040
 - Desenvolver  um  sistema  embarcado  que  utilize  o 
