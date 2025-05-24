@@ -1,0 +1,74 @@
+\doxysection{ssd1306\+\_\+i2c.\+h}
+\hypertarget{ssd1306__i2c_8h_source}{}\label{ssd1306__i2c_8h_source}\index{C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01\_Unid.01\_Microcontrolador/Atividades/Cap\_04/Atividade\_04/Atividade\_04/lib/ssd1306\_i2c.h@{C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01\_Unid.01\_Microcontrolador/Atividades/Cap\_04/Atividade\_04/Atividade\_04/lib/ssd1306\_i2c.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}pico/stdlib.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}hardware/i2c.h"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ ssd1306\_inc\_h}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ ssd1306\_inc\_h}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ ssd1306\_height\ 64\ }\textcolor{comment}{//\ Define\ a\ altura\ do\ display\ (32\ pixels)}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ ssd1306\_width\ 128\ }\textcolor{comment}{//\ Define\ a\ largura\ do\ display\ (128\ pixels)}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ ssd1306\_i2c\_address\ \_u(0x3C)\ }\textcolor{comment}{//\ Define\ o\ endereço\ do\ i2c\ do\ display}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ ssd1306\_i2c\_clock\ 400\ }\textcolor{comment}{//\ Define\ o\ tempo\ do\ clock\ (pode\ ser\ aumentado)}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{comment}{//\ Comandos\ de\ configuração\ (endereços)}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ ssd1306\_set\_memory\_mode\ \_u(0x20)}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ ssd1306\_set\_column\_address\ \_u(0x21)}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ ssd1306\_set\_page\_address\ \_u(0x22)}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ ssd1306\_set\_horizontal\_scroll\ \_u(0x26)}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ ssd1306\_set\_scroll\ \_u(0x2E)}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ ssd1306\_set\_display\_start\_line\ \_u(0x40)}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ ssd1306\_set\_contrast\ \_u(0x81)}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#define\ ssd1306\_set\_charge\_pump\ \_u(0x8D)}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ ssd1306\_set\_segment\_remap\ \_u(0xA0)}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#define\ ssd1306\_set\_entire\_on\ \_u(0xA4)}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ ssd1306\_set\_all\_on\ \_u(0xA5)}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#define\ ssd1306\_set\_normal\_display\ \_u(0xA6)}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#define\ ssd1306\_set\_inverse\_display\ \_u(0xA7)}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#define\ ssd1306\_set\_mux\_ratio\ \_u(0xA8)}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#define\ ssd1306\_set\_display\ \_u(0xAE)}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#define\ ssd1306\_set\_common\_output\_direction\ \_u(0xC0)}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#define\ ssd1306\_set\_common\_output\_direction\_flip\ \_u(0xC0)}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#define\ ssd1306\_set\_display\_offset\ \_u(0xD3)}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#define\ ssd1306\_set\_display\_clock\_divide\_ratio\ \_u(0xD5)}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#define\ ssd1306\_set\_precharge\ \_u(0xD9)}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ ssd1306\_set\_common\_pin\_configuration\ \_u(0xDA)}}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#define\ ssd1306\_set\_vcomh\_deselect\_level\ \_u(0xDB)}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#define\ ssd1306\_page\_height\ \_u(8)}}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#define\ ssd1306\_n\_pages\ (ssd1306\_height\ /\ ssd1306\_page\_height)}}
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#define\ ssd1306\_buffer\_length\ (ssd1306\_n\_pages\ *\ ssd1306\_width)}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#define\ ssd1306\_write\_mode\ \_u(0xFE)}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#define\ ssd1306\_read\_mode\ \_u(0xFF)}}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structrender__area}{render\_area}}\ \{}
+\DoxyCodeLine{00051\ \ \ \ \ uint8\_t\ start\_column;}
+\DoxyCodeLine{00052\ \ \ \ \ uint8\_t\ end\_column;}
+\DoxyCodeLine{00053\ \ \ \ \ uint8\_t\ start\_page;}
+\DoxyCodeLine{00054\ \ \ \ \ uint8\_t\ end\_page;}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{int}\ buffer\_length;}
+\DoxyCodeLine{00057\ \};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00060\ \ \ uint8\_t\ width,\ height,\ pages,\ address;}
+\DoxyCodeLine{00061\ \ \ i2c\_inst\_t\ *\ i2c\_port;}
+\DoxyCodeLine{00062\ \ \ \textcolor{keywordtype}{bool}\ external\_vcc;}
+\DoxyCodeLine{00063\ \ \ uint8\_t\ *ram\_buffer;}
+\DoxyCodeLine{00064\ \ \ \textcolor{keywordtype}{size\_t}\ bufsize;}
+\DoxyCodeLine{00065\ \ \ uint8\_t\ port\_buffer[2];}
+\DoxyCodeLine{00066\ \}\ \mbox{\hyperlink{structssd1306__t}{ssd1306\_t}};}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

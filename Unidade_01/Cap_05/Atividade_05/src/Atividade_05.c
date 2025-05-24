@@ -34,7 +34,7 @@
  *                  • Raspberry Pi Pico / Pico W
  *                  • Display OLED SSD1306 conectado aos pinos I2C:
  *                      – SDA → GP14   (GPIO 14)
- *                      – SCL → GP15   (GPIO 15)
+ *                      – SCL → GP55   (GPIO 15)
  *
  * @compile      Compilação (exemplo de CMake):
  *                  add_executable(Atividade_05

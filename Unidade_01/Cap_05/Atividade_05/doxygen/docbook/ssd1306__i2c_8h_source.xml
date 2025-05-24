@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_ssd1306__i2c_8h_source" xml:lang="en-US">
+<title>ssd1306_i2c.h</title>
+<indexterm><primary>C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_05/Atividade_05/lib/ssd1306_i2c.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#include&#32;&lt;stdlib.h&gt;</emphasis>
+2 <emphasis role="preprocessor">#include&#32;&quot;pico/stdlib.h&quot;</emphasis>
+3 <emphasis role="preprocessor">#include&#32;&quot;hardware/i2c.h&quot;</emphasis>
+4 
+5 <emphasis role="preprocessor">#ifndef&#32;ssd1306_inc_h</emphasis>
+6 <emphasis role="preprocessor">#define&#32;ssd1306_inc_h</emphasis>
+7 
+8 <emphasis role="preprocessor">#define&#32;ssd1306_height&#32;64&#32;</emphasis><emphasis role="comment">//&#32;Define&#32;a&#32;altura&#32;do&#32;display&#32;(32&#32;pixels)</emphasis>
+9 <emphasis role="preprocessor">#define&#32;ssd1306_width&#32;128&#32;</emphasis><emphasis role="comment">//&#32;Define&#32;a&#32;largura&#32;do&#32;display&#32;(128&#32;pixels)</emphasis>
+10 
+11 <emphasis role="preprocessor">#define&#32;ssd1306_i2c_address&#32;_u(0x3C)&#32;</emphasis><emphasis role="comment">//&#32;Define&#32;o&#32;endereço&#32;do&#32;i2c&#32;do&#32;display</emphasis>
+12 
+13 <emphasis role="preprocessor">#define&#32;ssd1306_i2c_clock&#32;400&#32;</emphasis><emphasis role="comment">//&#32;Define&#32;o&#32;tempo&#32;do&#32;clock&#32;(pode&#32;ser&#32;aumentado)</emphasis>
+14 
+15 <emphasis role="comment">//&#32;Comandos&#32;de&#32;configuração&#32;(endereços)</emphasis>
+16 <emphasis role="preprocessor">#define&#32;ssd1306_set_memory_mode&#32;_u(0x20)</emphasis>
+17 <emphasis role="preprocessor">#define&#32;ssd1306_set_column_address&#32;_u(0x21)</emphasis>
+18 <emphasis role="preprocessor">#define&#32;ssd1306_set_page_address&#32;_u(0x22)</emphasis>
+19 <emphasis role="preprocessor">#define&#32;ssd1306_set_horizontal_scroll&#32;_u(0x26)</emphasis>
+20 <emphasis role="preprocessor">#define&#32;ssd1306_set_scroll&#32;_u(0x2E)</emphasis>
+21 
+22 <emphasis role="preprocessor">#define&#32;ssd1306_set_display_start_line&#32;_u(0x40)</emphasis>
+23 
+24 <emphasis role="preprocessor">#define&#32;ssd1306_set_contrast&#32;_u(0x81)</emphasis>
+25 <emphasis role="preprocessor">#define&#32;ssd1306_set_charge_pump&#32;_u(0x8D)</emphasis>
+26 
+27 <emphasis role="preprocessor">#define&#32;ssd1306_set_segment_remap&#32;_u(0xA0)</emphasis>
+28 <emphasis role="preprocessor">#define&#32;ssd1306_set_entire_on&#32;_u(0xA4)</emphasis>
+29 <emphasis role="preprocessor">#define&#32;ssd1306_set_all_on&#32;_u(0xA5)</emphasis>
+30 <emphasis role="preprocessor">#define&#32;ssd1306_set_normal_display&#32;_u(0xA6)</emphasis>
+31 <emphasis role="preprocessor">#define&#32;ssd1306_set_inverse_display&#32;_u(0xA7)</emphasis>
+32 <emphasis role="preprocessor">#define&#32;ssd1306_set_mux_ratio&#32;_u(0xA8)</emphasis>
+33 <emphasis role="preprocessor">#define&#32;ssd1306_set_display&#32;_u(0xAE)</emphasis>
+34 <emphasis role="preprocessor">#define&#32;ssd1306_set_common_output_direction&#32;_u(0xC0)</emphasis>
+35 <emphasis role="preprocessor">#define&#32;ssd1306_set_common_output_direction_flip&#32;_u(0xC0)</emphasis>
+36 
+37 <emphasis role="preprocessor">#define&#32;ssd1306_set_display_offset&#32;_u(0xD3)</emphasis>
+38 <emphasis role="preprocessor">#define&#32;ssd1306_set_display_clock_divide_ratio&#32;_u(0xD5)</emphasis>
+39 <emphasis role="preprocessor">#define&#32;ssd1306_set_precharge&#32;_u(0xD9)</emphasis>
+40 <emphasis role="preprocessor">#define&#32;ssd1306_set_common_pin_configuration&#32;_u(0xDA)</emphasis>
+41 <emphasis role="preprocessor">#define&#32;ssd1306_set_vcomh_deselect_level&#32;_u(0xDB)</emphasis>
+42 
+43 <emphasis role="preprocessor">#define&#32;ssd1306_page_height&#32;_u(8)</emphasis>
+44 <emphasis role="preprocessor">#define&#32;ssd1306_n_pages&#32;(ssd1306_height&#32;/&#32;ssd1306_page_height)</emphasis>
+45 <emphasis role="preprocessor">#define&#32;ssd1306_buffer_length&#32;(ssd1306_n_pages&#32;*&#32;ssd1306_width)</emphasis>
+46 
+47 <emphasis role="preprocessor">#define&#32;ssd1306_write_mode&#32;_u(0xFE)</emphasis>
+48 <emphasis role="preprocessor">#define&#32;ssd1306_read_mode&#32;_u(0xFF)</emphasis>
+49 
+50 <emphasis role="keyword">struct&#32;</emphasis><link linkend="_structrender__area">render_area</link>&#32;{
+51 &#32;&#32;&#32;&#32;uint8_t&#32;start_column;
+52 &#32;&#32;&#32;&#32;uint8_t&#32;end_column;
+53 &#32;&#32;&#32;&#32;uint8_t&#32;start_page;
+54 &#32;&#32;&#32;&#32;uint8_t&#32;end_page;
+55 
+56 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;buffer_length;
+57 };
+58 
+59 <emphasis role="keyword">typedef</emphasis>&#32;<emphasis role="keyword">struct&#32;</emphasis>{
+60 &#32;&#32;uint8_t&#32;width,&#32;height,&#32;pages,&#32;address;
+61 &#32;&#32;i2c_inst_t&#32;*&#32;i2c_port;
+62 &#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;external_vcc;
+63 &#32;&#32;uint8_t&#32;*ram_buffer;
+64 &#32;&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;bufsize;
+65 &#32;&#32;uint8_t&#32;port_buffer[2];
+66 }&#32;<link linkend="_structssd1306__t">ssd1306_t</link>;
+67 
+68 <emphasis role="preprocessor">#endif</emphasis>
+</programlisting></section>

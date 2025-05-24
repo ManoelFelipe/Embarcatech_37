@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__atividade__04_8c" xml:lang="en-US">
+<title>C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/src/Atividade_04.c File Reference</title>
+<indexterm><primary>C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/src/Atividade_04.c</primary></indexterm>
+<para>
+
+<para>Simulação de semáforo de trânsito com acessibilidade para pedestres. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &lt;stdio.h&gt;<?linebreak?>#include &lt;string.h&gt;<?linebreak?>#include &quot;pico/stdlib.h&quot;<?linebreak?>#include &quot;hardware/gpio.h&quot;<?linebreak?>#include &quot;hardware/timer.h&quot;<?linebreak?>#include &quot;hardware/i2c.h&quot;<?linebreak?>#include &quot;ssd1306_i2c.h&quot;<?linebreak?>#include &quot;ssd1306.h&quot;<?linebreak?>#include &quot;ssd1306_font.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="__atividade__04_8c_1ad12a564ad91765abf118b1a1c935a79b"/>#define <emphasis role="strong">RED_TIME_SEC</emphasis>&#160;&#160;&#160;10</para>
+
+<para>Tempo total de sinal vermelho (s) </para>
+</listitem>
+            <listitem><para><anchor xml:id="__atividade__04_8c_1a4807eaf5581317c4277f82c741f105ac"/>#define <emphasis role="strong">GREEN_TIME_SEC</emphasis>&#160;&#160;&#160;10</para>
+
+<para>Tempo total de sinal verde (s) </para>
+</listitem>
+            <listitem><para><anchor xml:id="__atividade__04_8c_1aa878f52b8595a099574f3a1c12717b73"/>#define <emphasis role="strong">YELLOW_TIME_SEC</emphasis>&#160;&#160;&#160;3</para>
+
+<para>Tempo total de sinal amarelo (s) </para>
+</listitem>
+            <listitem><para><anchor xml:id="__atividade__04_8c_1a2b5f3cdada392dfc73422e30dc494bde"/>#define <emphasis role="strong">COUNTDOWN_START</emphasis>&#160;&#160;&#160;5</para>
+
+<para>Início da contagem regressiva (últimos segundos) </para>
+</listitem>
+            <listitem><para><anchor xml:id="__atividade__04_8c_1ab9824ab080c30006c1baaa0dd7e863c5"/>#define <emphasis role="strong">LED_RED_PIN</emphasis>&#160;&#160;&#160;13</para>
+
+<para>Pino do LED vermelho. </para>
+</listitem>
+            <listitem><para><anchor xml:id="__atividade__04_8c_1a0539be032702009fb24beec89c6fa0c0"/>#define <emphasis role="strong">LED_GREEN_PIN</emphasis>&#160;&#160;&#160;11</para>
+
+<para>Pino do LED verde. </para>
+</listitem>
+            <listitem><para><anchor xml:id="__atividade__04_8c_1a5aec9d3b503fb1a30a21b16c7be86cff"/>#define <emphasis role="strong">LED_BLUE_PIN</emphasis>&#160;&#160;&#160;12</para>
+
+<para>Pino do LED azul (não usado) </para>
+</listitem>
+            <listitem><para><anchor xml:id="__atividade__04_8c_1acbc26198121732a3c0a6888f8f4cb028"/>#define <emphasis role="strong">BUZZER_PIN1</emphasis>&#160;&#160;&#160;10</para>
+
+<para>Pino do buzzer principal. </para>
+</listitem>
+            <listitem><para><anchor xml:id="__atividade__04_8c_1a6a9a564ed2b8f42d387f38dac7ed1b62"/>#define <emphasis role="strong">BUZZER_PIN2</emphasis>&#160;&#160;&#160;21</para>
+
+<para>Pino do buzzer secundário. </para>
+</listitem>
+            <listitem><para><anchor xml:id="__atividade__04_8c_1aad905e2ee036ff31a5cc49b248361420"/>#define <emphasis role="strong">BUTTON_PIN1</emphasis>&#160;&#160;&#160;5</para>
+
+<para>Botão lado 1 (prioridade em empate) </para>
+</listitem>
+            <listitem><para><anchor xml:id="__atividade__04_8c_1ab7676ab9bef15c1956c8163558e3ac44"/>#define <emphasis role="strong">BUTTON_PIN2</emphasis>&#160;&#160;&#160;6</para>
+
+<para>Botão lado 2. </para>
+</listitem>
+            <listitem><para><anchor xml:id="__atividade__04_8c_1a2cade698267beb86ccaa38c14d35ab0f"/>#define <emphasis role="strong">I2C_SDA_PIN</emphasis>&#160;&#160;&#160;14</para>
+</listitem>
+            <listitem><para><anchor xml:id="__atividade__04_8c_1a0e4e08bab2fb484136d18b067bef372c"/>#define <emphasis role="strong">I2C_SCL_PIN</emphasis>&#160;&#160;&#160;15</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="__atividade__04_8c_1aa0aafed44fec19806d8f9ad834be1248">state_t</link> { <link linkend="__atividade__04_8c_1aa0aafed44fec19806d8f9ad834be1248ad2aaf0c286ae52532c96f716b3410aed">ST_RED</link> = 0
+, <link linkend="__atividade__04_8c_1aa0aafed44fec19806d8f9ad834be1248a3680d3e43be15ef8b428fe0a64956b90">ST_GREEN</link>
+, <link linkend="__atividade__04_8c_1aa0aafed44fec19806d8f9ad834be1248a7b5984aa066eb4676d7f8747429d5f3b">ST_YELLOW</link>
+ }</para>
+
+<para>Estados possíveis do semáforo. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="__atividade__04_8c_1a840291bc02cba5474a4cb46a9b9566fe">main</link> (void)</para>
+
+<para>Função principal: inicializa hardware e entra em loop de espera. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Simulação de semáforo de trânsito com acessibilidade para pedestres. </para>
+
+<para>Implementa ciclo semafórico fixo (Vermelho → Verde → Amarelo) e lógica de travessia para pedestres. Ao acionar botão em vermelho, reinicia-se o temporizador para 10 s completos e exibe-se contagem regressiva nos últimos 5 s no display OLED. Botões em verde/amarelo agendam countdown no próximo vermelho. Em vermelho, buzzer em GP10 e GP21 bipam a 1 Hz. Usei estilo Doxygen e comentários completos. Para fins didáticos.</para>
+
+<para>• Ciclo semafórico fixo: Vermelho 10 s → Verde 10 s → Amarelo 3 s ↺ <?linebreak?> Requisitos de pedestre: <?linebreak?><itemizedlist>
+<listitem>
+<para>Em VERMELHO: qualquer botão reinicia contagem para 10 s, exibe <?linebreak?> imediatamente &quot;Sinal: VERMELHO&quot; e, nos últimos 5 s, mostra <?linebreak?> contagem regressiva no OLED. <?linebreak?></para>
+</listitem><listitem>
+<para>Em VERDE ou AMARELO: botão A/B agenda countdown no próximo VERMELHO; Verde encurtado se pedido em VERDE.</para>
+</listitem><listitem>
+<para>Travessia bidirecional: um botão em cada lado da avenida (BUTTON_PIN1 e BUTTON_PIN2). Quando ambos são acionados simultaneamente, define-se prioridade para BUTTON_PIN1 (lado 1) sobre BUTTON_PIN2 (lado 2). <?linebreak?> • Buzzer soa 1 Hz SEMPRE em VERMELHO. - Acessibilidade <?linebreak?> • Botão A (GPIO 5) ou Botão B (6). • Lógica baseada em IRQ GPIO + temporizador 1 Hz. Sem polling intenso.</para>
+</listitem></itemizedlist>
+</para>
+
+<para>Hardware:<itemizedlist>
+<listitem>
+<para>LED RGB: GP11 (Verde), GP13 (Vermelho) (GP12 não usado)</para>
+</listitem><listitem>
+<para>Buzzer: GP10, GP21</para>
+</listitem><listitem>
+<para>Botões: GP5, GP6 (INPUT_PULLUP)</para>
+</listitem><listitem>
+<para>OLED: I2C1 SDA GP14, SCL GP15</para>
+</listitem></itemizedlist>
+</para>
+
+<para><formalpara><title>Author</title>
+
+<para>Manoel Furtado </para>
+</formalpara>
+<formalpara><title>Date</title>
+
+<para>15 mai 2025 </para>
+</formalpara>
+<formalpara><title>Copyright</title>
+
+<para>2025 Manoel Furtado (MIT License) (veja LICENSE.md) </para>
+</formalpara>
+</para>
+</section>
+<section>
+<title>Enumeration Type Documentation</title>
+<anchor xml:id="__atividade__04_8c_1aa0aafed44fec19806d8f9ad834be1248"/><section>
+    <title>state_t</title>
+<indexterm><primary>state_t</primary><secondary>Atividade_04.c</secondary></indexterm>
+<indexterm><primary>Atividade_04.c</primary><secondary>state_t</secondary></indexterm>
+<para><computeroutput>enum <link linkend="__atividade__04_8c_1aa0aafed44fec19806d8f9ad834be1248">state_t</link></computeroutput></para><para>
+
+<para>Estados possíveis do semáforo. </para>
+</para>
+<informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>ST_RED</primary><secondary>Atividade_04.c</secondary></indexterm>
+<indexterm><primary>Atividade_04.c</primary><secondary>ST_RED</secondary></indexterm>
+<anchor xml:id="__atividade__04_8c_1aa0aafed44fec19806d8f9ad834be1248ad2aaf0c286ae52532c96f716b3410aed"/>ST_RED</entry><entry>
+<para>Vermelho </para>
+</entry></row><row><entry><indexterm><primary>ST_GREEN</primary><secondary>Atividade_04.c</secondary></indexterm>
+<indexterm><primary>Atividade_04.c</primary><secondary>ST_GREEN</secondary></indexterm>
+<anchor xml:id="__atividade__04_8c_1aa0aafed44fec19806d8f9ad834be1248a3680d3e43be15ef8b428fe0a64956b90"/>ST_GREEN</entry><entry>
+<para>Verde </para>
+</entry></row><row><entry><indexterm><primary>ST_YELLOW</primary><secondary>Atividade_04.c</secondary></indexterm>
+<indexterm><primary>Atividade_04.c</primary><secondary>ST_YELLOW</secondary></indexterm>
+<anchor xml:id="__atividade__04_8c_1aa0aafed44fec19806d8f9ad834be1248a7b5984aa066eb4676d7f8747429d5f3b"/>ST_YELLOW</entry><entry>
+<para>Amarelo </para>
+</entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="__atividade__04_8c_1a840291bc02cba5474a4cb46a9b9566fe"/><section>
+    <title>main()</title>
+<indexterm><primary>main</primary><secondary>Atividade_04.c</secondary></indexterm>
+<indexterm><primary>Atividade_04.c</primary><secondary>main</secondary></indexterm>
+<para><computeroutput>int main (void )</computeroutput></para><para>
+
+<para>Função principal: inicializa hardware e entra em loop de espera. </para>
+</para>
+
+<para><orderedlist>
+<listitem>
+<para>Chama hw_init() para configurar GPIOs, I2C e display OLED.</para>
+</listitem><listitem>
+<para>Define cor inicial do semáforo para vermelho e exibe no OLED.</para>
+</listitem><listitem>
+<para>Adiciona timer periódico de 1 Hz para gerenciar transições de estado e contagem regressiva.</para>
+</listitem><listitem>
+<para>Entra em loop infinito com tight_loop_contents(), permitindo que a CPU aguarde de forma eficiente por interrupções de botões e callbacks. <formalpara><title>Returns</title>
+
+<para>Esta função não retorna. </para>
+</formalpara>
+</para>
+</listitem></orderedlist>
+</para>
+</section>
+</section>
+</section>

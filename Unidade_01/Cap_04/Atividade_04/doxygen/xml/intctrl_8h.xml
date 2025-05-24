@@ -1,0 +1,666 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="intctrl_8h" kind="file" language="C++">
+    <compoundname>intctrl.h</compoundname>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="intctrl_8h_1adbe2b7eeada61e813aca00e24665fb84" prot="public" static="no">
+        <name>isr_timer_0</name>
+        <initializer>isr_irq0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" line="78" column="9" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="intctrl_8h_1af47f5141a323aedf310cec1273bf8ce2" prot="public" static="no">
+        <name>isr_timer_1</name>
+        <initializer>isr_irq1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" line="79" column="9" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="intctrl_8h_1a94a97ec5d1a59b5229c80ca1e0451cff" prot="public" static="no">
+        <name>isr_timer_2</name>
+        <initializer>isr_irq2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" line="80" column="9" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="intctrl_8h_1a6e705e7072dda5eef0bd6813e1c82526" prot="public" static="no">
+        <name>isr_timer_3</name>
+        <initializer>isr_irq3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" line="81" column="9" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="intctrl_8h_1a2d98c8cb1845a159761a05ee5a38c171" prot="public" static="no">
+        <name>isr_pwm_wrap</name>
+        <initializer>isr_irq4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" line="82" column="9" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="intctrl_8h_1a49a91864f024cb7b4b132395c6607d2d" prot="public" static="no">
+        <name>isr_usbctrl</name>
+        <initializer>isr_irq5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" line="83" column="9" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="intctrl_8h_1a17889c230b59fcee2e18baafef0dc2bf" prot="public" static="no">
+        <name>isr_xip</name>
+        <initializer>isr_irq6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" line="84" column="9" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="intctrl_8h_1a177a2db60d236dd7cef3a8237915e3bb" prot="public" static="no">
+        <name>isr_pio0_0</name>
+        <initializer>isr_irq7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" line="85" column="9" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="intctrl_8h_1af3b2d4f2f620a25ff19afe68992a936c" prot="public" static="no">
+        <name>isr_pio0_1</name>
+        <initializer>isr_irq8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" line="86" column="9" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="intctrl_8h_1aed71553dffc134bc2c5823423e79072a" prot="public" static="no">
+        <name>isr_pio1_0</name>
+        <initializer>isr_irq9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" line="87" column="9" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="intctrl_8h_1a3e05cb30a83c7f78af5e98c73001e5a2" prot="public" static="no">
+        <name>isr_pio1_1</name>
+        <initializer>isr_irq10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" line="88" column="9" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="intctrl_8h_1ac129332a43a15722c8ffc59d3d07e06d" prot="public" static="no">
+        <name>isr_dma_0</name>
+        <initializer>isr_irq11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" line="89" column="9" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="intctrl_8h_1a21143aee0f32c8e57146cb5577c2d226" prot="public" static="no">
+        <name>isr_dma_1</name>
+        <initializer>isr_irq12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" line="90" column="9" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="intctrl_8h_1a02fa7ad7c87b55c2d8804c1ecb7d16b8" prot="public" static="no">
+        <name>isr_io_bank0</name>
+        <initializer>isr_irq13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" line="91" column="9" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="intctrl_8h_1ac2d90c81b7602bb8099b653cd50581fe" prot="public" static="no">
+        <name>isr_io_qspi</name>
+        <initializer>isr_irq14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" line="92" column="9" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="intctrl_8h_1a2ba0bdfa2e82fef0d073fb0f06162d5f" prot="public" static="no">
+        <name>isr_sio_proc0</name>
+        <initializer>isr_irq15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" line="93" column="9" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="intctrl_8h_1a3ce20671a351ccc77ed31d05c4a327ff" prot="public" static="no">
+        <name>isr_sio_proc1</name>
+        <initializer>isr_irq16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" line="94" column="9" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="intctrl_8h_1a4fb42f406d21236cda6cd6cd44a58a5f" prot="public" static="no">
+        <name>isr_clocks</name>
+        <initializer>isr_irq17</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" line="95" column="9" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="intctrl_8h_1a3ce13a013825b857a853bab64f94ab56" prot="public" static="no">
+        <name>isr_spi0</name>
+        <initializer>isr_irq18</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" line="96" column="9" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="intctrl_8h_1a1442dd5ec6405546d238c9cf3e25716c" prot="public" static="no">
+        <name>isr_spi1</name>
+        <initializer>isr_irq19</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" line="97" column="9" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="intctrl_8h_1adaacd481a8aa15bb67cb2b8296999a23" prot="public" static="no">
+        <name>isr_uart0</name>
+        <initializer>isr_irq20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" line="98" column="9" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="intctrl_8h_1a173c8071de4db3407d8f0334c9fe1b70" prot="public" static="no">
+        <name>isr_uart1</name>
+        <initializer>isr_irq21</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" line="99" column="9" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="intctrl_8h_1ac4e628f8ca36cb4574108ba4636e6117" prot="public" static="no">
+        <name>isr_adc_fifo</name>
+        <initializer>isr_irq22</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" line="100" column="9" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="intctrl_8h_1abbe8272af8bae27a2663ad47d2f6bfb3" prot="public" static="no">
+        <name>isr_i2c0</name>
+        <initializer>isr_irq23</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" line="101" column="9" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="intctrl_8h_1a94e45205eed8968eea3a0647cc290b61" prot="public" static="no">
+        <name>isr_i2c1</name>
+        <initializer>isr_irq24</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" line="102" column="9" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="intctrl_8h_1a61891feec20367e09b991a895b9d178f" prot="public" static="no">
+        <name>isr_rtc</name>
+        <initializer>isr_irq25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" line="103" column="9" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>irq_num_rp2040</name>
+        <enumvalue id="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a9adcee3ff00b51d885e399d87fd6c957" prot="public">
+          <name>TIMER_IRQ_0</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Select TIMER&apos;s IRQ 0 output. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a4c240b6b48b410130cd2890ab04d560e" prot="public">
+          <name>TIMER_IRQ_1</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Select TIMER&apos;s IRQ 1 output. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3aff3b80e5739147626d9386b2a3b2953c" prot="public">
+          <name>TIMER_IRQ_2</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Select TIMER&apos;s IRQ 2 output. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3aa85dca1accc78d56c18c8a2c2e842b42" prot="public">
+          <name>TIMER_IRQ_3</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Select TIMER&apos;s IRQ 3 output. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a0142d31049f55e027a88331ad70fa5aa" prot="public">
+          <name>PWM_IRQ_WRAP</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>Select PWM&apos;s IRQ_WRAP output. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a2cd42859a0101338a23d1687c6ff473c" prot="public">
+          <name>USBCTRL_IRQ</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+<para>Select USBCTRL&apos;s IRQ output. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a76f444f019edf6356c9e64a1c2714b30" prot="public">
+          <name>XIP_IRQ</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+<para>Select XIP&apos;s IRQ output. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a6a1531131ebf36cef68deb1b098c169e" prot="public">
+          <name>PIO0_IRQ_0</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+<para>Select PIO0&apos;s IRQ 0 output. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a8342ee77067f98e1796e79d437093367" prot="public">
+          <name>PIO0_IRQ_1</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+<para>Select PIO0&apos;s IRQ 1 output. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a25729562658fcf2aa86e87e54617e7af" prot="public">
+          <name>PIO1_IRQ_0</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+<para>Select PIO1&apos;s IRQ 0 output. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a02a272c2eed06831563b441793eb4964" prot="public">
+          <name>PIO1_IRQ_1</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+<para>Select PIO1&apos;s IRQ 1 output. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a27c81947202be1166b90cd5fb6f482a0" prot="public">
+          <name>DMA_IRQ_0</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+<para>Select DMA&apos;s IRQ 0 output. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a7b25577c8e3d3b1c4bab08eaed19b5ef" prot="public">
+          <name>DMA_IRQ_1</name>
+          <initializer>= 12</initializer>
+          <briefdescription>
+<para>Select DMA&apos;s IRQ 1 output. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3ae9d0650a36de3bfbad6edc82a613d3c1" prot="public">
+          <name>IO_IRQ_BANK0</name>
+          <initializer>= 13</initializer>
+          <briefdescription>
+<para>Select IO_BANK0&apos;s IRQ output. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3af5aa261b359dd160a1d8c3bc558ceb2b" prot="public">
+          <name>IO_IRQ_QSPI</name>
+          <initializer>= 14</initializer>
+          <briefdescription>
+<para>Select IO_QSPI&apos;s IRQ output. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a841acbddc6961252827d7645277452ec" prot="public">
+          <name>SIO_IRQ_PROC0</name>
+          <initializer>= 15</initializer>
+          <briefdescription>
+<para>Select SIO_PROC0&apos;s IRQ output. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3ae00819201c60acdf59448df5a08c11b5" prot="public">
+          <name>SIO_IRQ_PROC1</name>
+          <initializer>= 16</initializer>
+          <briefdescription>
+<para>Select SIO_PROC1&apos;s IRQ output. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a737a1db2a02502ed578e908b3b6796c2" prot="public">
+          <name>CLOCKS_IRQ</name>
+          <initializer>= 17</initializer>
+          <briefdescription>
+<para>Select CLOCKS&apos;s IRQ output. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a10b2c78ee63a060db5d9f30b8f1daf8a" prot="public">
+          <name>SPI0_IRQ</name>
+          <initializer>= 18</initializer>
+          <briefdescription>
+<para>Select SPI0&apos;s IRQ output. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a60f73b071388a649cac65d2026607540" prot="public">
+          <name>SPI1_IRQ</name>
+          <initializer>= 19</initializer>
+          <briefdescription>
+<para>Select SPI1&apos;s IRQ output. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a504e54f28a2e2928bd6a1604ee0a24fb" prot="public">
+          <name>UART0_IRQ</name>
+          <initializer>= 20</initializer>
+          <briefdescription>
+<para>Select UART0&apos;s IRQ output. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a1062848ec5bc51fcdd58a95d40fc266b" prot="public">
+          <name>UART1_IRQ</name>
+          <initializer>= 21</initializer>
+          <briefdescription>
+<para>Select UART1&apos;s IRQ output. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a80d34861619c6034c897e829aea93ed4" prot="public">
+          <name>ADC_IRQ_FIFO</name>
+          <initializer>= 22</initializer>
+          <briefdescription>
+<para>Select ADC&apos;s IRQ_FIFO output. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3ae54e6d9ba3c33888744c4ba77a7a4255" prot="public">
+          <name>I2C0_IRQ</name>
+          <initializer>= 23</initializer>
+          <briefdescription>
+<para>Select I2C0&apos;s IRQ output. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a3d4c9de91954651ee3dee7c066fc3db9" prot="public">
+          <name>I2C1_IRQ</name>
+          <initializer>= 24</initializer>
+          <briefdescription>
+<para>Select I2C1&apos;s IRQ output. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a758d0e5253474a1224daa5eff0bdb5fc" prot="public">
+          <name>RTC_IRQ</name>
+          <initializer>= 25</initializer>
+          <briefdescription>
+<para>Select RTC&apos;s IRQ output. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a5b2f2ddbc9d3322cae1f2f0b3f51cb7b" prot="public">
+          <name>IRQ_COUNT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Interrupt numbers on RP2040 (used as typedef irq_num_t) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" line="47" column="1" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" bodystart="47" bodyend="75"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="intctrl_8h_1af30862f51b5994ffd5863176a185d137" prot="public" static="no">
+        <type>enum irq_num_rp2040</type>
+        <definition>typedef enum irq_num_rp2040 irq_num_t</definition>
+        <argsstring></argsstring>
+        <name>irq_num_t</name>
+        <briefdescription>
+<para>Interrupt numbers on RP2040 (used as typedef irq_num_t) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h" line="75" column="11"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>THIS<sp/>HEADER<sp/>FILE<sp/>IS<sp/>AUTOMATICALLY<sp/>GENERATED<sp/>--<sp/>DO<sp/>NOT<sp/>EDIT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_INTCTRL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_INTCTRL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__ASSEMBLER__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIMER_IRQ_0<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIMER_IRQ_1<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIMER_IRQ_2<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIMER_IRQ_3<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWM_IRQ_WRAP<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USBCTRL_IRQ<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>XIP_IRQ<sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIO0_IRQ_0<sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIO0_IRQ_1<sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIO1_IRQ_0<sp/>9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIO1_IRQ_1<sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMA_IRQ_0<sp/>11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMA_IRQ_1<sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_IRQ_BANK0<sp/>13</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_IRQ_QSPI<sp/>14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SIO_IRQ_PROC0<sp/>15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SIO_IRQ_PROC1<sp/>16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CLOCKS_IRQ<sp/>17</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI0_IRQ<sp/>18</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI1_IRQ<sp/>19</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART0_IRQ<sp/>20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART1_IRQ<sp/>21</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_IRQ_FIFO<sp/>22</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I2C0_IRQ<sp/>23</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I2C1_IRQ<sp/>24</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RTC_IRQ<sp/>25</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>irq_num_rp2040<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>TIMER_IRQ_0<sp/>=<sp/>0,<sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>TIMER_IRQ_1<sp/>=<sp/>1,<sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>TIMER_IRQ_2<sp/>=<sp/>2,<sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>TIMER_IRQ_3<sp/>=<sp/>3,<sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>PWM_IRQ_WRAP<sp/>=<sp/>4,<sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>USBCTRL_IRQ<sp/>=<sp/>5,<sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>XIP_IRQ<sp/>=<sp/>6,<sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>PIO0_IRQ_0<sp/>=<sp/>7,<sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>PIO0_IRQ_1<sp/>=<sp/>8,<sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>PIO1_IRQ_0<sp/>=<sp/>9,<sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>PIO1_IRQ_1<sp/>=<sp/>10,<sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>DMA_IRQ_0<sp/>=<sp/>11,<sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>DMA_IRQ_1<sp/>=<sp/>12,<sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_IRQ_BANK0<sp/>=<sp/>13,<sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_IRQ_QSPI<sp/>=<sp/>14,<sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>SIO_IRQ_PROC0<sp/>=<sp/>15,<sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>SIO_IRQ_PROC1<sp/>=<sp/>16,<sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>CLOCKS_IRQ<sp/>=<sp/>17,<sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI0_IRQ<sp/>=<sp/>18,<sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI1_IRQ<sp/>=<sp/>19,<sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>UART0_IRQ<sp/>=<sp/>20,<sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>UART1_IRQ<sp/>=<sp/>21,<sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>ADC_IRQ_FIFO<sp/>=<sp/>22,<sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>I2C0_IRQ<sp/>=<sp/>23,<sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>I2C1_IRQ<sp/>=<sp/>24,<sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>RTC_IRQ<sp/>=<sp/>25,<sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>IRQ_COUNT</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}<sp/>irq_num_t;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>isr_timer_0<sp/>isr_irq0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>isr_timer_1<sp/>isr_irq1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>isr_timer_2<sp/>isr_irq2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>isr_timer_3<sp/>isr_irq3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>isr_pwm_wrap<sp/>isr_irq4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>isr_usbctrl<sp/>isr_irq5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>isr_xip<sp/>isr_irq6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>isr_pio0_0<sp/>isr_irq7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>isr_pio0_1<sp/>isr_irq8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>isr_pio1_0<sp/>isr_irq9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>isr_pio1_1<sp/>isr_irq10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>isr_dma_0<sp/>isr_irq11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>isr_dma_1<sp/>isr_irq12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>isr_io_bank0<sp/>isr_irq13</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>isr_io_qspi<sp/>isr_irq14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>isr_sio_proc0<sp/>isr_irq15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>isr_sio_proc1<sp/>isr_irq16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>isr_clocks<sp/>isr_irq17</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>isr_spi0<sp/>isr_irq18</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>isr_spi1<sp/>isr_irq19</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>isr_uart0<sp/>isr_irq20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>isr_uart1<sp/>isr_irq21</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>isr_adc_fifo<sp/>isr_irq22</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>isr_i2c0<sp/>isr_irq23</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>isr_i2c1<sp/>isr_irq24</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>isr_rtc<sp/>isr_irq25</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>_INTCTRL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen/intctrl.h"/>
+  </compounddef>
+</doxygen>

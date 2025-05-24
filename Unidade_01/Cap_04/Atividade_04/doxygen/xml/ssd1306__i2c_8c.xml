@@ -1,0 +1,710 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="ssd1306__i2c_8c" kind="file" language="C++">
+    <compoundname>ssd1306_i2c.c</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">ctype.h</includes>
+    <includes local="yes">pico/stdlib.h</includes>
+    <includes local="yes">pico/binary_info.h</includes>
+    <includes local="yes">hardware/i2c.h</includes>
+    <includes refid="ssd1306__font_8h" local="yes">ssd1306_font.h</includes>
+    <includes refid="ssd1306__i2c_8h" local="yes">ssd1306_i2c.h</includes>
+    <incdepgraph>
+      <node id="9">
+        <label>ssd1306_font.h</label>
+        <link refid="ssd1306__font_8h_source"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c</label>
+        <link refid="ssd1306__i2c_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>ssd1306_i2c.h</label>
+        <link refid="ssd1306__i2c_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ctype.h</label>
+      </node>
+      <node id="8">
+        <label>hardware/i2c.h</label>
+      </node>
+      <node id="7">
+        <label>pico/binary_info.h</label>
+      </node>
+      <node id="6">
+        <label>pico/stdlib.h</label>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+      <node id="3">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="ssd1306__i2c_8c_1ae5932cd62770dbfc045462197e471e05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void calculate_render_area_buffer_length</definition>
+        <argsstring>(struct render_area *area)</argsstring>
+        <name>calculate_render_area_buffer_length</name>
+        <param>
+          <type>struct <ref refid="structrender__area" kindref="compound">render_area</ref> *</type>
+          <declname>area</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" line="12" column="6" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="ssd1306__i2c_8c_1a2cc806c43bddcc51a8624cca4dfb0a73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ssd1306_send_command</definition>
+        <argsstring>(uint8_t command)</argsstring>
+        <name>ssd1306_send_command</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" line="17" column="6" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="ssd1306__i2c_8c_1a030c7955bd0f952a30e95e121b068738" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ssd1306_send_command_list</definition>
+        <argsstring>(uint8_t *ssd, int number)</argsstring>
+        <name>ssd1306_send_command_list</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>ssd</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" line="23" column="6" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" bodystart="23" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="ssd1306__i2c_8c_1a7e18a42742d08329312e5f45a7608baa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ssd1306_send_buffer</definition>
+        <argsstring>(uint8_t ssd[], int buffer_length)</argsstring>
+        <name>ssd1306_send_buffer</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>ssd</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>buffer_length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" line="30" column="6" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" bodystart="30" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="ssd1306__i2c_8c_1ab83a732f28055bd6835d031e13986f0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ssd1306_init</definition>
+        <argsstring>()</argsstring>
+        <name>ssd1306_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" line="42" column="6" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" bodystart="42" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="ssd1306__i2c_8c_1ab0235b4eac85ec2c85361cf4ba4a4fef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ssd1306_scroll</definition>
+        <argsstring>(bool set)</argsstring>
+        <name>ssd1306_scroll</name>
+        <param>
+          <type>bool</type>
+          <declname>set</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" line="68" column="6" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" bodystart="68" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="ssd1306__i2c_8c_1acc5a43ec9a35c7841e9f90761b9d7f7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void render_on_display</definition>
+        <argsstring>(uint8_t *ssd, struct render_area *area)</argsstring>
+        <name>render_on_display</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>ssd</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structrender__area" kindref="compound">render_area</ref> *</type>
+          <declname>area</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" line="78" column="6" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" bodystart="78" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="ssd1306__i2c_8c_1a457b8673ed0abdc7f6f9fc349db11f7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ssd1306_set_pixel</definition>
+        <argsstring>(uint8_t *ssd, int x, int y, bool set)</argsstring>
+        <name>ssd1306_set_pixel</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>ssd</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>set</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" line="89" column="6" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" bodystart="89" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="ssd1306__i2c_8c_1aa95c49092eafe5014b35452300fe51b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ssd1306_draw_line</definition>
+        <argsstring>(uint8_t *ssd, int x_0, int y_0, int x_1, int y_1, bool set)</argsstring>
+        <name>ssd1306_draw_line</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>ssd</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x_0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y_0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x_1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y_1</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>set</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" line="108" column="6" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" bodystart="108" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="ssd1306__i2c_8c_1ae64114fa2a37affebcc48180aab38bb2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ssd1306_get_font</definition>
+        <argsstring>(uint8_t character)</argsstring>
+        <name>ssd1306_get_font</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>character</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" line="136" column="12" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" bodystart="136" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="ssd1306__i2c_8c_1a5418dd7bdf136f08728e633cdfb2cd7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ssd1306_draw_char</definition>
+        <argsstring>(uint8_t *ssd, int16_t x, int16_t y, uint8_t character)</argsstring>
+        <name>ssd1306_draw_char</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>ssd</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>character</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" line="149" column="6" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" bodystart="149" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="ssd1306__i2c_8c_1a9a273c38bc5db3ac5df358ebb34e80c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ssd1306_draw_string</definition>
+        <argsstring>(uint8_t *ssd, int16_t x, int16_t y, char *string)</argsstring>
+        <name>ssd1306_draw_string</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>ssd</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>string</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" line="166" column="6" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" bodystart="166" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="ssd1306__i2c_8c_1a50ff8458e3b2dd7c441106df048d6284" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ssd1306_command</definition>
+        <argsstring>(ssd1306_t *ssd, uint8_t command)</argsstring>
+        <name>ssd1306_command</name>
+        <param>
+          <type><ref refid="structssd1306__t" kindref="compound">ssd1306_t</ref> *</type>
+          <declname>ssd</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" line="178" column="6" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" bodystart="178" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="ssd1306__i2c_8c_1a9e50a2b01dd8c9b30cd05e14d7daf331" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ssd1306_config</definition>
+        <argsstring>(ssd1306_t *ssd)</argsstring>
+        <name>ssd1306_config</name>
+        <param>
+          <type><ref refid="structssd1306__t" kindref="compound">ssd1306_t</ref> *</type>
+          <declname>ssd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" line="185" column="6" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" bodystart="185" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="ssd1306__i2c_8c_1a3b043ccdfcac74d8b05cf4e5dc04c21f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ssd1306_init_bm</definition>
+        <argsstring>(ssd1306_t *ssd, uint8_t width, uint8_t height, bool external_vcc, uint8_t address, i2c_inst_t *i2c)</argsstring>
+        <name>ssd1306_init_bm</name>
+        <param>
+          <type><ref refid="structssd1306__t" kindref="compound">ssd1306_t</ref> *</type>
+          <declname>ssd</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>external_vcc</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>i2c_inst_t *</type>
+          <declname>i2c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" line="214" column="6" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" bodystart="214" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="ssd1306__i2c_8c_1a2d68611599dbced339a73b42c6444f1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ssd1306_send_data</definition>
+        <argsstring>(ssd1306_t *ssd)</argsstring>
+        <name>ssd1306_send_data</name>
+        <param>
+          <type><ref refid="structssd1306__t" kindref="compound">ssd1306_t</ref> *</type>
+          <declname>ssd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" line="227" column="6" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" bodystart="227" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="ssd1306__i2c_8c_1a028efa52c1c2550dd072180d46dd3ea1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ssd1306_draw_bitmap</definition>
+        <argsstring>(ssd1306_t *ssd, const uint8_t *bitmap)</argsstring>
+        <name>ssd1306_draw_bitmap</name>
+        <param>
+          <type><ref refid="structssd1306__t" kindref="compound">ssd1306_t</ref> *</type>
+          <declname>ssd</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>bitmap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" line="239" column="6" bodyfile="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c" bodystart="239" bodyend="245"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ctype.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pico/stdlib.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pico/binary_info.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hardware/i2c.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ssd1306_font.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ssd1306_i2c.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Calcular<sp/>quanto<sp/>do<sp/>buffer<sp/>será<sp/>destinado<sp/>à<sp/>área<sp/>de<sp/>renderização</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>calculate_render_area_buffer_length(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structrender__area" kindref="compound">render_area</ref><sp/>*area)<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>area-&gt;buffer_length<sp/>=<sp/>(area-&gt;end_column<sp/>-<sp/>area-&gt;start_column<sp/>+<sp/>1)<sp/>*<sp/>(area-&gt;end_page<sp/>-<sp/>area-&gt;start_page<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Processo<sp/>de<sp/>escrita<sp/>do<sp/>i2c<sp/>espera<sp/>um<sp/>byte<sp/>de<sp/>controle,<sp/>seguido<sp/>por<sp/>dados</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ssd1306_send_command(uint8_t<sp/>command)<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>buffer[2]<sp/>=<sp/>{0x80,<sp/>command};</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>i2c_write_blocking(i2c1,<sp/>ssd1306_i2c_address,<sp/>buffer,<sp/>2,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Envia<sp/>uma<sp/>lista<sp/>de<sp/>comandos<sp/>ao<sp/>hardware</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ssd1306_send_command_list(uint8_t<sp/>*ssd,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>number)<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>number;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ssd1306_send_command(ssd[i]);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copia<sp/>buffer<sp/>de<sp/>referência<sp/>num<sp/>novo<sp/>buffer,<sp/>a<sp/>fim<sp/>de<sp/>adicionar<sp/>o<sp/>byte<sp/>de<sp/>controle<sp/>desde<sp/>o<sp/>início</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ssd1306_send_buffer(uint8_t<sp/>ssd[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>buffer_length)<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*temp_buffer<sp/>=<sp/>malloc(buffer_length<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>temp_buffer[0]<sp/>=<sp/>0x40;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy(temp_buffer<sp/>+<sp/>1,<sp/>ssd,<sp/>buffer_length);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>i2c_write_blocking(i2c1,<sp/>ssd1306_i2c_address,<sp/>temp_buffer,<sp/>buffer_length<sp/>+<sp/>1,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>free(temp_buffer);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Cria<sp/>a<sp/>lista<sp/>de<sp/>comandos<sp/>(com<sp/>base<sp/>nos<sp/>endereços<sp/>definidos<sp/>em<sp/>ssd1306_i2c.h)<sp/>para<sp/>a<sp/>inicialização<sp/>do<sp/>display</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ssd1306_init()<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>commands[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ssd1306_set_display,<sp/>ssd1306_set_memory_mode,<sp/>0x00,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ssd1306_set_display_start_line,<sp/>ssd1306_set_segment_remap<sp/>|<sp/>0x01,<sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ssd1306_set_mux_ratio,<sp/>ssd1306_height<sp/>-<sp/>1,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ssd1306_set_common_output_direction<sp/>|<sp/>0x08,<sp/>ssd1306_set_display_offset,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00,<sp/>ssd1306_set_common_pin_configuration,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>((ssd1306_width<sp/>==<sp/>128)<sp/>&amp;&amp;<sp/>(ssd1306_height<sp/>==<sp/>32))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>0x02,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>((ssd1306_width<sp/>==<sp/>128)<sp/>&amp;&amp;<sp/>(ssd1306_height<sp/>==<sp/>64))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>0x12,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>0x02,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ssd1306_set_display_clock_divide_ratio,<sp/>0x80,<sp/>ssd1306_set_precharge,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xF1,<sp/>ssd1306_set_vcomh_deselect_level,<sp/>0x30,<sp/>ssd1306_set_contrast,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xFF,<sp/>ssd1306_set_entire_on,<sp/>ssd1306_set_normal_display,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ssd1306_set_charge_pump,<sp/>0x14,<sp/>ssd1306_set_scroll<sp/>|<sp/>0x00,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ssd1306_set_display<sp/>|<sp/>0x01,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_send_command_list(commands,<sp/>count_of(commands));</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Cria<sp/>a<sp/>lista<sp/>de<sp/>comandos<sp/>para<sp/>configurar<sp/>o<sp/>scrolling</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ssd1306_scroll(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>set)<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>commands[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ssd1306_set_horizontal_scroll<sp/>|<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x03,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00,<sp/>0xFF,<sp/>ssd1306_set_scroll<sp/>|<sp/>(set<sp/>?<sp/>0x01<sp/>:<sp/>0)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_send_command_list(commands,<sp/>count_of(commands));</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Atualiza<sp/>uma<sp/>parte<sp/>do<sp/>display<sp/>com<sp/>uma<sp/>área<sp/>de<sp/>renderização</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>render_on_display(uint8_t<sp/>*ssd,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structrender__area" kindref="compound">render_area</ref><sp/>*area)<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>commands[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ssd1306_set_column_address,<sp/>area-&gt;start_column,<sp/>area-&gt;end_column,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ssd1306_set_page_address,<sp/>area-&gt;start_page,<sp/>area-&gt;end_page</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_send_command_list(commands,<sp/>count_of(commands));</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_send_buffer(ssd,<sp/>area-&gt;buffer_length);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Determina<sp/>o<sp/>pixel<sp/>a<sp/>ser<sp/>aceso<sp/>(no<sp/>display)<sp/>de<sp/>acordo<sp/>com<sp/>a<sp/>coordenada<sp/>fornecida</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ssd1306_set_pixel(uint8_t<sp/>*ssd,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>set)<sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(x<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>x<sp/>&lt;<sp/>ssd1306_width<sp/>&amp;&amp;<sp/>y<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>y<sp/>&lt;<sp/>ssd1306_height);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bytes_per_row<sp/>=<sp/>ssd1306_width;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>byte_idx<sp/>=<sp/>(y<sp/>/<sp/>8)<sp/>*<sp/>bytes_per_row<sp/>+<sp/>x;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/></highlight><highlight class="keywordtype">byte</highlight><highlight class="normal"><sp/>=<sp/>ssd[byte_idx];</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(set)<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">byte</highlight><highlight class="normal"><sp/>|=<sp/>1<sp/>&lt;&lt;<sp/>(y<sp/>%<sp/>8);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">byte</highlight><highlight class="normal"><sp/>&amp;=<sp/>~(1<sp/>&lt;&lt;<sp/>(y<sp/>%<sp/>8));</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd[byte_idx]<sp/>=<sp/>byte;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Algoritmo<sp/>de<sp/>Bresenham<sp/>básico</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ssd1306_draw_line(uint8_t<sp/>*ssd,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x_0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y_0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x_1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y_1,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>set)<sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dx<sp/>=<sp/>abs(x_1<sp/>-<sp/>x_0);<sp/></highlight><highlight class="comment">//<sp/>Deslocamentos</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dy<sp/>=<sp/>-abs(y_1<sp/>-<sp/>y_0);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sx<sp/>=<sp/>x_0<sp/>&lt;<sp/>x_1<sp/>?<sp/>1<sp/>:<sp/>-1;<sp/></highlight><highlight class="comment">//<sp/>Direção<sp/>de<sp/>avanço</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sy<sp/>=<sp/>y_0<sp/>&lt;<sp/>y_1<sp/>?<sp/>1<sp/>:<sp/>-1;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>error<sp/>=<sp/>dx<sp/>+<sp/>dy;<sp/></highlight><highlight class="comment">//<sp/>Erro<sp/>acumulado</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>error_2;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ssd1306_set_pixel(ssd,<sp/>x_0,<sp/>y_0,<sp/>set);<sp/></highlight><highlight class="comment">//<sp/>Acende<sp/>pixel<sp/>no<sp/>ponto<sp/>atual</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(x_0<sp/>==<sp/>x_1<sp/>&amp;&amp;<sp/>y_0<sp/>==<sp/>y_1)<sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>Verifica<sp/>se<sp/>o<sp/>ponto<sp/>final<sp/>foi<sp/>alcançado</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_2<sp/>=<sp/>2<sp/>*<sp/>error;<sp/></highlight><highlight class="comment">//<sp/>Ajusta<sp/>o<sp/>erro<sp/>acumulado</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(error_2<sp/>&gt;=<sp/>dy)<sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error<sp/>+=<sp/>dy;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x_0<sp/>+=<sp/>sx;<sp/></highlight><highlight class="comment">//<sp/>Avança<sp/>na<sp/>direção<sp/>x</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(error_2<sp/>&lt;=<sp/>dx)<sp/>{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error<sp/>+=<sp/>dx;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y_0<sp/>+=<sp/>sy;<sp/></highlight><highlight class="comment">//<sp/>Avança<sp/>na<sp/>direção<sp/>y</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Adquire<sp/>os<sp/>pixels<sp/>para<sp/>um<sp/>caractere<sp/>(de<sp/>acordo<sp/>com<sp/>ssd1306_font.h)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ssd1306_get_font(uint8_t<sp/>character)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(character<sp/>&gt;=<sp/></highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>character<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;Z&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>character<sp/>-<sp/></highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal"><sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(character<sp/>&gt;=<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>character<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;9&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>character<sp/>-<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal"><sp/>+<sp/>27;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Desenha<sp/>um<sp/>único<sp/>caractere<sp/>no<sp/>display</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ssd1306_draw_char(uint8_t<sp/>*ssd,<sp/>int16_t<sp/>x,<sp/>int16_t<sp/>y,<sp/>uint8_t<sp/>character)<sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(x<sp/>&gt;<sp/>ssd1306_width<sp/>-<sp/>8<sp/>||<sp/>y<sp/>&gt;<sp/>ssd1306_height<sp/>-<sp/>8)<sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>y<sp/>=<sp/>y<sp/>/<sp/>8;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>character<sp/>=<sp/>toupper(character);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx<sp/>=<sp/>ssd1306_get_font(character);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fb_idx<sp/>=<sp/>y<sp/>*<sp/>128<sp/>+<sp/>x;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>8;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ssd[fb_idx++]<sp/>=<sp/>font[idx<sp/>*<sp/>8<sp/>+<sp/>i];</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Desenha<sp/>uma<sp/>string,<sp/>chamando<sp/>a<sp/>função<sp/>de<sp/>desenhar<sp/>caractere<sp/>várias<sp/>vezes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ssd1306_draw_string(uint8_t<sp/>*ssd,<sp/>int16_t<sp/>x,<sp/>int16_t<sp/>y,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(x<sp/>&gt;<sp/>ssd1306_width<sp/>-<sp/>8<sp/>||<sp/>y<sp/>&gt;<sp/>ssd1306_height<sp/>-<sp/>8)<sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(*</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ssd1306_draw_char(ssd,<sp/>x,<sp/>y,<sp/>*</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">++);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>+=<sp/>8;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Comando<sp/>de<sp/>configuração<sp/>com<sp/>base<sp/>na<sp/>estrutura<sp/>ssd1306_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ssd1306_command(<ref refid="structssd1306__t" kindref="compound">ssd1306_t</ref><sp/>*ssd,<sp/>uint8_t<sp/>command)<sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/>ssd-&gt;port_buffer[1]<sp/>=<sp/>command;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/>i2c_write_blocking(</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd-&gt;i2c_port,<sp/>ssd-&gt;address,<sp/>ssd-&gt;port_buffer,<sp/>2,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Função<sp/>de<sp/>configuração<sp/>do<sp/>display<sp/>para<sp/>o<sp/>caso<sp/>do<sp/>bitmap</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ssd1306_config(<ref refid="structssd1306__t" kindref="compound">ssd1306_t</ref><sp/>*ssd)<sp/>{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_command(ssd,<sp/>ssd1306_set_display<sp/>|<sp/>0x00);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_command(ssd,<sp/>ssd1306_set_memory_mode);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_command(ssd,<sp/>0x01);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_command(ssd,<sp/>ssd1306_set_display_start_line<sp/>|<sp/>0x00);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_command(ssd,<sp/>ssd1306_set_segment_remap<sp/>|<sp/>0x01);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_command(ssd,<sp/>ssd1306_set_mux_ratio);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_command(ssd,<sp/>ssd1306_height<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_command(ssd,<sp/>ssd1306_set_common_output_direction<sp/>|<sp/>0x08);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_command(ssd,<sp/>ssd1306_set_display_offset);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_command(ssd,<sp/>0x00);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_command(ssd,<sp/>ssd1306_set_common_pin_configuration);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_command(ssd,<sp/>0x12);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_command(ssd,<sp/>ssd1306_set_display_clock_divide_ratio);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_command(ssd,<sp/>0x80);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_command(ssd,<sp/>ssd1306_set_precharge);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_command(ssd,<sp/>0xF1);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_command(ssd,<sp/>ssd1306_set_vcomh_deselect_level);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_command(ssd,<sp/>0x30);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_command(ssd,<sp/>ssd1306_set_contrast);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_command(ssd,<sp/>0xFF);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_command(ssd,<sp/>ssd1306_set_entire_on);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_command(ssd,<sp/>ssd1306_set_normal_display);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_command(ssd,<sp/>ssd1306_set_charge_pump);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_command(ssd,<sp/>0x14);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_command(ssd,<sp/>ssd1306_set_display<sp/>|<sp/>0x01);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Inicializa<sp/>o<sp/>display<sp/>para<sp/>o<sp/>caso<sp/>de<sp/>exibição<sp/>de<sp/>bitmap</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ssd1306_init_bm(<ref refid="structssd1306__t" kindref="compound">ssd1306_t</ref><sp/>*ssd,<sp/>uint8_t<sp/>width,<sp/>uint8_t<sp/>height,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>external_vcc,<sp/>uint8_t<sp/>address,<sp/>i2c_inst_t<sp/>*i2c)<sp/>{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd-&gt;width<sp/>=<sp/>width;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd-&gt;height<sp/>=<sp/>height;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd-&gt;pages<sp/>=<sp/>height<sp/>/<sp/>8U;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd-&gt;address<sp/>=<sp/>address;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd-&gt;i2c_port<sp/>=<sp/>i2c;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd-&gt;bufsize<sp/>=<sp/>ssd-&gt;pages<sp/>*<sp/>ssd-&gt;width<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd-&gt;ram_buffer<sp/>=<sp/>calloc(ssd-&gt;bufsize,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(uint8_t));</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd-&gt;ram_buffer[0]<sp/>=<sp/>0x40;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd-&gt;port_buffer[0]<sp/>=<sp/>0x80;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Envia<sp/>os<sp/>dados<sp/>ao<sp/>display</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ssd1306_send_data(<ref refid="structssd1306__t" kindref="compound">ssd1306_t</ref><sp/>*ssd)<sp/>{</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_command(ssd,<sp/>ssd1306_set_column_address);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_command(ssd,<sp/>0);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_command(ssd,<sp/>ssd-&gt;width<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_command(ssd,<sp/>ssd1306_set_page_address);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_command(ssd,<sp/>0);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd1306_command(ssd,<sp/>ssd-&gt;pages<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>i2c_write_blocking(</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>ssd-&gt;i2c_port,<sp/>ssd-&gt;address,<sp/>ssd-&gt;ram_buffer,<sp/>ssd-&gt;bufsize,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Desenha<sp/>o<sp/>bitmap<sp/>(a<sp/>ser<sp/>fornecido<sp/>em<sp/>display_oled.c)<sp/>no<sp/>display</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ssd1306_draw_bitmap(<ref refid="structssd1306__t" kindref="compound">ssd1306_t</ref><sp/>*ssd,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*bitmap)<sp/>{</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>ssd-&gt;bufsize<sp/>-<sp/>1;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ssd-&gt;ram_buffer[i<sp/>+<sp/>1]<sp/>=<sp/>bitmap[i];</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ssd1306_send_data(ssd);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="245"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib/ssd1306_i2c.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,147 @@
+.TH "C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_05/Atividade_05/src/Atividade_05.c" 3 "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_05/Atividade_05/src/Atividade_05.c \- Sistema de Aquisição de Temperatura com DMA e Interface I2C em Microcontrolador RP2040\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fR#include <stdio\&.h>\fP
+.br
+\fR#include <string\&.h>\fP
+.br
+\fR#include 'pico/stdlib\&.h'\fP
+.br
+\fR#include 'hardware/adc\&.h'\fP
+.br
+\fR#include 'hardware/dma\&.h'\fP
+.br
+\fR#include 'hardware/i2c\&.h'\fP
+.br
+\fR#include 'ssd1306_i2c\&.h'\fP
+.br
+\fR#include 'ssd1306\&.h'\fP
+.br
+\fR#include 'ssd1306_font\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSAMPLES\fP   100"
+.br
+.ti -1c
+.RI "#define \fBTEMP_UPDATE_MS\fP   500"
+.br
+.ti -1c
+.RI "#define \fBI2C_PORT\fP   i2c1"
+.br
+.ti -1c
+.RI "#define \fBI2C_BAUDRATE\fP   400000"
+.br
+.in -1c
+.PP
+.RI "\fBOLED I²C Mapping\fP"
+.br
+Pinos utilizados pelo barramento I²C dedicado ao display\&. 
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "#define \fBOLED_I2C_SDA_PIN\fP   14"
+.br
+.ti -1c
+.RI "#define \fBOLED_I2C_SCL_PIN\fP   15"
+.br
+.in -1c
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBmain\fP (void)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Sistema de Aquisição de Temperatura com DMA e Interface I2C em Microcontrolador RP2040\&. 
+
+
+.PP
+.nf
+     Este progrma tem como objetivo demonstar como utilizar:
+        * ADC interno (canal 4) para ler o sensor de temperatura
+        * Controlador DMA para transferir automaticamente as amostras do FIFO do ADC para a RAM
+        * Barramento I2C para atualizar um display OLED SSD1306
+
+     O ciclo de trabalho é:
+        1\&. O ADC é configurado para amostragem contínua do canal 4\&.
+        2\&. Um canal de DMA lê amostras(SAMPLES) do FIFO e armazena em um buffer\&.
+        3\&. Quando o bloco de DMA termina, calculamos a média, convertemos em °C e
+           enviamos o valor formatado para o display\&.
+        4\&. O DMA é usado sem intervenção intensiva da CPU, permitindo que o núcleo possa
+           ficar em espera reduzindo consumo\&.
+
+.fi
+.PP
+
+.PP
+\fBNote\fP
+.RS 4
+Também foi esclarecida a razão de se utilizar \fRmemset()\fP + \fRrender_on_display()\fP em vez dos atalhos \fRssd1306_clear()\fP e \fRssd1306_show()\fP\&. O uso direto do frame‑buffer permite:
+.IP "1." 4
+Renderizar apenas regiões específicas da tela, economizando tráfego I²C quando necessário;
+.IP "2." 4
+Manter a lógica didática de \fIclear → draw → show\fP explícita;
+.IP "3." 4
+Suportar múltiplos frame‑buffers simultâneos caso o projeto evolua para animações ou janelas sobrepostas\&. Caso deseje simplificar, basta substituir o bloco marcado em \fBdisplay_temperature()\fP pelos atalhos da biblioteca\&.
+.PP
+.RE
+.PP
+Não foi tratado os caracteres especiais que apace no display OLED então, a temperatura médida a exemplo 26 55 c --> 26,55 ºc A blibioteca atual \fBssd1306_font\&.h\fP e ssd1306_i2c\&.c só reconhece acaracteres simples maiúsculas\&.
+
+.PP
+@hardware Requisitos de hardware: • Raspberry Pi Pico / Pico W • Display OLED SSD1306 conectado aos pinos I2C: – SDA → GP14  (GPIO 14) – SCL → GP55  (GPIO 15)
+
+.PP
+@compile Compilação (exemplo de CMake): add_executable(Atividade_05 \fBsrc/Atividade_05\&.c\fP lib/ssd1306_i2c\&.c )
+
+.PP
+IMPORTANTE: • Todas as funções estão extensivamente comentadas, estilo Doxygen para fins didáticos\&. • O código assume Vref = 3,3 V (padrão do RP2040) para a conversão do ADC\&. • Ajuste SAMPLES e TEMP_UPDATE_MS conforme necessidade\&.
+
+.PP
+\fBAuthor\fP
+.RS 4
+Manoel Furtado 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+18 mai 2025 
+.RE
+.PP
+\fBCopyright\fP
+.RS 4
+2025 Manoel Furtado (MIT License) (veja LICENSE\&.md) 
+.RE
+.PP
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define I2C_BAUDRATE   400000"
+400 kHz – modo Fast I²C 
+.SS "#define I2C_PORT   i2c1"
+Porta I²C utilizada pinos GP4/GP5 no Pico 
+.SS "#define OLED_I2C_SCL_PIN   15"
+GPIO que carrega o sinal SCL 
+.SS "#define OLED_I2C_SDA_PIN   14"
+GPIO que carrega o sinal SDA 
+.SS "#define SAMPLES   100"
+Nº de amostras que compõem cada bloco de DMA 
+.SS "#define TEMP_UPDATE_MS   500"
+Intervalo (ms) entre atualizações do display 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

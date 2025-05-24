@@ -1,0 +1,320 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.13.2" xml:lang="en-US">
+  <compound refid="structrender__area" kind="struct"><name>render_area</name>
+    <member refid="structrender__area_1ae7921054194e69265cb8aa858da1062d" kind="variable"><name>start_column</name></member>
+    <member refid="structrender__area_1a2d496a7c4f283ea3287a0b24ce3ec77c" kind="variable"><name>end_column</name></member>
+    <member refid="structrender__area_1ad94896f8257c3080daecc25d2cfd80c8" kind="variable"><name>start_page</name></member>
+    <member refid="structrender__area_1a7ec41903b6c708a47e164376560510b1" kind="variable"><name>end_page</name></member>
+    <member refid="structrender__area_1a79074b0651dff919e3c551513cfa83b6" kind="variable"><name>buffer_length</name></member>
+  </compound>
+  <compound refid="structssd1306__t" kind="struct"><name>ssd1306_t</name>
+    <member refid="structssd1306__t_1a09a2a45f731b02946ff6d3cd15c1a476" kind="variable"><name>width</name></member>
+    <member refid="structssd1306__t_1adcf201a8aabf55cb352ec05331242594" kind="variable"><name>height</name></member>
+    <member refid="structssd1306__t_1a249087c071f547a50c74805580b39e71" kind="variable"><name>pages</name></member>
+    <member refid="structssd1306__t_1af3f726014b044194def151079f1f2d89" kind="variable"><name>address</name></member>
+    <member refid="structssd1306__t_1a5c4c209f7c10dc443700e101121ba182" kind="variable"><name>i2c_port</name></member>
+    <member refid="structssd1306__t_1a75116ef7be7de2fe207621a3c356f5f4" kind="variable"><name>external_vcc</name></member>
+    <member refid="structssd1306__t_1ac74167571d66f4215dd6096e8fc44839" kind="variable"><name>ram_buffer</name></member>
+    <member refid="structssd1306__t_1aa228557f03b26a638d3beae5da93f530" kind="variable"><name>bufsize</name></member>
+    <member refid="structssd1306__t_1abdd549379f4db8df877589bd509c11a9" kind="variable"><name>port_buffer</name></member>
+  </compound>
+  <compound refid="_c_make_c_compiler_id_8c" kind="file"><name>CMakeCCompilerId.c</name>
+    <member refid="_c_make_c_compiler_id_8c_1ae5510d82e4946f1656f4969911c54736" kind="define"><name>__has_include</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a81dee0709ded976b2e0319239f72d174" kind="define"><name>COMPILER_ID</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a2ae9b72bb13abaabfcf2ee0ba7d3fa1d" kind="define"><name>STRINGIFY_HELPER</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a43e1cad902b6477bec893cb6430bd6c8" kind="define"><name>STRINGIFY</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1adbc5372f40838899018fadbc89bd588b" kind="define"><name>PLATFORM_ID</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1aba35d0d200deaeb06aee95ca297acb28" kind="define"><name>ARCHITECTURE_ID</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1ad1280362da42492bbc11aa78cbf776ad" kind="define"><name>DEC</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a46d5d95daa1bef867bd0179594310ed5" kind="define"><name>HEX</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1af6079dc519dac099ee85a1df6ae5e5e8" kind="define"><name>C_STD_99</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a7c35af7e67642a2c62eb27dd81be11b2" kind="define"><name>C_STD_11</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1aa8cd9c2c76dde36abac0bd7698090693" kind="define"><name>C_STD_17</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a81af617e8f7b5417689ca478ce9f4d69" kind="define"><name>C_STD_23</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1adaee3ee7c5a7a22451ea25e762e1d7d5" kind="define"><name>C_VERSION</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a4b0efeb7a5d59313986b3a0390f050f6" kind="variable"><name>info_compiler</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a2321403dee54ee23f0c2fa849c60f7d4" kind="variable"><name>info_platform</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a59647e99d304ed33b15cb284c27ed391" kind="variable"><name>info_arch</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a4607cccf070750927b458473ca82c090" kind="variable"><name>info_language_standard_default</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a0f46a8a39e09d9b803c4766904fd7e99" kind="variable"><name>info_language_extensions_default</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_c_make_c_x_x_compiler_id_8cpp" kind="file"><name>CMakeCXXCompilerId.cpp</name>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1ae5510d82e4946f1656f4969911c54736" kind="define"><name>__has_include</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a81dee0709ded976b2e0319239f72d174" kind="define"><name>COMPILER_ID</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a2ae9b72bb13abaabfcf2ee0ba7d3fa1d" kind="define"><name>STRINGIFY_HELPER</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a43e1cad902b6477bec893cb6430bd6c8" kind="define"><name>STRINGIFY</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1adbc5372f40838899018fadbc89bd588b" kind="define"><name>PLATFORM_ID</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1aba35d0d200deaeb06aee95ca297acb28" kind="define"><name>ARCHITECTURE_ID</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1ad1280362da42492bbc11aa78cbf776ad" kind="define"><name>DEC</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a46d5d95daa1bef867bd0179594310ed5" kind="define"><name>HEX</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a2454727f55dd7af9210ab341ca8be2c8" kind="define"><name>CXX_STD_98</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a2c21af1889e9ca5cda36069184cc3234" kind="define"><name>CXX_STD_11</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a39fb4789a452bfb5df17d40f640dd720" kind="define"><name>CXX_STD_14</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1ae17f1ae0bf56cf631eadff4f73e96ff9" kind="define"><name>CXX_STD_17</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1aa52ec6104623a66734cc5d5d28733bed" kind="define"><name>CXX_STD_20</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1ae5e2d955d2884c65b7de2e1ad29a4f1d" kind="define"><name>CXX_STD_23</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a34cc889e576a1ae6c84ae9e0a851ba21" kind="define"><name>CXX_STD</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a4b0efeb7a5d59313986b3a0390f050f6" kind="variable"><name>info_compiler</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a2321403dee54ee23f0c2fa849c60f7d4" kind="variable"><name>info_platform</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a59647e99d304ed33b15cb284c27ed391" kind="variable"><name>info_arch</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a4607cccf070750927b458473ca82c090" kind="variable"><name>info_language_standard_default</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a0f46a8a39e09d9b803c4766904fd7e99" kind="variable"><name>info_language_extensions_default</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="config__autogen_8h" kind="file"><name>config_autogen.h</name>
+  </compound>
+  <compound refid="version_8h" kind="file"><name>version.h</name>
+    <member refid="version_8h_1a389b2ab6feac8cb2e16cc15c2355b1a9" kind="define"><name>PICO_SDK_VERSION_MAJOR</name></member>
+    <member refid="version_8h_1a2dda83706b2cefcf15dfdbc278676c0f" kind="define"><name>PICO_SDK_VERSION_MINOR</name></member>
+    <member refid="version_8h_1a5be32caa1531cc592aeff17e4c5b230d" kind="define"><name>PICO_SDK_VERSION_REVISION</name></member>
+    <member refid="version_8h_1a335c1eae5c5da86063f72343c92764db" kind="define"><name>PICO_SDK_VERSION_STRING</name></member>
+  </compound>
+  <compound refid="dreq_8h" kind="file"><name>dreq.h</name>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6d" kind="enum"><name>dreq_num_rp2040</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6dad7529b7e45af2d7eab4b740ff15b49d8" kind="enumvalue"><name>DREQ_PIO0_TX0</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6dac5fedec084064e1d9ff9c6a382c1ccf8" kind="enumvalue"><name>DREQ_PIO0_TX1</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6daa2e360dbf123d634d08e5fae27aa29e5" kind="enumvalue"><name>DREQ_PIO0_TX2</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6da156b1b999c6b2dd877545c8c79060a30" kind="enumvalue"><name>DREQ_PIO0_TX3</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6dac4bc12d74b758a7b39c1977c401e2fe1" kind="enumvalue"><name>DREQ_PIO0_RX0</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6da19b55b49bb618eed839edccba14c0d8f" kind="enumvalue"><name>DREQ_PIO0_RX1</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6da967d6b5eb2d3e06113b2b1606ef2af2c" kind="enumvalue"><name>DREQ_PIO0_RX2</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6da10f8705467782c859f05f82aa3c3c9f5" kind="enumvalue"><name>DREQ_PIO0_RX3</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6da3c22f2c9eb4a49654bba70dbc99bc893" kind="enumvalue"><name>DREQ_PIO1_TX0</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6da37f1bb39c3aa38a753df88e7e6c57feb" kind="enumvalue"><name>DREQ_PIO1_TX1</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6da13d7cb74708595298d788ba0ce25f6a0" kind="enumvalue"><name>DREQ_PIO1_TX2</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6daaa5859ea1daaf5f0760fb4dea23116c3" kind="enumvalue"><name>DREQ_PIO1_TX3</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6da833bfa99e8b74de9bfc1872958a742e3" kind="enumvalue"><name>DREQ_PIO1_RX0</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6da8da9c5655eb51f2fb8a33b16827796a9" kind="enumvalue"><name>DREQ_PIO1_RX1</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6da0198dfe2da7237817e780a483144df8f" kind="enumvalue"><name>DREQ_PIO1_RX2</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6dab093d84a1df12a37ab6e9d62ee1f6d57" kind="enumvalue"><name>DREQ_PIO1_RX3</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6da4b8b13f940414660401a7b334d85b64b" kind="enumvalue"><name>DREQ_SPI0_TX</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6da46641088908dd355dc82971e7c7fbd35" kind="enumvalue"><name>DREQ_SPI0_RX</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6da01d244742e157d2d2fb8e55b5fd6d81b" kind="enumvalue"><name>DREQ_SPI1_TX</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6da04665a3e6a5c58a6cbf2d0fe1503cf00" kind="enumvalue"><name>DREQ_SPI1_RX</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6da80ecb62e37f0c5af2780b93d4995326d" kind="enumvalue"><name>DREQ_UART0_TX</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6da4812587fa3aa4cfd7ea0d91e20246b95" kind="enumvalue"><name>DREQ_UART0_RX</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6daa64110e7f89692b9c789275b4d8b04c0" kind="enumvalue"><name>DREQ_UART1_TX</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6dae5c7e2a566983a1148113e2987e059d5" kind="enumvalue"><name>DREQ_UART1_RX</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6da2a861c9dcce9e158ace7bc5d547ebde1" kind="enumvalue"><name>DREQ_PWM_WRAP0</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6da1504bdb2bd8aaa535903ea11aa2c2994" kind="enumvalue"><name>DREQ_PWM_WRAP1</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6dacb766e3b38daca5c8cd35459d835d7a2" kind="enumvalue"><name>DREQ_PWM_WRAP2</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6da017ebaacb45d90c4f20db2d5edded874" kind="enumvalue"><name>DREQ_PWM_WRAP3</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6da5fdd41bb900549d6ff26772cc9fd507a" kind="enumvalue"><name>DREQ_PWM_WRAP4</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6daced239695d7bf65c41827e1eb6cbc04a" kind="enumvalue"><name>DREQ_PWM_WRAP5</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6dadd0e022489d6ad4f835a97c6e354c15b" kind="enumvalue"><name>DREQ_PWM_WRAP6</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6dadafe5a7f2f401a496e842c7a2c95dac5" kind="enumvalue"><name>DREQ_PWM_WRAP7</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6dab51c1095a1fec8ad39050cf49fd01835" kind="enumvalue"><name>DREQ_I2C0_TX</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6da675d15a4afa861045235a441d46d0580" kind="enumvalue"><name>DREQ_I2C0_RX</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6da74c786868da56dbb18b7da2c7748568f" kind="enumvalue"><name>DREQ_I2C1_TX</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6da0b5156eb2381872ddc1837d83de16b8b" kind="enumvalue"><name>DREQ_I2C1_RX</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6da5f3aedb5ef1de25b99afcde8742b4590" kind="enumvalue"><name>DREQ_ADC</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6daedbcc51f819f4c85c3ab8f51b654ebdc" kind="enumvalue"><name>DREQ_XIP_STREAM</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6dabaf536bfba84db157116952ae4a5d466" kind="enumvalue"><name>DREQ_XIP_SSITX</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6da74f7500adc3af744bfe564b1c90aba0a" kind="enumvalue"><name>DREQ_XIP_SSIRX</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6da49bb6d90479edbff257068afd1a5bfe1" kind="enumvalue"><name>DREQ_DMA_TIMER0</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6da11c9291490c2ddf45df69f45a2f83dcf" kind="enumvalue"><name>DREQ_DMA_TIMER1</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6dabb60a9d9038192f9db081b51b9c23f65" kind="enumvalue"><name>DREQ_DMA_TIMER2</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6da86d08425822a129c3eaa1479e920c67c" kind="enumvalue"><name>DREQ_DMA_TIMER3</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6dae683f0bb3ee8b854fe4cea850cf9d4c8" kind="enumvalue"><name>DREQ_FORCE</name></member>
+    <member refid="dreq_8h_1a864c3313155ab20116b62a64bf78df6dad305cc1fa59fa14d6b14b9c3b9855170" kind="enumvalue"><name>DREQ_COUNT</name></member>
+    <member refid="dreq_8h_1a8def0ea481095c94f3a0dd0b4fed999e" kind="typedef"><name>dreq_num_t</name></member>
+  </compound>
+  <compound refid="intctrl_8h" kind="file"><name>intctrl.h</name>
+    <member refid="intctrl_8h_1adbe2b7eeada61e813aca00e24665fb84" kind="define"><name>isr_timer_0</name></member>
+    <member refid="intctrl_8h_1af47f5141a323aedf310cec1273bf8ce2" kind="define"><name>isr_timer_1</name></member>
+    <member refid="intctrl_8h_1a94a97ec5d1a59b5229c80ca1e0451cff" kind="define"><name>isr_timer_2</name></member>
+    <member refid="intctrl_8h_1a6e705e7072dda5eef0bd6813e1c82526" kind="define"><name>isr_timer_3</name></member>
+    <member refid="intctrl_8h_1a2d98c8cb1845a159761a05ee5a38c171" kind="define"><name>isr_pwm_wrap</name></member>
+    <member refid="intctrl_8h_1a49a91864f024cb7b4b132395c6607d2d" kind="define"><name>isr_usbctrl</name></member>
+    <member refid="intctrl_8h_1a17889c230b59fcee2e18baafef0dc2bf" kind="define"><name>isr_xip</name></member>
+    <member refid="intctrl_8h_1a177a2db60d236dd7cef3a8237915e3bb" kind="define"><name>isr_pio0_0</name></member>
+    <member refid="intctrl_8h_1af3b2d4f2f620a25ff19afe68992a936c" kind="define"><name>isr_pio0_1</name></member>
+    <member refid="intctrl_8h_1aed71553dffc134bc2c5823423e79072a" kind="define"><name>isr_pio1_0</name></member>
+    <member refid="intctrl_8h_1a3e05cb30a83c7f78af5e98c73001e5a2" kind="define"><name>isr_pio1_1</name></member>
+    <member refid="intctrl_8h_1ac129332a43a15722c8ffc59d3d07e06d" kind="define"><name>isr_dma_0</name></member>
+    <member refid="intctrl_8h_1a21143aee0f32c8e57146cb5577c2d226" kind="define"><name>isr_dma_1</name></member>
+    <member refid="intctrl_8h_1a02fa7ad7c87b55c2d8804c1ecb7d16b8" kind="define"><name>isr_io_bank0</name></member>
+    <member refid="intctrl_8h_1ac2d90c81b7602bb8099b653cd50581fe" kind="define"><name>isr_io_qspi</name></member>
+    <member refid="intctrl_8h_1a2ba0bdfa2e82fef0d073fb0f06162d5f" kind="define"><name>isr_sio_proc0</name></member>
+    <member refid="intctrl_8h_1a3ce20671a351ccc77ed31d05c4a327ff" kind="define"><name>isr_sio_proc1</name></member>
+    <member refid="intctrl_8h_1a4fb42f406d21236cda6cd6cd44a58a5f" kind="define"><name>isr_clocks</name></member>
+    <member refid="intctrl_8h_1a3ce13a013825b857a853bab64f94ab56" kind="define"><name>isr_spi0</name></member>
+    <member refid="intctrl_8h_1a1442dd5ec6405546d238c9cf3e25716c" kind="define"><name>isr_spi1</name></member>
+    <member refid="intctrl_8h_1adaacd481a8aa15bb67cb2b8296999a23" kind="define"><name>isr_uart0</name></member>
+    <member refid="intctrl_8h_1a173c8071de4db3407d8f0334c9fe1b70" kind="define"><name>isr_uart1</name></member>
+    <member refid="intctrl_8h_1ac4e628f8ca36cb4574108ba4636e6117" kind="define"><name>isr_adc_fifo</name></member>
+    <member refid="intctrl_8h_1abbe8272af8bae27a2663ad47d2f6bfb3" kind="define"><name>isr_i2c0</name></member>
+    <member refid="intctrl_8h_1a94e45205eed8968eea3a0647cc290b61" kind="define"><name>isr_i2c1</name></member>
+    <member refid="intctrl_8h_1a61891feec20367e09b991a895b9d178f" kind="define"><name>isr_rtc</name></member>
+    <member refid="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3" kind="enum"><name>irq_num_rp2040</name></member>
+    <member refid="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a9adcee3ff00b51d885e399d87fd6c957" kind="enumvalue"><name>TIMER_IRQ_0</name></member>
+    <member refid="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a4c240b6b48b410130cd2890ab04d560e" kind="enumvalue"><name>TIMER_IRQ_1</name></member>
+    <member refid="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3aff3b80e5739147626d9386b2a3b2953c" kind="enumvalue"><name>TIMER_IRQ_2</name></member>
+    <member refid="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3aa85dca1accc78d56c18c8a2c2e842b42" kind="enumvalue"><name>TIMER_IRQ_3</name></member>
+    <member refid="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a0142d31049f55e027a88331ad70fa5aa" kind="enumvalue"><name>PWM_IRQ_WRAP</name></member>
+    <member refid="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a2cd42859a0101338a23d1687c6ff473c" kind="enumvalue"><name>USBCTRL_IRQ</name></member>
+    <member refid="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a76f444f019edf6356c9e64a1c2714b30" kind="enumvalue"><name>XIP_IRQ</name></member>
+    <member refid="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a6a1531131ebf36cef68deb1b098c169e" kind="enumvalue"><name>PIO0_IRQ_0</name></member>
+    <member refid="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a8342ee77067f98e1796e79d437093367" kind="enumvalue"><name>PIO0_IRQ_1</name></member>
+    <member refid="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a25729562658fcf2aa86e87e54617e7af" kind="enumvalue"><name>PIO1_IRQ_0</name></member>
+    <member refid="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a02a272c2eed06831563b441793eb4964" kind="enumvalue"><name>PIO1_IRQ_1</name></member>
+    <member refid="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a27c81947202be1166b90cd5fb6f482a0" kind="enumvalue"><name>DMA_IRQ_0</name></member>
+    <member refid="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a7b25577c8e3d3b1c4bab08eaed19b5ef" kind="enumvalue"><name>DMA_IRQ_1</name></member>
+    <member refid="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3ae9d0650a36de3bfbad6edc82a613d3c1" kind="enumvalue"><name>IO_IRQ_BANK0</name></member>
+    <member refid="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3af5aa261b359dd160a1d8c3bc558ceb2b" kind="enumvalue"><name>IO_IRQ_QSPI</name></member>
+    <member refid="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a841acbddc6961252827d7645277452ec" kind="enumvalue"><name>SIO_IRQ_PROC0</name></member>
+    <member refid="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3ae00819201c60acdf59448df5a08c11b5" kind="enumvalue"><name>SIO_IRQ_PROC1</name></member>
+    <member refid="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a737a1db2a02502ed578e908b3b6796c2" kind="enumvalue"><name>CLOCKS_IRQ</name></member>
+    <member refid="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a10b2c78ee63a060db5d9f30b8f1daf8a" kind="enumvalue"><name>SPI0_IRQ</name></member>
+    <member refid="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a60f73b071388a649cac65d2026607540" kind="enumvalue"><name>SPI1_IRQ</name></member>
+    <member refid="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a504e54f28a2e2928bd6a1604ee0a24fb" kind="enumvalue"><name>UART0_IRQ</name></member>
+    <member refid="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a1062848ec5bc51fcdd58a95d40fc266b" kind="enumvalue"><name>UART1_IRQ</name></member>
+    <member refid="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a80d34861619c6034c897e829aea93ed4" kind="enumvalue"><name>ADC_IRQ_FIFO</name></member>
+    <member refid="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3ae54e6d9ba3c33888744c4ba77a7a4255" kind="enumvalue"><name>I2C0_IRQ</name></member>
+    <member refid="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a3d4c9de91954651ee3dee7c066fc3db9" kind="enumvalue"><name>I2C1_IRQ</name></member>
+    <member refid="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a758d0e5253474a1224daa5eff0bdb5fc" kind="enumvalue"><name>RTC_IRQ</name></member>
+    <member refid="intctrl_8h_1af4bf6b287c1a8445fce49ccaa711b3c3a5b2f2ddbc9d3322cae1f2f0b3f51cb7b" kind="enumvalue"><name>IRQ_COUNT</name></member>
+    <member refid="intctrl_8h_1af30862f51b5994ffd5863176a185d137" kind="typedef"><name>irq_num_t</name></member>
+  </compound>
+  <compound refid="ssd1306_8h" kind="file"><name>ssd1306.h</name>
+    <member refid="ssd1306_8h_1ae5932cd62770dbfc045462197e471e05" kind="function"><name>calculate_render_area_buffer_length</name></member>
+    <member refid="ssd1306_8h_1a558049235d3e6a4a58db92a66fa5f054" kind="function"><name>ssd1306_send_command</name></member>
+    <member refid="ssd1306_8h_1a030c7955bd0f952a30e95e121b068738" kind="function"><name>ssd1306_send_command_list</name></member>
+    <member refid="ssd1306_8h_1a7e18a42742d08329312e5f45a7608baa" kind="function"><name>ssd1306_send_buffer</name></member>
+    <member refid="ssd1306_8h_1ab83a732f28055bd6835d031e13986f0b" kind="function"><name>ssd1306_init</name></member>
+    <member refid="ssd1306_8h_1ab0235b4eac85ec2c85361cf4ba4a4fef" kind="function"><name>ssd1306_scroll</name></member>
+    <member refid="ssd1306_8h_1acc5a43ec9a35c7841e9f90761b9d7f7e" kind="function"><name>render_on_display</name></member>
+    <member refid="ssd1306_8h_1a457b8673ed0abdc7f6f9fc349db11f7e" kind="function"><name>ssd1306_set_pixel</name></member>
+    <member refid="ssd1306_8h_1aa95c49092eafe5014b35452300fe51b0" kind="function"><name>ssd1306_draw_line</name></member>
+    <member refid="ssd1306_8h_1a5418dd7bdf136f08728e633cdfb2cd7d" kind="function"><name>ssd1306_draw_char</name></member>
+    <member refid="ssd1306_8h_1a9a273c38bc5db3ac5df358ebb34e80c9" kind="function"><name>ssd1306_draw_string</name></member>
+    <member refid="ssd1306_8h_1a50ff8458e3b2dd7c441106df048d6284" kind="function"><name>ssd1306_command</name></member>
+    <member refid="ssd1306_8h_1a9e50a2b01dd8c9b30cd05e14d7daf331" kind="function"><name>ssd1306_config</name></member>
+    <member refid="ssd1306_8h_1a3b043ccdfcac74d8b05cf4e5dc04c21f" kind="function"><name>ssd1306_init_bm</name></member>
+    <member refid="ssd1306_8h_1a2d68611599dbced339a73b42c6444f1e" kind="function"><name>ssd1306_send_data</name></member>
+    <member refid="ssd1306_8h_1a028efa52c1c2550dd072180d46dd3ea1" kind="function"><name>ssd1306_draw_bitmap</name></member>
+  </compound>
+  <compound refid="ssd1306__font_8h" kind="file"><name>ssd1306_font.h</name>
+    <member refid="ssd1306__font_8h_1a38dcdcd9231da0fefae4fdadf5a748f1" kind="variable"><name>font</name></member>
+  </compound>
+  <compound refid="ssd1306__i2c_8c" kind="file"><name>ssd1306_i2c.c</name>
+    <member refid="ssd1306__i2c_8c_1ae5932cd62770dbfc045462197e471e05" kind="function"><name>calculate_render_area_buffer_length</name></member>
+    <member refid="ssd1306__i2c_8c_1a2cc806c43bddcc51a8624cca4dfb0a73" kind="function"><name>ssd1306_send_command</name></member>
+    <member refid="ssd1306__i2c_8c_1a030c7955bd0f952a30e95e121b068738" kind="function"><name>ssd1306_send_command_list</name></member>
+    <member refid="ssd1306__i2c_8c_1a7e18a42742d08329312e5f45a7608baa" kind="function"><name>ssd1306_send_buffer</name></member>
+    <member refid="ssd1306__i2c_8c_1ab83a732f28055bd6835d031e13986f0b" kind="function"><name>ssd1306_init</name></member>
+    <member refid="ssd1306__i2c_8c_1ab0235b4eac85ec2c85361cf4ba4a4fef" kind="function"><name>ssd1306_scroll</name></member>
+    <member refid="ssd1306__i2c_8c_1acc5a43ec9a35c7841e9f90761b9d7f7e" kind="function"><name>render_on_display</name></member>
+    <member refid="ssd1306__i2c_8c_1a457b8673ed0abdc7f6f9fc349db11f7e" kind="function"><name>ssd1306_set_pixel</name></member>
+    <member refid="ssd1306__i2c_8c_1aa95c49092eafe5014b35452300fe51b0" kind="function"><name>ssd1306_draw_line</name></member>
+    <member refid="ssd1306__i2c_8c_1ae64114fa2a37affebcc48180aab38bb2" kind="function"><name>ssd1306_get_font</name></member>
+    <member refid="ssd1306__i2c_8c_1a5418dd7bdf136f08728e633cdfb2cd7d" kind="function"><name>ssd1306_draw_char</name></member>
+    <member refid="ssd1306__i2c_8c_1a9a273c38bc5db3ac5df358ebb34e80c9" kind="function"><name>ssd1306_draw_string</name></member>
+    <member refid="ssd1306__i2c_8c_1a50ff8458e3b2dd7c441106df048d6284" kind="function"><name>ssd1306_command</name></member>
+    <member refid="ssd1306__i2c_8c_1a9e50a2b01dd8c9b30cd05e14d7daf331" kind="function"><name>ssd1306_config</name></member>
+    <member refid="ssd1306__i2c_8c_1a3b043ccdfcac74d8b05cf4e5dc04c21f" kind="function"><name>ssd1306_init_bm</name></member>
+    <member refid="ssd1306__i2c_8c_1a2d68611599dbced339a73b42c6444f1e" kind="function"><name>ssd1306_send_data</name></member>
+    <member refid="ssd1306__i2c_8c_1a028efa52c1c2550dd072180d46dd3ea1" kind="function"><name>ssd1306_draw_bitmap</name></member>
+  </compound>
+  <compound refid="ssd1306__i2c_8h" kind="file"><name>ssd1306_i2c.h</name>
+    <member refid="ssd1306__i2c_8h_1a78d80c2cbf27af52df8390e3318c1d00" kind="define"><name>ssd1306_height</name></member>
+    <member refid="ssd1306__i2c_8h_1ab7455ab640aa33266cd38050a5c1fd7d" kind="define"><name>ssd1306_width</name></member>
+    <member refid="ssd1306__i2c_8h_1abc498bfdf848a37aa4e54bf5715a8c9f" kind="define"><name>ssd1306_i2c_address</name></member>
+    <member refid="ssd1306__i2c_8h_1a64833b2cc1cf64918bed0dcf5bf2c221" kind="define"><name>ssd1306_i2c_clock</name></member>
+    <member refid="ssd1306__i2c_8h_1a5f84bdf75dec6d2a57e1afe0d206e7b2" kind="define"><name>ssd1306_set_memory_mode</name></member>
+    <member refid="ssd1306__i2c_8h_1a0303fcebe87c281a5fda7c7d3b32fa6f" kind="define"><name>ssd1306_set_column_address</name></member>
+    <member refid="ssd1306__i2c_8h_1a23e5f46f3207ad67646816fdef6510a1" kind="define"><name>ssd1306_set_page_address</name></member>
+    <member refid="ssd1306__i2c_8h_1aeb3a6449d3304b53222a3c1a4a6247a0" kind="define"><name>ssd1306_set_horizontal_scroll</name></member>
+    <member refid="ssd1306__i2c_8h_1aab209eb357f8898ec2ab2bd99046c408" kind="define"><name>ssd1306_set_scroll</name></member>
+    <member refid="ssd1306__i2c_8h_1a3ec420da49bc71f7e266b4b6e3a2e27a" kind="define"><name>ssd1306_set_display_start_line</name></member>
+    <member refid="ssd1306__i2c_8h_1a82687bd9bf6397529ab6a2dd7024a991" kind="define"><name>ssd1306_set_contrast</name></member>
+    <member refid="ssd1306__i2c_8h_1a19a6a2a27e5ca626ea1b3dcdd85b35b6" kind="define"><name>ssd1306_set_charge_pump</name></member>
+    <member refid="ssd1306__i2c_8h_1a6fdfddd37ffafa6624583ddcb3e2c073" kind="define"><name>ssd1306_set_segment_remap</name></member>
+    <member refid="ssd1306__i2c_8h_1a177b092bbe234f35539e8570e6d54191" kind="define"><name>ssd1306_set_entire_on</name></member>
+    <member refid="ssd1306__i2c_8h_1a1a815f0596fc47020029e7fe21b7a4f3" kind="define"><name>ssd1306_set_all_on</name></member>
+    <member refid="ssd1306__i2c_8h_1a5600fc561e322d05b22af6a60cb3d5fc" kind="define"><name>ssd1306_set_normal_display</name></member>
+    <member refid="ssd1306__i2c_8h_1a04cce80592063712568ef7bc0f7bf622" kind="define"><name>ssd1306_set_inverse_display</name></member>
+    <member refid="ssd1306__i2c_8h_1ab660cd23a8bce5310f8822c3060e25d7" kind="define"><name>ssd1306_set_mux_ratio</name></member>
+    <member refid="ssd1306__i2c_8h_1afedba6e77224d394dd08730f51bee586" kind="define"><name>ssd1306_set_display</name></member>
+    <member refid="ssd1306__i2c_8h_1a490a9ba971406881908a0a9b27eb2c27" kind="define"><name>ssd1306_set_common_output_direction</name></member>
+    <member refid="ssd1306__i2c_8h_1adb0acd3aaba3672401b2c398da17039a" kind="define"><name>ssd1306_set_common_output_direction_flip</name></member>
+    <member refid="ssd1306__i2c_8h_1a8891791ec03d8c5bb43b4a57f4f8f3a8" kind="define"><name>ssd1306_set_display_offset</name></member>
+    <member refid="ssd1306__i2c_8h_1a91d9b497cb652b721ca6b16477662c90" kind="define"><name>ssd1306_set_display_clock_divide_ratio</name></member>
+    <member refid="ssd1306__i2c_8h_1a0a7733b3ef59cf2e50342d871e1fe055" kind="define"><name>ssd1306_set_precharge</name></member>
+    <member refid="ssd1306__i2c_8h_1a2c08312f217eff5d6246d6e745bc5df3" kind="define"><name>ssd1306_set_common_pin_configuration</name></member>
+    <member refid="ssd1306__i2c_8h_1a6ff3c297045c92c2c7041c99cb2700fe" kind="define"><name>ssd1306_set_vcomh_deselect_level</name></member>
+    <member refid="ssd1306__i2c_8h_1a50611a42e8a2dc4a11631c837f595097" kind="define"><name>ssd1306_page_height</name></member>
+    <member refid="ssd1306__i2c_8h_1aadcfa88da8330ceca7777702deb90e6a" kind="define"><name>ssd1306_n_pages</name></member>
+    <member refid="ssd1306__i2c_8h_1afb3f814b2c3fda31b702360a5c278b87" kind="define"><name>ssd1306_buffer_length</name></member>
+    <member refid="ssd1306__i2c_8h_1a33550aeb0d947a5626af94b5ec272b57" kind="define"><name>ssd1306_write_mode</name></member>
+    <member refid="ssd1306__i2c_8h_1ad93543135f058acb7f42c05e5501e838" kind="define"><name>ssd1306_read_mode</name></member>
+  </compound>
+  <compound refid="_atividade__04_8c" kind="file"><name>Atividade_04.c</name>
+    <member refid="_atividade__04_8c_1ad12a564ad91765abf118b1a1c935a79b" kind="define"><name>RED_TIME_SEC</name></member>
+    <member refid="_atividade__04_8c_1a4807eaf5581317c4277f82c741f105ac" kind="define"><name>GREEN_TIME_SEC</name></member>
+    <member refid="_atividade__04_8c_1aa878f52b8595a099574f3a1c12717b73" kind="define"><name>YELLOW_TIME_SEC</name></member>
+    <member refid="_atividade__04_8c_1a2b5f3cdada392dfc73422e30dc494bde" kind="define"><name>COUNTDOWN_START</name></member>
+    <member refid="_atividade__04_8c_1ab9824ab080c30006c1baaa0dd7e863c5" kind="define"><name>LED_RED_PIN</name></member>
+    <member refid="_atividade__04_8c_1a0539be032702009fb24beec89c6fa0c0" kind="define"><name>LED_GREEN_PIN</name></member>
+    <member refid="_atividade__04_8c_1a5aec9d3b503fb1a30a21b16c7be86cff" kind="define"><name>LED_BLUE_PIN</name></member>
+    <member refid="_atividade__04_8c_1acbc26198121732a3c0a6888f8f4cb028" kind="define"><name>BUZZER_PIN1</name></member>
+    <member refid="_atividade__04_8c_1a6a9a564ed2b8f42d387f38dac7ed1b62" kind="define"><name>BUZZER_PIN2</name></member>
+    <member refid="_atividade__04_8c_1aad905e2ee036ff31a5cc49b248361420" kind="define"><name>BUTTON_PIN1</name></member>
+    <member refid="_atividade__04_8c_1ab7676ab9bef15c1956c8163558e3ac44" kind="define"><name>BUTTON_PIN2</name></member>
+    <member refid="_atividade__04_8c_1a2cade698267beb86ccaa38c14d35ab0f" kind="define"><name>I2C_SDA_PIN</name></member>
+    <member refid="_atividade__04_8c_1a0e4e08bab2fb484136d18b067bef372c" kind="define"><name>I2C_SCL_PIN</name></member>
+    <member refid="_atividade__04_8c_1aa0aafed44fec19806d8f9ad834be1248" kind="enum"><name>state_t</name></member>
+    <member refid="_atividade__04_8c_1aa0aafed44fec19806d8f9ad834be1248ad2aaf0c286ae52532c96f716b3410aed" kind="enumvalue"><name>ST_RED</name></member>
+    <member refid="_atividade__04_8c_1aa0aafed44fec19806d8f9ad834be1248a3680d3e43be15ef8b428fe0a64956b90" kind="enumvalue"><name>ST_GREEN</name></member>
+    <member refid="_atividade__04_8c_1aa0aafed44fec19806d8f9ad834be1248a7b5984aa066eb4676d7f8747429d5f3b" kind="enumvalue"><name>ST_YELLOW</name></member>
+    <member refid="_atividade__04_8c_1a27005362f402a15934db97feb762757a" kind="variable"><name>current_state</name></member>
+    <member refid="_atividade__04_8c_1a75a34bdf1ffa12044ddb09c31d963edd" kind="variable"><name>countdown_sec</name></member>
+    <member refid="_atividade__04_8c_1a87b3873fb6337c08e0a14cbafdbdadb3" kind="variable"><name>ped_request_dir</name></member>
+    <member refid="_atividade__04_8c_1a6ec7d5c95351217346ebd56922950736" kind="variable"><name>red_from_ped_dir</name></member>
+    <member refid="_atividade__04_8c_1ac749231214a0a374d533dd9e2e54a12a" kind="variable"><name>timer_1s</name></member>
+    <member refid="_atividade__04_8c_1ac8913b180f61e54dbd5836fcad825fa4" kind="variable"><name>oled_buf</name></member>
+    <member refid="_atividade__04_8c_1a8a2d3a68931f9ca89d4fe36361492a6a" kind="variable"><name>full_area</name></member>
+    <member refid="_atividade__04_8c_1ae645657433565bf733f5b31937955123" kind="function"><name>hw_init</name></member>
+    <member refid="_atividade__04_8c_1af5b30eb433745769b0531884a446a25b" kind="function"><name>oled_init</name></member>
+    <member refid="_atividade__04_8c_1a4608e1fb635b3114ed8b3ac7fe7d09f1" kind="function"><name>oled_clear</name></member>
+    <member refid="_atividade__04_8c_1a69f226189729aba429635cce5266d88b" kind="function"><name>oled_show_state</name></member>
+    <member refid="_atividade__04_8c_1af7b625341315902b3b7872013e453699" kind="function"><name>oled_show_countdown</name></member>
+    <member refid="_atividade__04_8c_1a98606800b141cffb9060e4cbf69d8bf4" kind="function"><name>set_led_color</name></member>
+    <member refid="_atividade__04_8c_1acea4dbf08c2da3d3527b46a8a1c249ba" kind="function"><name>timer_cb</name></member>
+    <member refid="_atividade__04_8c_1a15251d5b761cd87e891ebc4e934c55b6" kind="function"><name>button_irq</name></member>
+    <member refid="_atividade__04_8c_1a840291bc02cba5474a4cb46a9b9566fe" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="dir_69e80f025fb56afbdf91d331632ea444" kind="dir"><name>C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/CMakeFiles/3.31.5</name>
+  </compound>
+  <compound refid="dir_52e761de2bd804f75234cfd4be4cf800" kind="dir"><name>C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04</name>
+  </compound>
+  <compound refid="dir_449fdcb960e46332888bba08ef873265" kind="dir"><name>C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04</name>
+  </compound>
+  <compound refid="dir_37abd4778359905fce5d2fc500108f10" kind="dir"><name>C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build</name>
+  </compound>
+  <compound refid="dir_66c2f2139d72fbdcccdef72ff070d173" kind="dir"><name>C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04</name>
+  </compound>
+  <compound refid="dir_eab664d7d55cce4beca5ec6570c094b7" kind="dir"><name>C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/CMakeFiles</name>
+  </compound>
+  <compound refid="dir_5b931155306b9c5f4e0fcee0e2c38db2" kind="dir"><name>C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/CMakeFiles/3.31.5/CompilerIdC</name>
+  </compound>
+  <compound refid="dir_773e3b320743628166ecb3dc3a961600" kind="dir"><name>C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/CMakeFiles/3.31.5/CompilerIdCXX</name>
+  </compound>
+  <compound refid="dir_b56d864a03ee821d71009f040e30b2a2" kind="dir"><name>C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src/extra_doxygen</name>
+  </compound>
+  <compound refid="dir_277dfd41aedc94517c063167d10ebafd" kind="dir"><name>C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/generated</name>
+  </compound>
+  <compound refid="dir_9c267cc61a62cdf61f3aedcdce3033bb" kind="dir"><name>C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/lib</name>
+  </compound>
+  <compound refid="dir_e7ead3cdefcbe295f08e5712dd3048e7" kind="dir"><name>C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/generated/pico_base/pico</name>
+  </compound>
+  <compound refid="dir_91f56505bc180d6bef4550c9ae91dad6" kind="dir"><name>C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk</name>
+  </compound>
+  <compound refid="dir_5fc1565cb3a56d699b52d512120a8370" kind="dir"><name>C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/generated/pico_base</name>
+  </compound>
+  <compound refid="dir_7ac87968e8a6dc083e02bf47353a5357" kind="dir"><name>C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/build/pico-sdk/src</name>
+  </compound>
+  <compound refid="dir_8dd9e1c75ded640e6f9f4769c9ffab26" kind="dir"><name>C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01_Unid.01_Microcontrolador/Atividades/Cap_04/Atividade_04/Atividade_04/src</name>
+  </compound>
+</doxygenindex>

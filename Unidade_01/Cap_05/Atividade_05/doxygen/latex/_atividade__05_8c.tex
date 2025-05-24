@@ -1,0 +1,126 @@
+\doxysection{C\+:/\+Users/manoe/\+One\+Drive/\+TI/\+Embarca\+Tech/\+Segunda Fase/01\+\_\+\+Unid.01\+\_\+\+Microcontrolador/\+Atividades/\+Cap\+\_\+05/\+Atividade\+\_\+05/src/\+Atividade\+\_\+05.c File Reference}
+\hypertarget{_atividade__05_8c}{}\label{_atividade__05_8c}\index{C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01\_Unid.01\_Microcontrolador/Atividades/Cap\_05/Atividade\_05/src/Atividade\_05.c@{C:/Users/manoe/OneDrive/TI/EmbarcaTech/Segunda Fase/01\_Unid.01\_Microcontrolador/Atividades/Cap\_05/Atividade\_05/src/Atividade\_05.c}}
+
+
+Sistema de Aquisição de Temperatura com DMA e Interface I2C em Microcontrolador RP2040.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include "{}pico/stdlib.\+h"{}}\newline
+{\ttfamily \#include "{}hardware/adc.\+h"{}}\newline
+{\ttfamily \#include "{}hardware/dma.\+h"{}}\newline
+{\ttfamily \#include "{}hardware/i2c.\+h"{}}\newline
+{\ttfamily \#include "{}ssd1306\+\_\+i2c.\+h"{}}\newline
+{\ttfamily \#include "{}ssd1306.\+h"{}}\newline
+{\ttfamily \#include "{}ssd1306\+\_\+font.\+h"{}}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_atividade__05_8c_ad0c329adebc27917fc0a4f51079acf6a}{SAMPLES}}~100
+\item 
+\#define \mbox{\hyperlink{_atividade__05_8c_ae2377e1385d49cf9c9ba44a8d07c94db}{TEMP\+\_\+\+UPDATE\+\_\+\+MS}}~500
+\item 
+\#define \mbox{\hyperlink{_atividade__05_8c_ad9ecf80e1eac083d16ec47f9d3aeb39f}{I2\+C\+\_\+\+PORT}}~i2c1
+\item 
+\#define \mbox{\hyperlink{_atividade__05_8c_a31568ea8caf00a3ec699c01652c771d0}{I2\+C\+\_\+\+BAUDRATE}}~400000
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ OLED I²C Mapping}\par
+{\em Pinos utilizados pelo barramento I²C dedicado ao display. }\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_atividade__05_8c_ae8d87fbd2ecb585ea5b5726469914735}{OLED\+\_\+\+I2\+C\+\_\+\+SDA\+\_\+\+PIN}}~14
+\item 
+\#define \mbox{\hyperlink{_atividade__05_8c_a4461f81a16bc2633c7295aba245a31b3}{OLED\+\_\+\+I2\+C\+\_\+\+SCL\+\_\+\+PIN}}~15
+\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{_atividade__05_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{_atividade__05_8c_a840291bc02cba5474a4cb46a9b9566fe} 
+int {\bfseries main} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Sistema de Aquisição de Temperatura com DMA e Interface I2C em Microcontrolador RP2040. 
+
+\begin{DoxyVerb}     Este progrma tem como objetivo demonstar como utilizar:
+        * ADC interno (canal 4) para ler o sensor de temperatura
+        * Controlador DMA para transferir automaticamente as amostras do FIFO do ADC para a RAM
+        * Barramento I2C para atualizar um display OLED SSD1306
+
+     O ciclo de trabalho é:
+        1. O ADC é configurado para amostragem contínua do canal 4.
+        2. Um canal de DMA lê amostras(SAMPLES) do FIFO e armazena em um buffer.
+        3. Quando o bloco de DMA termina, calculamos a média, convertemos em °C e
+           enviamos o valor formatado para o display.
+        4. O DMA é usado sem intervenção intensiva da CPU, permitindo que o núcleo possa
+           ficar em espera reduzindo consumo.
+\end{DoxyVerb}
+
+
+\begin{DoxyNote}{Note}
+Também foi esclarecida a razão de se utilizar {\ttfamily memset()} + {\ttfamily render\+\_\+on\+\_\+display()} em vez dos atalhos {\ttfamily ssd1306\+\_\+clear()} e {\ttfamily ssd1306\+\_\+show()}. O uso direto do frame‑buffer permite\+:
+\begin{DoxyEnumerate}
+\item Renderizar apenas regiões específicas da tela, economizando tráfego I²C quando necessário;
+\item Manter a lógica didática de {\itshape clear → draw → show} explícita;
+\item Suportar múltiplos frame‑buffers simultâneos caso o projeto evolua para animações ou janelas sobrepostas. Caso deseje simplificar, basta substituir o bloco marcado em display\+\_\+temperature() pelos atalhos da biblioteca.
+\end{DoxyEnumerate}
+\end{DoxyNote}
+Não foi tratado os caracteres especiais que apace no display OLED então, a temperatura médida a exemplo 26 55 c -\/-\/\texorpdfstring{$>$}{>} 26,55 ºc A blibioteca atual \doxylink{ssd1306__font_8h_source}{ssd1306\+\_\+font.\+h} e ssd1306\+\_\+i2c.\+c só reconhece acaracteres simples maiúsculas.
+
+@hardware Requisitos de hardware\+: • Raspberry \+Pi \+Pico / \+Pico W • Display \+OLED \+SSD1306 conectado aos pinos I2C\+: – SDA → GP14  (GPIO 14) – SCL → GP55  (GPIO 15)
+
+@compile Compilação (exemplo de CMake)\+: add\+\_\+executable(Atividade\+\_\+05 \doxylink{_atividade__05_8c}{src/\+Atividade\+\_\+05.\+c} lib/ssd1306\+\_\+i2c.\+c )
+
+IMPORTANTE\+: • Todas as funções estão extensivamente comentadas, estilo Doxygen para fins didáticos. • O código assume Vref = 3,3 V (padrão do RP2040) para a conversão do ADC. • Ajuste SAMPLES e TEMP\+\_\+\+UPDATE\+\_\+\+MS conforme necessidade.
+
+\begin{DoxyAuthor}{Author}
+Manoel Furtado 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+18 mai 2025 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+2025 Manoel Furtado (MIT License) (veja LICENSE.\+md) 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_atividade__05_8c_a31568ea8caf00a3ec699c01652c771d0}\index{Atividade\_05.c@{Atividade\_05.c}!I2C\_BAUDRATE@{I2C\_BAUDRATE}}
+\index{I2C\_BAUDRATE@{I2C\_BAUDRATE}!Atividade\_05.c@{Atividade\_05.c}}
+\doxysubsubsection{\texorpdfstring{I2C\_BAUDRATE}{I2C\_BAUDRATE}}
+{\footnotesize\ttfamily \label{_atividade__05_8c_a31568ea8caf00a3ec699c01652c771d0} 
+\#define I2\+C\+\_\+\+BAUDRATE~400000}
+
+400 k\+Hz – modo Fast I²C \Hypertarget{_atividade__05_8c_ad9ecf80e1eac083d16ec47f9d3aeb39f}\index{Atividade\_05.c@{Atividade\_05.c}!I2C\_PORT@{I2C\_PORT}}
+\index{I2C\_PORT@{I2C\_PORT}!Atividade\_05.c@{Atividade\_05.c}}
+\doxysubsubsection{\texorpdfstring{I2C\_PORT}{I2C\_PORT}}
+{\footnotesize\ttfamily \label{_atividade__05_8c_ad9ecf80e1eac083d16ec47f9d3aeb39f} 
+\#define I2\+C\+\_\+\+PORT~i2c1}
+
+Porta I²C utilizada pinos GP4/\+GP5 no Pico \Hypertarget{_atividade__05_8c_a4461f81a16bc2633c7295aba245a31b3}\index{Atividade\_05.c@{Atividade\_05.c}!OLED\_I2C\_SCL\_PIN@{OLED\_I2C\_SCL\_PIN}}
+\index{OLED\_I2C\_SCL\_PIN@{OLED\_I2C\_SCL\_PIN}!Atividade\_05.c@{Atividade\_05.c}}
+\doxysubsubsection{\texorpdfstring{OLED\_I2C\_SCL\_PIN}{OLED\_I2C\_SCL\_PIN}}
+{\footnotesize\ttfamily \label{_atividade__05_8c_a4461f81a16bc2633c7295aba245a31b3} 
+\#define OLED\+\_\+\+I2\+C\+\_\+\+SCL\+\_\+\+PIN~15}
+
+GPIO que carrega o sinal SCL \Hypertarget{_atividade__05_8c_ae8d87fbd2ecb585ea5b5726469914735}\index{Atividade\_05.c@{Atividade\_05.c}!OLED\_I2C\_SDA\_PIN@{OLED\_I2C\_SDA\_PIN}}
+\index{OLED\_I2C\_SDA\_PIN@{OLED\_I2C\_SDA\_PIN}!Atividade\_05.c@{Atividade\_05.c}}
+\doxysubsubsection{\texorpdfstring{OLED\_I2C\_SDA\_PIN}{OLED\_I2C\_SDA\_PIN}}
+{\footnotesize\ttfamily \label{_atividade__05_8c_ae8d87fbd2ecb585ea5b5726469914735} 
+\#define OLED\+\_\+\+I2\+C\+\_\+\+SDA\+\_\+\+PIN~14}
+
+GPIO que carrega o sinal SDA \Hypertarget{_atividade__05_8c_ad0c329adebc27917fc0a4f51079acf6a}\index{Atividade\_05.c@{Atividade\_05.c}!SAMPLES@{SAMPLES}}
+\index{SAMPLES@{SAMPLES}!Atividade\_05.c@{Atividade\_05.c}}
+\doxysubsubsection{\texorpdfstring{SAMPLES}{SAMPLES}}
+{\footnotesize\ttfamily \label{_atividade__05_8c_ad0c329adebc27917fc0a4f51079acf6a} 
+\#define SAMPLES~100}
+
+Nº de amostras que compõem cada bloco de DMA \Hypertarget{_atividade__05_8c_ae2377e1385d49cf9c9ba44a8d07c94db}\index{Atividade\_05.c@{Atividade\_05.c}!TEMP\_UPDATE\_MS@{TEMP\_UPDATE\_MS}}
+\index{TEMP\_UPDATE\_MS@{TEMP\_UPDATE\_MS}!Atividade\_05.c@{Atividade\_05.c}}
+\doxysubsubsection{\texorpdfstring{TEMP\_UPDATE\_MS}{TEMP\_UPDATE\_MS}}
+{\footnotesize\ttfamily \label{_atividade__05_8c_ae2377e1385d49cf9c9ba44a8d07c94db} 
+\#define TEMP\+\_\+\+UPDATE\+\_\+\+MS~500}
+
+Intervalo (ms) entre atualizações do display 
