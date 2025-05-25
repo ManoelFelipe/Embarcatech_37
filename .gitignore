@@ -1,5 +1,6 @@
 build
-# Ignora toda a pasta "minha_pasta"
+
+# Ignora toda a pasta descritas a baixo
 **/Unidade_01/Cap_06
 **/Unidade_01/Cap_08
 **/Unidade_01/Cap_09
