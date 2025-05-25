@@ -7,6 +7,9 @@
 - Matrícula: 20251RSE.MTC0086
 - Local: IFMA - MA
 
+## Nota importante
+- É importante destacar que a intituição de ensino IFMA forneceu aulas e códigos base para que os alunos possão usar e modificar. Eu não construi esses códigos do zero e sim modiquei.
+
 
  ## Unidade 01 - Programação Para Microcontroladores
 
