@@ -66,7 +66,7 @@ Esta unidade foca nos fundamentos da programação para sistemas embarcados e mi
 - **Enunciado:** Dispositivo CDC (Communication Device Class) responsivo e com videntificação visual: Criar um Dispositivo CDC (Communication Device Class), que 
 responda  aos  comandos  realizados  no  computador  através  de  eco  e  indique visualmente o comando executado. O projeto deve ser implementado com a biblioteca 
 TinyUSB.
-- **Link para o código:** [Unidade_01/Cap_05/Atividade_06](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Unidade_06/Cap_06/Atividade_06)
+- **Link para o código:** [Unidade_01/Cap_06/Atividade_06](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Unidade_06/Cap_06/Atividade_06)
 
 #### Capítulo 08: Periféricos Avançados: Ethernet/Wifi
 - **Enunciado:** Simulador  Portátil  de  Alarme  para  Treinamentos  de  Brigadas  e Evacuação 
