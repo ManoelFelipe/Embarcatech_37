@@ -1,6 +1,10 @@
 build
 
 # Ignora toda a pasta descritas a baixo
-**/Unidade_01/Cap_06
-**/Unidade_01/Cap_08
-**/Unidade_01/Cap_09
+#**/Unidade_01/Cap_06
+#**/Unidade_01/Cap_08
+#**/Unidade_01/Cap_09
+**/Unidade_01/Cap_10
+**/Unidade_02/Cap_01
+**/Unidade_02/Cap_02
+

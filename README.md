@@ -63,16 +63,31 @@ Esta unidade foca nos fundamentos da programação para sistemas embarcados e mi
 - **Link para o código:** [Unidade_01/Cap_05/Atividade_05](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Unidade_01/Cap_05/Atividade_05)
 
 #### Capítulo 06: Periféricos Avançados: USB
-- **Enunciado:** *[A ser definido/adicionado pelo aluno]*
-- **Link para o código:** *[A ser adicionado pelo aluno]*
+- **Enunciado:** Dispositivo CDC (Communication Device Class) responsivo e com videntificação visual: Criar um Dispositivo CDC (Communication Device Class), que 
+responda  aos  comandos  realizados  no  computador  através  de  eco  e  indique visualmente o comando executado. O projeto deve ser implementado com a biblioteca 
+TinyUSB.
+- **Link para o código:** [Unidade_01/Cap_05/Atividade_06](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Unidade_06/Cap_04/Atividade_06)
 
 #### Capítulo 08: Periféricos Avançados: Ethernet/Wifi
-- **Enunciado:** *[A ser definido/adicionado pelo aluno]*
-- **Link para o código:** *[A ser adicionado pelo aluno]*
+- **Enunciado:** Simulador  Portátil  de  Alarme  para  Treinamentos  de  Brigadas  e Evacuação 
+- Este trabalho propõe o desenvolvimento de uma ferramenta portátil, baseada no 
+microcontrolador  Raspberry  Pi  Pico  W,  destinada  a  simulações  de  emergência  e 
+treinamentos de evacuação. O sistema opera em modo Access Point, permitindo que o 
+instrutor  ative  remotamente  o  modo “ALARME”  por  meio  de  um  dispositivo  móvel 
+conectado à rede Wi-Fi local. Uma vez acionado, o sistema emite sinais visuais e sonoros 
+— com LED piscante, buzzer ativo — e exibe, no display OLED, a mensagem “EVACUAR”, 
+simulando uma situação real de emergência, sem depender de infraestrutura de rede 
+externa.
+- **Link para o código:** [Unidade_01/Cap_08/Atividade_08](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Unidade_08/Cap_04/Atividade_08)
 
 #### Capítulo 09: Executor Cíclico
-- **Enunciado:** *[A ser definido/adicionado pelo aluno]*
-- **Link para o código:** *[A ser adicionado pelo aluno]*
+- **Enunciado:** Complementação do Projeto TempCycleDMA. Não foi utilizado outra 
+estratégia para gerenciar o tempo de execução das tarefas em função da Tarefa 1, 
+considerara a principal. 
+- Qual a melhoria que deve ser realizada no novo projeto: 
+Sincronizar as tarefas em função da primeira utilizado add_repeating_timer_ms nas 
+demais tarefas e repeating_timer_callback para a tarefa 1.
+- **Link para o código:** [Unidade_01/Cap_09/Atividade_09](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Unidade_09/Cap_04/Atividade_09)
 
 ---
 
