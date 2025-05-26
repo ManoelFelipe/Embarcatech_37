@@ -66,7 +66,7 @@ Esta unidade foca nos fundamentos da programação para sistemas embarcados e mi
 - **Enunciado:** Dispositivo CDC (Communication Device Class) responsivo e com videntificação visual: Criar um Dispositivo CDC (Communication Device Class), que 
 responda  aos  comandos  realizados  no  computador  através  de  eco  e  indique visualmente o comando executado. O projeto deve ser implementado com a biblioteca 
 TinyUSB.
-- **Link para o código:** [Unidade_01/Cap_06/Atividade_06](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Unidade_06/Cap_06/Atividade_06)
+- **Link para o código:** [Unidade_01/Cap_06/Atividade_06](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Unidade_01/Cap_06/Atividade_06)
 
 #### Capítulo 08: Periféricos Avançados: Ethernet/Wifi
 - **Enunciado:** Simulador  Portátil  de  Alarme  para  Treinamentos  de  Brigadas  e Evacuação 
@@ -78,7 +78,7 @@ conectado à rede Wi-Fi local. Uma vez acionado, o sistema emite sinais visuais 
 — com LED piscante, buzzer ativo — e exibe, no display OLED, a mensagem “EVACUAR”, 
 simulando uma situação real de emergência, sem depender de infraestrutura de rede 
 externa.
-- **Link para o código:** [Unidade_01/Cap_08/Atividade_08](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Unidade_08/Cap_08/Atividade_08)
+- **Link para o código:** [Unidade_01/Cap_08/Atividade_08](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Unidade_01/Cap_08/Atividade_08)
 
 #### Capítulo 09: Executor Cíclico
 - **Enunciado:** Complementação do Projeto TempCycleDMA. Não foi utilizado outra 
@@ -87,7 +87,7 @@ considerara a principal.
 - Qual a melhoria que deve ser realizada no novo projeto: 
 Sincronizar as tarefas em função da primeira utilizado add_repeating_timer_ms nas 
 demais tarefas e repeating_timer_callback para a tarefa 1.
-- **Link para o código:** [Unidade_01/Cap_09/Atividade_09](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Unidade_09/Cap_09/Atividade_09)
+- **Link para o código:** [Unidade_01/Cap_09/Atividade_09](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Unidade_01/Cap_09/Atividade_09)
 
 ---
 
