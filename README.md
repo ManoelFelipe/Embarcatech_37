@@ -84,10 +84,32 @@ externa.
 - **Enunciado:** Complementação do Projeto TempCycleDMA. Não foi utilizado outra 
 estratégia para gerenciar o tempo de execução das tarefas em função da Tarefa 1, 
 considerara a principal. 
-- Qual a melhoria que deve ser realizada no novo projeto: 
+- Qual a melhoria que deve ser realizada no novo projeto: \
 Sincronizar as tarefas em função da primeira utilizado add_repeating_timer_ms nas 
 demais tarefas e repeating_timer_callback para a tarefa 1.
 - **Link para o código:** [Unidade_01/Cap_09/Atividade_09](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Unidade_01/Cap_09/Atividade_09)
+
+#### Capítulo 10: Foreground/Background
+- **Enunciado:** Complementação da Atividade 5 Ao executar a atividade 5,
+percebemos que o BOTÃO do Joystick não foi utilizado. Também observamos que o
+contador de tarefa não é zerado quando chegamos no fim da fila.
+- Qual a melhoria que deve ser realizada no novo projeto: \
+Manter toda lógica já existente de controle da fila com
+Os BOTÕES A e B e o uso da Matriz NeoPixel. Inserir uma nova lógica de Controle no BOTÃO do JOYSTICK:
+AO PRESSIONAR O BOTÃO DO JOYSTICK, O SISTEMA ZERA O CONTADOR DE EVENTOS E APAGA TODA A MATRIZ DE NEOPIXEL.
+Simulando uma fila vazia que está pronta para iniciar. Os contadores que monitoram a fila e de eventos deverão ser ajustados de modo que tenhamos a ideia de uma nova fila que está sendo executada pela primeira vez.
+- **Link para o código:** [Unidade_01/Cap_10/Atividade_10](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Unidade_01/Cap_10/Atividade_10)
+
+### Unidade 02: Internet das Coisas
+
+#### Capítulo 01: IEEE 802.15.4, Bluetooth, Zigbee
+- **Enunciado:** Analise o conjunto de arquivos fornecidos (server_common.c,
+server.c, server_with_wifi.c, client.c, btstack_config.h, lwipopts.h, btstack_config.h) e reflita sobre os seguintes pontos. Não altere o código: apenas estude-o e responda às
+questões de forma clara e objetiva.
+
+- **Link para o código:** [Unidade_02/Cap_01/Atividade_01](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Unidade_02/Cap_01/Atividade_01)
+
+
 
 ---
 
