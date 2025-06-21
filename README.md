@@ -123,6 +123,13 @@ página HTML para controle de LED e leitura da temperatura interna.
 
 - **Link para o código:** [Unidade_02/Cap_2/Atividade_02](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Unidade_02/Cap_02/Atividade_02)
 
+#### Atidvidades em Aula sobre Cap.02 e 01: WiFi, LoRaWAN
+- **Enunciado:** Estudo de caso completo sobre implementação de rede Wi-Fi segura em
+instituição educacional. Baseado no padrão IEEE 802.11ax (Wi-Fi 6) e LoRaWAN para monitoramento de lixeiras, identificando quando estiverem cheias, os níveis das lixeiras. Identifique quais sensores ou atuadores serão necessários.
+
+- **Link para o código:** [Unidade_02/Cap_2/Atividade_02](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Unidade_02/Cap_02/Atividade_02)
+
+
 #### Capítulo 03: MQTT, CoAP, AMQP, STOMP
 - **Enunciado:** Complementação da Atividade_3_MQTT_2. Perceba que, ao ocorrer o
 envio do PING, o LED RGB permanece aceso na cor verde. Logo após ocorrer o PING o LED RGB deve mudar para uma cor aleatória que não seja o VERDE, padrão já definido. Na função, percebemos que ela ativa o LED para VERDE. Que o LED RGB permaneça na cor aleatória por 1 segundo, após ocorrer o PING, sinalizando no LED que houve o PING.
