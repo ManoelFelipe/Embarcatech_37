@@ -32,7 +32,7 @@ O programa de residência abrange uma variedade de tópicos em tecnologia, inclu
 ## Acesso ao Conteúdo Completo (Incluindo Builds)
 
 Todo o conteúdo deste repositório, incluindo as pastas `build` dos projetos, está disponível no seguinte link do OneDrive:
-[Repositório Completo no OneDrive](https://1drv.ms/u/c/faa9e6024cd17b33/EUddTv2zBUBDu__W3DL-66cBp0xJg2aBMki7MaCg0jAslw?e=orqM1t)
+[Repositório Completo no OneDrive](https://1drv.ms/u/c/faa9e6024cd17b33/EVEstXOcZ8pPneu2MVdEiyoBXzcnumK1d4pn0zNSxvJZLQ?e=NcoEeq)
 
 ---
 
@@ -121,7 +121,8 @@ questões de forma clara e objetiva.
 embarcado no Raspberry Pi Pico W, capaz de atuar como Access Point, fornecer uma
 página HTML para controle de LED e leitura da temperatura interna.
 
-- **Link para o código:** [Unidade_02/Cap_2/Atividade_02](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Unidade_02/Cap_02/Atividade_02)
+- **Link para o código:** [Unidade_02/Atividades_Em_Aula/27-05-25_WiFi](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Unidade_02/Atividades_Em_Aula/27-05-25_WiFi)
+- **Link para o código:** [Unidade_02/Atividades_Em_Aula/28-05-25_LoRaWan](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Unidade_02/Atividades_Em_Aula/28-05-25_LoRaWan)
 
 #### Atidvidades em Aula sobre Cap.02 e 01: WiFi, LoRaWAN
 - **Enunciado:** Estudo de caso completo sobre implementação de rede Wi-Fi segura em
