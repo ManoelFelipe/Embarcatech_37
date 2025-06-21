@@ -1,0 +1,35 @@
+# Arquivo gerado pelo Gemini com base nas boas práticas para Pico W + CMake
+
+# 1. Artefatos de Build e Compilação
+# Ignora o diretório de build do CMake. Essencial.
+/build/
+
+# Ignora os binários e arquivos de firmware gerados.
+# Eles devem ser gerados a partir do código-fonte, não armazenados.
+*.uf2
+*.hex
+*.bin
+*.elf
+*.o
+*.a
+*.so
+
+# 2. Configurações do Visual Studio Code
+# Ignore a pasta inteira por padrão para evitar arquivos específicos do usuário.
+.vscode/
+
+# AGORA, crie exceções para os arquivos de configuração que são úteis
+# para compartilhar com a equipe.
+!.vscode/settings.json    # Configurações do workspace
+!.vscode/tasks.json       # Tarefas de build e execução
+!.vscode/launch.json      # Configurações de depuração
+!.vscode/extensions.json  # Recomendações de extensões para o projeto
+
+# 3. Arquivos de Sistema Operacional
+# Ignora arquivos de metadados do macOS e Windows.
+.DS_Store
+Thumbs.db
+
+# 4. Outros arquivos de IDEs e editores (opcional, mas boa prática)
+*.swp   # Arquivos de swap do Vim
+*~      # Arquivos de backup comuns

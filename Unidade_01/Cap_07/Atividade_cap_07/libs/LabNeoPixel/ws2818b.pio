@@ -1,0 +1,134 @@
+/**
+ * @file ws2818b.pio
+ * @brief Programa PIO para controlar fitas de LED RGB do tipo WS2812B/NeoPixel.
+ *
+ * Este programa é executado diretamente no hardware PIO (Programmable I/O) do RP2040
+ * para gerar os sinais com a temporização precisa exigida pelo protocolo WS2812B.
+ * O programa consome 24 bits (8 para Verde, 8 para Vermelho, 8 para Azul) da FIFO de
+ * transmissão (TX) e os serializa no pino de saída.
+ *
+ * A temporização para cada bit é de 1.25µs (para uma frequência de 800kHz), dividida em:
+ * - Bit 0: Nível ALTO por ~0.25µs, seguido de nível BAIXO por ~1.00µs.
+ * - Bit 1: Nível ALTO por ~0.875µs, seguido de nível BAIXO por ~0.375µs.
+ *
+ * Este arquivo também inclui uma função de ajuda em C (`ws2818b_program_init`) que
+ * encapsula toda a configuração da Máquina de Estado (State Machine) do PIO.
+ *
+ * @author Modoficado por Manoel Furtado (baseado no exemplo do SDK do Raspberry Pi Pico)
+ * @date 12 de Junho de 2025
+ */
+
+// ---------------------------------------------------------------------------
+// --- Seção do Programa em Assembly do PIO ---
+// ---------------------------------------------------------------------------
+
+/**
+ * @brief Define o nome do programa PIO.
+ * Este nome será usado para gerar funções e variáveis no arquivo .h correspondente.
+ */
+.program ws2818b
+
+/**
+ * @brief Configura o uso do 'side-setting'.
+ * '.side_set 1' significa que uma instrução pode controlar o estado de 1 pino
+ * (o pino de dados do LED) "ao lado" de sua operação principal, sem custo de tempo.
+ * É a chave para gerar as formas de onda com precisão.
+ */
+.side_set 1
+
+/**
+ * @brief Ponto de início do loop principal do programa.
+ * O código entre .wrap_target e .wrap será executado continuamente.
+ */
+.wrap_target
+    // --- Lógica de Geração de Bits ---
+    // Cada bit enviado leva exatamente 10 ciclos do clock do PIO.
+    // O programa lê 1 bit da FIFO e, dependendo se é 0 ou 1, executa
+    // caminhos diferentes para gerar a forma de onda correta.
+
+    // Instrução 0: Puxa 1 bit do Registrador de Deslocamento de Saída (OSR) para o registrador X.
+    //              Define o pino como BAIXO (side 0) e dura 3 ciclos de clock (1+2).
+    out x, 1        side 0 [2]
+
+    // Instrução 1: Salta para a instrução 3 (nop) se o bit em X for 0.
+    //              Define o pino como ALTO (side 1) e dura 2 ciclos (1+1).
+    //              Este é o pulso ALTO curto para o 'bit 0'.
+    jmp !x, 3       side 1 [1]
+
+    // Instrução 2: Se o bit for 1, o salto acima não ocorre. Esta instrução é executada.
+    //              Salta incondicionalmente para o início do programa (instrução 0).
+    //              Mantém o pino em ALTO (side 1) e dura 5 ciclos (1+4).
+    //              Este é o pulso ALTO longo para o 'bit 1'.
+    jmp 0           side 1 [4]
+
+    // Instrução 3: Alvo do salto para o 'bit 0'. Não faz nada (nop).
+    //              Define o pino como BAIXO (side 0) e dura 5 ciclos (1+4).
+    nop             side 0 [4]
+
+/**
+ * @brief Fim do loop principal. O PIO automaticamente retorna ao .wrap_target.
+ */
+.wrap
+
+
+// ---------------------------------------------------------------------------
+// --- Seção da Função Auxiliar em C ---
+// ---------------------------------------------------------------------------
+// O bloco '% c-sdk' insere este código C diretamente no arquivo .h gerado,
+// criando uma função de conveniência para inicializar este programa PIO.
+% c-sdk {
+#include "hardware/clocks.h"
+
+/**
+ * @brief Inicializa e configura a Máquina de Estado do PIO para executar o programa ws2818b.
+ *
+ * Esta função de alto nível abstrai toda a configuração necessária:
+ * - Inicializa o pino GPIO para ser controlado pelo PIO.
+ * - Obtém uma configuração padrão para o programa.
+ * - Configura o pino para 'side-setting', o deslocamento de dados e a união das FIFOs.
+ * - Calcula o divisor de clock correto para atingir a frequência de 800kHz do protocolo.
+ * - Inicializa e habilita a Máquina de Estado.
+ *
+ * @param pio A instância do hardware PIO a ser usada (pio0 ou pio1).
+ * @param sm O índice da Máquina de Estado (0 a 3) a ser usada.
+ * @param offset O endereço de memória onde o programa PIO foi carregado.
+ * @param pin O número do pino GPIO conectado à fita de LED.
+ * @param freq A frequência do protocolo em Hz (normalmente 800000.0f).
+ */
+void ws2818b_program_init(PIO pio, uint sm, uint offset, uint pin, float freq) {
+
+    // Associa o pino GPIO ao hardware PIO.
+    pio_gpio_init(pio, pin);
+    
+    // Configura o pino como uma saída para a Máquina de Estado (sm).
+    pio_sm_set_consecutive_pindirs(pio, sm, pin, 1, true);
+    
+    // Obtém uma estrutura de configuração padrão para este programa PIO.
+    pio_sm_config c = ws2818b_program_get_default_config(offset);
+    
+    // Mapeia o pino de 'side-set' do programa PIO para o pino GPIO físico.
+    sm_config_set_sideset_pins(&c, pin); // Uses sideset pins.
+    
+    // Configura o Registrador de Deslocamento de Saída (OSR):
+    // - true (primeiro): Desloca os bits para a direita (shift_right).
+    // - true (segundo): Habilita o autopull, que puxa automaticamente dados da FIFO TX.
+    // - 8: Limiar de bits para o autopull. A SM buscará novos dados quando restarem menos de 8 bits no OSR.
+    sm_config_set_out_shift(&c, true, true, 8); // 8 bit transfers, right-shift.
+    
+    // Une as FIFOs TX e RX em uma única FIFO TX mais profunda (8 palavras).
+    // Útil porque este programa apenas envia dados.
+    sm_config_set_fifo_join(&c, PIO_FIFO_JOIN_TX); // Use only TX FIFO.
+    
+    // Calcula o divisor de clock para a Máquina de Estado.
+    // O clock do sistema (ex: 125MHz) é dividido para que a SM opere na frequência correta.
+    // Como cada bit leva 10 ciclos do PIO, a frequência da SM deve ser 10 * freq.
+    float prescaler = clock_get_hz(clk_sys) / (10.f * freq); // 10 cycles per transmission, freq is frequency of encoded bits.
+    sm_config_set_clkdiv(&c, prescaler);
+    
+    // Aplica a configuração à Máquina de Estado.
+    pio_sm_init(pio, sm, offset, &c);
+    
+    // Habilita a Máquina de Estado, iniciando a execução do programa.
+    pio_sm_set_enabled(pio, sm, true);
+}
+%}
