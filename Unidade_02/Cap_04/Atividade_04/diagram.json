@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "author": "Manoel Felipe Costa Furtado",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-pi-pico-w",
+      "id": "pico",
+      "top": 140.75,
+      "left": 61.15,
+      "attrs": { "builder": "pico-sdk" }
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": -38.1,
+      "left": 109.8,
+      "attrs": { "humidity": "67", "temperature": "54.7" }
+    },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr1",
+      "top": -29.1,
+      "left": 148.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gas-sensor",
+      "id": "gas1",
+      "top": 15.2,
+      "left": 252.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 198,
+      "left": -43.8,
+      "attrs": { "color": "red", "flip": "1" }
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo1",
+      "top": 303.4,
+      "left": 337,
+      "rotate": 90,
+      "attrs": {}
+    },
+    { "type": "wokwi-relay-module", "id": "relay1", "top": 221, "left": 220.8, "attrs": {} },
+    { "type": "wokwi-vcc", "id": "vcc1", "top": 177.4, "left": 244.04, "rotate": 90, "attrs": {} },
+    { "type": "wokwi-gnd", "id": "gnd1", "top": 230.9, "left": 173.1, "rotate": 90, "attrs": {} },
+    { "type": "wokwi-vcc", "id": "vcc2", "top": 183.16, "left": 364.8, "attrs": {} },
+    { "type": "wokwi-gnd", "id": "gnd2", "top": 183.8, "left": 422.2, "rotate": 180, "attrs": {} },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 292.8,
+      "left": -58.15,
+      "rotate": 90,
+      "attrs": { "value": "220" }
+    }
+  ],
+  "connections": [
+    [ "pico:GP0", "$serialMonitor:RX", "", [] ],
+    [ "pico:GP1", "$serialMonitor:TX", "", [] ],
+    [ "pico:GND.8", "dht1:GND", "black", [ "h0" ] ],
+    [ "pico:3V3", "dht1:VCC", "red", [ "h29.11", "v-86.4", "h28.8" ] ],
+    [ "relay1:COM", "vcc2:VCC", "red", [ "h39.6", "v-49.4" ] ],
+    [ "servo1:GND", "gnd2:GND", "black", [ "v0" ] ],
+    [ "relay1:NO", "servo1:V+", "green", [ "h0" ] ],
+    [ "relay1:VCC", "vcc1:VCC", "red", [ "v-48", "h19.2" ] ],
+    [ "relay1:IN", "pico:GP18", "green", [ "h0", "v47.8" ] ],
+    [ "gnd1:GND", "relay1:GND", "black", [ "v0" ] ],
+    [ "servo1:PWM", "pico:GP17", "green", [ "v0", "h-48.2", "v38.4" ] ],
+    [ "pico:GND.3", "led1:C", "black", [ "h-57.6", "v0", "h-28.4" ] ],
+    [ "pico:GP26", "gas1:AOUT", "green", [ "h19.51", "v-19.2", "h48", "v-76.8", "h134.4" ] ],
+    [ "gas1:VCC", "pico:3V3", "red", [ "v19.2", "h-143.1", "v57.6" ] ],
+    [ "pico:GP6", "dht1:SDA", "green", [ "h-28.8", "v-115.2", "h95.9" ] ],
+    [ "gas1:GND", "pico:GND.8", "black", [ "v0" ] ],
+    [ "ldr1:AO", "pico:GP28", "green", [ "v28.8", "h-28.1", "v96" ] ],
+    [ "ldr1:GND", "pico:GND.8", "black", [ "v86.4", "h0.4" ] ],
+    [ "ldr1:VCC", "pico:3V3", "red", [ "v48", "h-86.4", "v57.6" ] ],
+    [ "r1:2", "pico:GP10", "green", [ "v18", "h48", "v-67.2" ] ],
+    [ "r1:1", "led1:A", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}

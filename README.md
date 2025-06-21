@@ -116,6 +116,28 @@ questões de forma clara e objetiva.
 - **Link para o código:** [Unidade_02/Cap_01/Atividade_01](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Unidade_02/Cap_01/Atividade_01)
 
 
+#### Capítulo 02: IEEE 802.11, LoRaWAN, SigFox, 4G, 5G
+- **Enunciado:** A atividade propõe o desenvolvimento de um servidor HTTP
+embarcado no Raspberry Pi Pico W, capaz de atuar como Access Point, fornecer uma
+página HTML para controle de LED e leitura da temperatura interna.
+
+- **Link para o código:** [Unidade_02/Cap_2/Atividade_02](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Unidade_02/Cap_02/Atividade_02)
+
+#### Capítulo 03: MQTT, CoAP, AMQP, STOMP
+- **Enunciado:** Complementação da Atividade_3_MQTT_2. Perceba que, ao ocorrer o
+envio do PING, o LED RGB permanece aceso na cor verde. Logo após ocorrer o PING o LED RGB deve mudar para uma cor aleatória que não seja o VERDE, padrão já definido. Na função, percebemos que ela ativa o LED para VERDE. Que o LED RGB permaneça na cor aleatória por 1 segundo, após ocorrer o PING, sinalizando no LED que houve o PING.
+
+- **Link para o código:** [Unidade_02/Cap_3/Atividade_03](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Unidade_02/Cap_03/Atividade_03)
+
+#### Capítulo 04: Sensores e Atuadores
+- **Enunciado:** Desenvolver um sistema embarcado com o Raspberry Pi Pico W que integre
+sensores (temperatura, luminosidade e gás) com atuadores (relé, servo motor e LED), criando uma solução automatizada de monitoramento e resposta a variações ambientais.
+
+- **Link para o código:** [Unidade_02/Cap_4/Atividade_04](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Unidade_02/Cap_04/Atividade_04)
+
+
+
+
 
 ---
 
