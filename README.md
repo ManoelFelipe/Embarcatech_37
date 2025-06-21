@@ -68,6 +68,12 @@ responda  aos  comandos  realizados  no  computador  através  de  eco  e  indiq
 TinyUSB.
 - **Link para o código:** [Unidade_01/Cap_06/Atividade_06](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Unidade_01/Cap_06/Atividade_06)
 
+#### Capítulo 07: Periféricos Avançados: PIO - Programmable Input/Output
+- **Enunciado:** Complementação do Projeto NeoControlLab Utilizando uma técnica
+de interrupção em conjunto com o botão A, refaça o código de modo que a geração de
+números aleatórios ocorrerá quando pressionado o botão A.
+- **Link para o código:** [Unidade_01/Cap_07/Atividade_07](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Unidade_01/Cap_07/Atividade_07)
+
 #### Capítulo 08: Periféricos Avançados: Ethernet/Wifi
 - **Enunciado:** Simulador  Portátil  de  Alarme  para  Treinamentos  de  Brigadas  e Evacuação 
 - Este trabalho propõe o desenvolvimento de uma ferramenta portátil, baseada no 
