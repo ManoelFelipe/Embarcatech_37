@@ -42,10 +42,6 @@ Todo o conteúdo deste repositório, incluindo as pastas `build` dos projetos, e
 - Descrição das atividades da Segunda fase da residência em TIC 37: FPGA:
 - **Link para o código:** [doc/README_02.md](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/doc/README_02.md)
 
-
-
-
-
 ---
 
 *Este README será atualizado conforme o progresso no programa Residência em TIC 37.*
