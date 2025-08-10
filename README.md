@@ -37,10 +37,10 @@ Todo o conteúdo deste repositório, incluindo as pastas `build` dos projetos, e
 ---
 
 - Descrição das atividades da Primeira fase da residência em TIC 37: Sistema Embarcados:
-- **Link para o código:** [doc/README_01.md](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/oc/README_01.md)
+- **Link para o código:** [doc/README_01.md](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/doc/README_01.md)
 
 - Descrição das atividades da Segunda fase da residência em TIC 37: FPGA:
-- **Link para o código:** [doc/README_02.md](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/oc/README_02.md)
+- **Link para o código:** [doc/README_02.md](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/doc/README_02.md)
 
 
 
