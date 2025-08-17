@@ -1,0 +1,67 @@
+$date
+	Sun Aug 17 18:07:02 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_Atividade_Uni_02_Cap_01 $end
+$var wire 1 ! y $end
+$var reg 1 " a $end
+$var reg 1 # b $end
+$var reg 1 $ c $end
+$scope module uut $end
+$var wire 1 " A $end
+$var wire 1 % AB $end
+$var wire 1 & AC $end
+$var wire 1 # B $end
+$var wire 1 ' BC $end
+$var wire 1 $ C $end
+$var wire 1 ! Y $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#5
+1$
+#10
+0$
+1#
+#15
+1!
+1'
+1$
+#20
+0!
+0'
+0$
+0#
+1"
+#25
+1!
+1&
+1$
+#30
+0&
+1%
+0$
+1#
+#35
+1&
+1'
+1$
+#40
