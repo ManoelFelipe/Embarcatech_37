@@ -32,7 +32,11 @@ O programa de residência abrange uma variedade de tópicos em tecnologia, inclu
 ## Acesso ao Conteúdo Completo (Incluindo Builds)
 
 Todo o conteúdo deste repositório, incluindo as pastas `build` dos projetos, está disponível no seguinte link do OneDrive:
-[Repositório Completo no OneDrive](https://1drv.ms/u/c/faa9e6024cd17b33/EVEstXOcZ8pPneu2MVdEiyoBXzcnumK1d4pn0zNSxvJZLQ?e=NcoEeq)
+
+[Repositório Completo Primeira Fase - Sistemas Embarcados](https://1drv.ms/u/c/faa9e6024cd17b33/Ee1UR3hZ2W5DkgzvcbjSspABIRnJQrxRdzpvQTkHO_xlVA?e=QAg5uu)
+
+[Repositório Completo Segunda Fase - FPGA](https://1drv.ms/u/c/faa9e6024cd17b33/EZvCv-HgNptBiz4KctI1VvwBn_UDb7uhKKwOihxXtpd19w?e=3Ho8Xf)
+
 
 ---
 
