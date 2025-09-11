@@ -1,0 +1,64 @@
+$date
+	Thu Sep 04 22:29:12 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_subtratorcompleto $end
+$var wire 1 ! s_tb $end
+$var wire 1 " cout_tb $end
+$var reg 1 # a_tb $end
+$var reg 1 $ b_tb $end
+$var reg 1 % cin_tb $end
+$scope module DUT $end
+$var wire 1 # a $end
+$var wire 1 $ b $end
+$var wire 1 % cin $end
+$var wire 1 " cout $end
+$var wire 1 ! s $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0%
+0$
+0#
+0"
+0!
+$end
+#10000
+1"
+1!
+1%
+#20000
+1!
+1$
+0%
+#30000
+0!
+1%
+#40000
+0"
+1!
+1#
+0$
+0%
+#50000
+0!
+1%
+#60000
+0!
+1$
+0%
+#70000
+1"
+1!
+1%
+#80000

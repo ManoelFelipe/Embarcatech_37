@@ -1,0 +1,4 @@
+iverilog -o subtratorcompleto.vvp subtratorcompleto.v
+iverilog -o subtratorcompleto_tb.vvp subtratorcompleto_tb.v
+vvp subtratorcompleto_tb.vvp
+gtkwave subtratorcompleto.vcd
