@@ -22,7 +22,7 @@ lógico utilizando portas lógicas básicas.
 
 ### Unidade 02: Ferramentas de Desenvolvimento
 
-Esta unidade foca nas ferramentas a ser usadas nesta fase do programa. Para cada atividade listada abaixo, a solução e a lógica de implementação são geralmente detalhadas nos comentários do respectivo código-fonte.
+Esta unidade foca nas ferramentas a ser usadas nesta fase do programa. Sobre a linguagem Verilog. Para cada atividade listada abaixo, a solução e a lógica de implementação são geralmente detalhadas nos comentários do respectivo código-fonte.
 
 #### Capítulo 01: Ferramentas de Desenvolvimento: Digital JS
 - **Enunciado:** Sistema de Alarme Digital com Simulação Visual Você deverá criar um circuito lógico que funcione como um sistema de alarme de segurança, com as seguintes condições:
@@ -39,3 +39,23 @@ Esta unidade foca nas ferramentas a ser usadas nesta fase do programa. Para cada
 - **Enunciado:** Desenvolva um código utilizando o Icarus Verilog que represente um subtrator completo (“subtratorcompleto”). A aplicação deverá ser composta por três entrada (a, b, cin) e duas saídas (s, cout). Faça a compilação, simulação e visualização das formas de onda do projeto “subtratorcompleto” no VSCode, utilizando o Icarus Verilog e verifique os resultados da simulação no GTKWave. A tabela 1 mostra os valores de entrada e saída do circuito subtrator completo.
   
 - **Link para o código:** [Unidade_02/Cap_02](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Segunda_Fase_FPGA/Unidade_02/Cap_02)
+
+
+### Unidade 03: Ferramentas de Desenvolvimento
+
+Esta unidade foca nas ferramentas a ser usadas nesta fase do programa. Sobre a linguagem VHDL. Para cada atividade listada abaixo, a solução e a lógica de implementação são geralmente detalhadas nos comentários do respectivo código-fonte.
+
+
+#### Atividade em Aula: Realisado em Dupla: Decodificador binário de 3 para 8 bits
+
+- **Enunciado:** Responder as questões sobre o projeto. Está descrito no arquivo Apresentação_Final_Manoel_Furtado.pdf no link abaixo.
+  
+- **Link para o código:** [Unidade_03/Atividade_Em_Aula](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Segunda_Fase_FPGA/Unidade_03/Atividade_Em_Aula/Projeto_decodificador_3a8)
+
+
+
+#### Capítulo 01: Descrição de Hardware com VHDL
+
+- **Enunciado:** 
+  
+- **Link para o código:** 
