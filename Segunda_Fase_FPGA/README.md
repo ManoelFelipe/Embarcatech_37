@@ -35,7 +35,7 @@ Esta unidade foca nas ferramentas a ser usadas nesta fase do programa. Para cada
     - O alarme deve permanecer desativado (Y = 0) se menos de dois sensores forem acionados.
 - **Link para o código:** [Unidade_02/Cap_01](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Segunda_Fase_FPGA/Unidade_02/Cap_01)
 - 
-#### Capítulo 02: 
-- **Enunciado:** E...
-  - C...
-- **Link para o código:** 
+#### Capítulo 02: Ferramentas de Desenvolvimento: Icarus Verilog e GTKWave
+- **Enunciado:** Desenvolva um código utilizando o Icarus Verilog que represente um subtrator completo (“subtratorcompleto”). A aplicação deverá ser composta por três entrada (a, b, cin) e duas saídas (s, cout). Faça a compilação, simulação e visualização das formas de onda do projeto “subtratorcompleto” no VSCode, utilizando o Icarus Verilog e verifique os resultados da simulação no GTKWave. A tabela 1 mostra os valores de entrada e saída do circuito subtrator completo.
+  
+- **Link para o código:** [Unidade_02/Cap_02](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Segunda_Fase_FPGA/Unidade_02/Cap_02)
