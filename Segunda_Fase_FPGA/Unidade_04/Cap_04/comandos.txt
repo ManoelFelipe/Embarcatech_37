@@ -1,0 +1,8 @@
+ghdl -a unid_04_cap_01.vhd
+ghdl -a unid_04_cap_01_tb.vhd
+
+ghdl -e unid_04_cap_01_tb
+
+ghdl -r unid_04_cap_01_tb --vcd=waveform.vcd
+
+gtkwave waveform.vcd
