@@ -41,21 +41,30 @@ Esta unidade foca nas ferramentas a ser usadas nesta fase do programa. Sobre a l
 - **Link para o código:** [Unidade_02/Cap_02](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Segunda_Fase_FPGA/Unidade_02/Cap_02)
 
 
-### Unidade 03: Ferramentas de Desenvolvimento
+### Unidade 04: Ferramentas de Desenvolvimento
 
 Esta unidade foca nas ferramentas a ser usadas nesta fase do programa. Sobre a linguagem VHDL. Para cada atividade listada abaixo, a solução e a lógica de implementação são geralmente detalhadas nos comentários do respectivo código-fonte.
-
 
 #### Atividade em Aula: Realisado em Dupla: Decodificador binário de 3 para 8 bits
 
 - **Enunciado:** Responder as questões sobre o projeto. Está descrito no arquivo Apresentação_Final_Manoel_Furtado.pdf no link abaixo.
   
-- **Link para o código:** [Unidade_03/Atividade_Em_Aula](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Segunda_Fase_FPGA/Unidade_03/Atividade_Em_Aula/Projeto_decodificador_3a8)
-
-
+- **Link para o código:** [Unidade_04/Atividade_Em_Aula](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Segunda_Fase_FPGA/Unidade_04/Atividade_Em_Aula/)
 
 #### Capítulo 01: Descrição de Hardware com VHDL
 
-- **Enunciado:** 
+- **Enunciado:** Para que um alimento seja classificado como light, seu valor calórico deve corresponder, no máximo, a 50% das calorias presentes no produto original. Considera-se, neste contexto, a adição de ingredientes opcionais utilizados para realçar o sabor e a coloração do alimento, os quais contribuem com diferentes percentuais calóricos em relação ao produto
+normal, conforme descrito a seguir:
+• A contém 40%; B contém 30%; C contém 20%; D contém 10% A partir dessas definições, monte a tabela-verdade, o mapa de Karnaugh e implemente em linguagem VHDL a solução do problema. Projete um circuito para acender uma lâmpada cada vez que a combinação dos produtos misturados em um tanque ultrapassar 50% das calorias de um produto normal.
   
-- **Link para o código:** 
+- **Link para o código:** [Unidade_04/Cap_01](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Segunda_Fase_FPGA/Unidade_04/Cap_01)
+
+
+### Unidade 05: Aritimética Distribuída
+
+#### Capítulo 01: Registradores
+
+- **Enunciado:** Desenvolver e simular um registrador paralelo de 8 bits utilizando flip-flops tipo D, onde cada flip-flop possui apenas entrada D e entrada de clock. O registrador deve permitir o armazenamento de dados paralelos e a atualização simultânea de todos os bits a cada pulso ascendente de clock.
+  
+- **Link para o código:** [Unidade_05/Cap_01](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Segunda_Fase_FPGA/Unidade_05/Cap_01)
+

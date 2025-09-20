@@ -1,0 +1,43 @@
+#-------------------------------------------------------------------------------
+# Arquivo:   comandos.txt
+# Descrição: Roteiro de comandos para análise, elaboração, execução e
+#            visualização da simulação do registrador de 8 bits.
+#-------------------------------------------------------------------------------
+
+# ETAPA 1: ANÁLISE (COMPILAÇÃO)
+# O comando 'ghdl -a' (analisar) verifica a sintaxe dos arquivos VHDL e, se
+# não houver erros, compila-os para um formato intermediário na biblioteca de trabalho.
+# É necessário analisar primeiro as dependências (o design) e depois os arquivos
+# que dependem delas (o testbench).
+
+ghdl -a unid_05_cap_01.vhd
+ghdl -a unid_05_cap_01_tb.vhd
+
+# ETAPA 2: ELABORAÇÃO
+# O comando 'ghdl -e' (elaborar) constrói o modelo de simulação. Ele pega a
+# entidade de mais alto nível (nosso testbench, 'unid_05_cap_01_tb'), e a "conecta"
+# com todas as suas instâncias de componentes (nosso registrador, 'unid_05_cap_01'),
+# criando um executável pronto para a simulação.
+
+ghdl -e unid_05_cap_01_tb
+
+# ETAPA 3: EXECUÇÃO (SIMULAÇÃO)
+# O comando 'ghdl -r' (rodar) executa a simulação.
+
+# A linha abaixo está comentada com '#' porque ela rodaria a simulação por
+# tempo indefinido, gerando um arquivo .vcd gigantesco.
+# ghdl -r unid_05_cap_01_tb --vcd=waveform.vcd
+
+# Esta é a linha correta. Ela executa a simulação e inclui dois argumentos importantes:
+# --vcd=waveform.vcd : instrui o simulador a salvar todas as mudanças de
+#                      sinais em um arquivo chamado 'waveform.vcd'.
+# --stop-time=100ns  : instrui o simulador a parar automaticamente após
+#                      100 nanosegundos, evitando o loop infinito.
+ghdl -r unid_05_cap_01_tb --vcd=waveform.vcd --stop-time=80ns
+
+# ETAPA 4: VISUALIZAÇÃO
+# O comando 'gtkwave' abre o programa de visualização de formas de onda,
+# carregando o arquivo 'waveform.vcd' gerado na etapa anterior.
+# Nele, você pode analisar graficamente o comportamento dos sinais ao longo do tempo.
+
+gtkwave waveform.vcd

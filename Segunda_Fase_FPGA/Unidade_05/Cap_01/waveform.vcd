@@ -1,0 +1,104 @@
+$date
+  Sat Sep 20 09:28:22 2025
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module unid_05_cap_01_tb $end
+$var reg 1 ! s_clk $end
+$var reg 8 " s_d[7:0] $end
+$var reg 8 # s_q[7:0] $end
+$scope module dut_instance $end
+$var reg 1 $ clk $end
+$var reg 8 % d[7:0] $end
+$var reg 8 & q[7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+b00000000 "
+bUUUUUUUU #
+0$
+b00000000 %
+bUUUUUUUU &
+#1000000
+b11111111 "
+b11111111 %
+#5000000
+1!
+b00000000 "
+b11111111 #
+1$
+b00000000 %
+b11111111 &
+#10000000
+0!
+0$
+#15000000
+1!
+b10101010 "
+b00000000 #
+1$
+b10101010 %
+b00000000 &
+#20000000
+0!
+0$
+#25000000
+1!
+b01010101 "
+b10101010 #
+1$
+b01010101 %
+b10101010 &
+#30000000
+0!
+0$
+#35000000
+1!
+b11110000 "
+b01010101 #
+1$
+b11110000 %
+b01010101 &
+#40000000
+0!
+0$
+#45000000
+1!
+b11001001 "
+b11110000 #
+1$
+b11001001 %
+b11110000 &
+#50000000
+0!
+0$
+#55000000
+1!
+b11001001 #
+1$
+b11001001 &
+#60000000
+0!
+0$
+#65000000
+1!
+1$
+#70000000
+0!
+0$
+#75000000
+1!
+1$
+#80000000
+0!
+0$
