@@ -1,42 +1,94 @@
-# Projeto de Residência em TIC 37 – IFMA – EmbarcaTech
+# 💻 Manoel Felipe Costa Furtado · Residência em TIC 37 – EmbarcaTech (IFMA)
 
-## Sobre o Projeto
+> Repositório oficial dos projetos, simulações, códigos e relatórios desenvolvidos durante a **Residência em TIC 37 – EmbarcaTech**, vinculada ao **Instituto Federal do Maranhão (IFMA)** e ao programa nacional **Softex + MCTI para Desenvolvimento de Competências em Sistemas Digitais**.
 
-Este repositório documenta as atividades desenvolvidas por **Manoel Felipe Costa Furtado** (Matrícula: `20251RSE.MTC0086`) durante a **Segunda Fase do Programa EmbarcaTech - Projeto Residência em TIC 37**.
-- **Instituição:** IFMA - MA
-- **Período do Programa:** 22 de abril de 2025 a 22 de abril de 2026
+📍 **Instituição Executora:** IFMA – Instituto Federal do Maranhão  
+🎓 **Aluno:** Manoel Felipe Costa Furtado  
+🆔 **Matrícula:** 20251RSE.MTC0086  
+🗓️ **Período Oficial do Programa:** 22/04/2025 → 22/04/2026  
 
-O objetivo principal é apresentar as soluções e aprendizados adquiridos ao longo do programa.
+---
 
-## Tecnologias Abordadas
+## 🚧 Status do Repositório
 
-O programa de residência abrange uma variedade de tópicos em tecnologia, incluindo, mas não se limitando a:
-- Sistemas Embarcados
-- Programação de Microcontroladores
-- FPGA (Field-Programmable Gate Array)
+> **Em desenvolvimento contínuo** — este repositório será atualizado conforme a evolução técnica e entrega de projetos nas fases de **Sistemas Embarcados** e **FPGA**.
+
+---
+
+## 📊 Progresso da Jornada
+
+| Etapa | Período Oficial | Status |
+|------|------------------|:------:|
+| **Fase 1 – Sistemas Embarcados** | 22/04/2025 → 27/06/2025 | ✅ Concluído |
+| **Fase 2 – FPGA e Design Digital** | 04/08/2025 → 04/11/2026 | ⏳ Em andamento |
+| **Fase 3 – Residência / Trabalho Final** | 10/11/2025 → 22/04/2026 | ⬜ Aguardando início |
+
+
+> 📌 *As datas refletem a progressão padrão estimada com base na estrutura acadêmica do programa.*
+
+---
+
+## 🎯 Objetivo do Repositório
+
+Este repositório tem como finalidade:
+
+✔️ Documentar a **evolução técnica e aprendizado real** durante a residência  
+✔️ Registrar **códigos-fonte, testbenches, relatórios e simulações**  
+✔️ Manter uma **organização modular e escalável**, seguindo boas práticas de projetos de sistemas digitais  
+✔️ Servir como **portfólio técnico público**, alinhado ao padrão exigido pela indústria de semicondutores  
+
+---
+
+
+## 🔔 Nota Importante sobre o Código-Fonte
+
+A instituição IFMA fornece códigos-base e estruturas iniciais. Os projetos presentes aqui podem ser **derivados, modificações ou melhorias** sobre essas bases — o foco do repositório é **evolução técnica e autoria progressiva**, e não apenas código “do zero”.
+
+---
+
+## 🗂️ Estrutura Acadêmica do Programa
+
+### 🔹 **Fase 1 — Sistemas Embarcados**
+| Diretório | Conteúdo | Status |
+|-----------|---------|:------:|
+| `Primeira_Fase_Sistemas_Embarcados/` | Atividades com microcontroladores, GPIO, interrupções, timers, DMA, interfaces de comunicação e periféricos | ✅ |
+
+### 🔹 **Fase 2 — FPGA e Circuitos Digitais**
+| Diretório | Conteúdo | Status |
+|-----------|---------|:------:|
+| `Segunda_Fase_FPGA/` | Projetos com Verilog, simulação em HDL, criação de testbenches, uso de ferramentas EDA, síntese lógica e desenvolvimento baseado em FPGA | ⬜ |
+
+---
+
+## 🚀 Tecnologias e Competências Desenvolvidas
+
+- Programação de **microcontroladores**
 - IoT (Internet das Coisas)
 - Periféricos Avançados (Temporizadores, DMA, USB, Ethernet/WiFi)
-- Modelos de Multitarefas
 - Tratamento de Interrupções
+- Modelos de Multitarefas
+- Desenvolvimento com FPGA (Verilog HDL)
+- Simulação digital e Testbench
+- Interrupções, GPIO, comunicação serial, temporizadores
+- Arquitetura RTL e síntese digital
+- Ferramentas EDA profissionais
 
-## Nota Importante sobre o Código-Fonte
+---
 
-É fundamental destacar que a instituição de ensino IFMA forneceu aulas e códigos base que serviram de ponto de partida para as atividades aqui apresentadas. Os códigos neste repositório são, em sua maioria, modificações e adaptações realizadas sobre esse material original, e não construídos integralmente do zero.
+## 📁 Organização Recomendada dos Diretórios
 
-## Como Navegar neste Repositório
+### Como Navegar neste Repositório
 
 - As atividades estão organizadas em **Unidades** e **Capítulos**, seguindo a estrutura do programa.
 - Cada capítulo de atividade contém uma descrição do problema (Enunciado) e um link direto para a pasta com o código-fonte da solução no GitHub.
 - Para ter acesso ao conteúdo completo, incluindo pastas `build` e outros artefatos dos projetos, utilize o link do OneDrive abaixo.
-
-## Acesso ao Conteúdo Completo (Incluindo Builds)
+### Acesso ao Conteúdo Completo (Incluindo Builds)
 
 Todo o conteúdo deste repositório, incluindo as pastas `build` dos projetos, está disponível no seguinte link do OneDrive:
 
 [Arquivo Completo da Primeira Fase - Sistemas Embarcados](https://1drv.ms/u/c/faa9e6024cd17b33/Ee1UR3hZ2W5DkgzvcbjSspABIRnJQrxRdzpvQTkHO_xlVA?e=QAg5uu)
 
 [Arquivo Completo da Segunda Fase - FPGA](https://1drv.ms/u/c/faa9e6024cd17b33/EZvCv-HgNptBiz4KctI1VvwBn_UDb7uhKKwOihxXtpd19w?e=3Ho8Xf)
-
 
 ---
 
@@ -48,4 +100,17 @@ Todo o conteúdo deste repositório, incluindo as pastas `build` dos projetos, e
 
 ---
 
-*Este README será atualizado conforme o progresso no programa Residência em TIC 37.*
+```bash
+Embarcatech_37/
+│
+├── Primeira_Fase_Sistemas_Embarcados/   ✅ Concluído
+│   ├── Projeto_01/
+│   ├── Projeto_02/
+│   └── ...
+│
+├── Segunda_Fase_FPGA/                  ⏳ Em andamento
+│   ├── Projeto_01/
+│   ├── Testbench/
+│   └── ...
+│
+└── README.md  ← (Você está aqui)
