@@ -1,0 +1,79 @@
+# =======================================================================================
+# Arquivo de Preferências Físicas (LPF) para Lattice ECP5
+# Projeto:      Motores Alternados
+# Arquivo:      motores_alternados.lpf
+# Versão:       1.0
+# Autor:        Manoel Furtado
+# Data:         12/05/2025
+#
+# DESCRIÇÃO:
+# Este arquivo mapeia os sinais lógicos (portas) do design em SystemVerilog
+# para os pinos físicos do encapsulamento do FPGA. Também define as
+# propriedades elétricas de cada pino, como o padrão de tensão e
+# a configuração de resistores internos.
+# =======================================================================================
+
+
+# ---------------------------------------------------------------------------------------
+# SINAL DE CLOCK (Entrada de 25 MHz)
+# ---------------------------------------------------------------------------------------
+# Mapeia a porta 'clk' do design para o pino físico P3 do FPGA.
+LOCATE    COMP "clk" SITE "P3"; 
+# Configura o pino como um buffer de entrada/saída usando o padrão de tensão LVCMOS 3.3V.
+IOBUF     PORT "clk" IO_TYPE=LVCMOS33; 
+# Informa à ferramenta de síntese a frequência do clock para auxiliar na análise de timing.
+FREQUENCY PORT "clk" 25 MHz; 
+
+
+# ---------------------------------------------------------------------------------------
+# ENTRADAS I1..I5 (Botões Push-button, Normalmente Abertos, Ativo-Alto)
+# ---------------------------------------------------------------------------------------
+# O resistor de PULLMODE=DOWN interno garante que, quando o botão não está
+# pressionado, o pino tenha um nível lógico '0' definido, evitando estados flutuantes.
+
+# I1 = START – inicia o ciclo alternado. 
+LOCATE COMP "I1" SITE "D1"; 
+IOBUF PORT "I1" IO_TYPE=LVCMOS33 PULLMODE=DOWN; 
+
+# I2 = STOP – para imediatamente e desliga ambos motores. 
+LOCATE COMP "I2" SITE "C1";
+IOBUF PORT "I2" IO_TYPE=LVCMOS33 PULLMODE=DOWN; 
+
+# I3 = RESET – retorna ao estado inicial. 
+LOCATE COMP "I3" SITE "C2"; 
+IOBUF PORT "I3" IO_TYPE=LVCMOS33 PULLMODE=DOWN; 
+
+# I4 = MODO TESTE – reduz o tempo de ciclo para debug. 
+LOCATE COMP "I4" SITE "E3";
+IOBUF PORT "I4" IO_TYPE=LVCMOS33 PULLMODE=DOWN; 
+
+# I5 = Livre (reservado para futuras funções). 
+LOCATE COMP "I5" SITE "B4"; 
+IOBUF PORT "I5" IO_TYPE=LVCMOS33 PULLMODE=DOWN; 
+
+
+# ---------------------------------------------------------------------------------------
+# SAÍDAS O1..O5 (LEDs de Cátodo Comum, Ativo-Alto)
+# ---------------------------------------------------------------------------------------
+# Para LEDs de cátodo comum, um nível lógico '1' (alto) na saída do FPGA acende o LED.
+# O padrão LVCMOS33 fornece uma tensão de 3.3V.
+
+# O1 = M1 (Acionamento do Motor M1). 
+LOCATE COMP "O1" SITE "E2"; 
+IOBUF PORT "O1" IO_TYPE=LVCMOS33; 
+
+# O2 = M2 (Acionamento do Motor M2). 
+LOCATE COMP "O2" SITE "D2";
+IOBUF PORT "O2" IO_TYPE=LVCMOS33; 
+
+# O3 = “Cronômetro ativo” (pisca 1 Hz durante a contagem). 
+LOCATE COMP "O3" SITE "B1"; 
+IOBUF PORT "O3" IO_TYPE=LVCMOS33; 
+
+# O4 = “Em ciclo” (alto quando o sistema está rodando). 
+LOCATE COMP "O4" SITE "A3";
+IOBUF PORT "O4" IO_TYPE=LVCMOS33; 
+
+# O5 = Heartbeat (~2 Hz para indicar FPGA vivo). 
+LOCATE COMP "O5" SITE "C3"; 
+IOBUF PORT "O5" IO_TYPE=LVCMOS33;

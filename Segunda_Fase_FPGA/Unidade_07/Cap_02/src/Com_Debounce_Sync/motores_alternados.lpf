@@ -1,0 +1,25 @@
+# ============================================================================
+# Arquivo: motores_alternados.lpf — Mapeamento de pinos (Lattice ECP5 genérico)
+# (Mantido: nomes I1..I5 / O1..O5 coerentes com o TOP)
+# ============================================================================
+
+# CLOCK (25 MHz)
+LOCATE    COMP "clk" SITE "P3";            # AJUSTAR para o pino real do clock
+IOBUF     PORT "clk" IO_TYPE=LVCMOS33;
+FREQUENCY PORT "clk" 25 MHz;
+
+# ENTRADAS I1..I5 (PULLDOWN — botões NA, ativo-alto)
+# Exemplo do enunciado (conector P3): I1=D1, I2=C1, I3=C2, I4=E3, I5=B4
+LOCATE COMP "I1" SITE "D1"; IOBUF PORT "I1" IO_TYPE=LVCMOS33 PULLMODE=DOWN;
+LOCATE COMP "I2" SITE "C1"; IOBUF PORT "I2" IO_TYPE=LVCMOS33 PULLMODE=DOWN;
+LOCATE COMP "I3" SITE "C2"; IOBUF PORT "I3" IO_TYPE=LVCMOS33 PULLMODE=DOWN;
+LOCATE COMP "I4" SITE "E3"; IOBUF PORT "I4" IO_TYPE=LVCMOS33 PULLMODE=DOWN;
+LOCATE COMP "I5" SITE "B4"; IOBUF PORT "I5" IO_TYPE=LVCMOS33 PULLMODE=DOWN;
+
+# SAÍDAS O1..O5 (LEDs cátodo comum, ativo-alto)
+# Exemplo do enunciado (conector P3): O1=E2, O2=D2, O3=B1, O4=A3, O5=C3
+LOCATE COMP "O1" SITE "E2"; IOBUF PORT "O1" IO_TYPE=LVCMOS33;
+LOCATE COMP "O2" SITE "D2"; IOBUF PORT "O2" IO_TYPE=LVCMOS33;
+LOCATE COMP "O3" SITE "B1"; IOBUF PORT "O3" IO_TYPE=LVCMOS33;
+LOCATE COMP "O4" SITE "A3"; IOBUF PORT "O4" IO_TYPE=LVCMOS33;
+LOCATE COMP "O5" SITE "C3"; IOBUF PORT "O5" IO_TYPE=LVCMOS33;

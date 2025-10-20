@@ -68,3 +68,32 @@ normal, conforme descrito a seguir:
   
 - **Link para o código:** [Unidade_05/Cap_01](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Segunda_Fase_FPGA/Unidade_05/Cap_01)
 
+
+
+### Unidade 06: Máquinas de Estado
+
+#### Capítulo 01: VHDL: Máquinas de Estado e Contadores, Bibliotecas
+
+- **Enunciado:** Implementar uma máquina de estados para controlar a abertura e fechamento de uma porta automática com sensor de presença e botão fechar_manual.
+  
+- **Link para o código:** [Unidade_06/Cap_01](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Segunda_Fase_FPGA/Unidade_06/Cap_01)
+
+
+
+
+### Unidade 07: SystemVerilog
+
+#### Capítulo 01: Linguagem SystemVerilog
+
+- **Enunciado:** Desenvolva um
+código utilizando a plataforma EDA Playground(https://www.edaplayground.com/) em SystemVerilog que represente um somador e subtrator completo. A aplicação deverá ser composta por quatro entradas (M, A, B, Te) e duas saídas (S, Ts), sendo que M representa a variável de controle, onde M = 0 será a seleção para a soma, M = 1 será a seleção para subtração, Te representa o transporte de entrada e Ts representa o transporte de saída. Faça a compilação, simulação e visualização das formas de onda do projeto
+utilizando o EDA Playground e verifique os resultados da simulação no GTKWave.
+
+- **Link para o código:** [Unidade_07/Cap_01](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Segunda_Fase_FPGA/Unidade_07/Cap_01)
+
+#### Capítulo 02: Lattice Diamond
+
+- **Enunciado:** Objetivo: Desenvolva em SystemVerilog um circuito lógico para acionar dois motores (M1 e M2) de forma alternada: liga-se um motor por 30 s, em seguida desliga-se este e liga-se o outro por 30 s, repetindo o ciclo continuamente até receber comando de parada. Mapeamento de I/O (padrão utilizado nas aulas - 5 entradas e 5 saídas no
+conector P3 da colorlight-i9).
+  
+- **Link para o código:** [Unidade_07/Cap_02](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Segunda_Fase_FPGA/Unidade_07/Cap_02)

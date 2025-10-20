@@ -1,0 +1,11 @@
+# 1. Compilar os arquivos do projeto (habilitando SystemVerilog 2012)
+# -o sim: define o nome do arquivo de saída compilado como "sim"
+iverilog -g2012 -o sim design.sv testbench.sv
+
+# 2. Executar a simulação
+# Este comando roda o testbench e gera o arquivo "dump.vcd" com as formas de onda.
+vvp sim
+
+# 3. Visualizar as formas de onda
+# Abre o arquivo gerado no passo anterior com o programa GTKWave.
+gtkwave dump.vcd

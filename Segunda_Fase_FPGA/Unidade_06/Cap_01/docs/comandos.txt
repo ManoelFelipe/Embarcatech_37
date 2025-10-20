@@ -1,0 +1,60 @@
+# =================================================================================
+# SCRIPT DE SIMULAÇÃO PARA A PORTA AUTOMÁTICA USANDO GHDL
+# =================================================================================
+# Este script demonstra o fluxo de trabalho completo para compilar,
+# executar e visualizar a simulação de um projeto VHDL.
+
+# ---------------------------------------------------------------------------------
+# FLUXO 1: Simulação do Testbench Rápido (tb_porta_automatica_fast.vhd)
+# ---------------------------------------------------------------------------------
+
+# PASSO 1: Limpeza do Diretório de Compilação
+# O comando '--clean' remove todos os arquivos intermediários gerados
+# pelo GHDL em compilações anteriores. É uma boa prática para
+# garantir que o projeto será reconstruído do zero com os arquivos mais recentes.
+ghdl --clean
+
+# PASSO 2: Análise (Compilação) dos Arquivos VHDL
+# O comando '-a' (analisar) compila os arquivos VHDL, verifica a sintaxe e cria
+# os arquivos de biblioteca necessários. A ordem é importante:
+# a entidade (porta_automatica_fsm) deve ser compilada antes do testbench
+# que a utiliza.
+ghdl -a porta_automatica_fsm.vhd
+ghdl -a tb_porta_automatica_fast.vhd
+
+# PASSO 3: Elaboração do Modelo de Simulação
+# O comando '-e' (elaborar) constrói o modelo de simulação executável
+# a partir da entidade de topo, que geralmente é o testbench.
+ghdl -e tb_porta_automatica_fast
+
+# PASSO 4: Execução da Simulação
+# O comando '-r' (run) executa o modelo de simulação elaborado.
+# --wave=waveform.ghw  : Gera um arquivo de formas de onda no formato GHW.
+# --stop-time=8000ms   : Define o tempo máximo que a simulação irá rodar (8 segundos).
+ghdl -r tb_porta_automatica_fast --wave=waveform.ghw --stop-time=8000ms
+
+# PASSO 5: Visualização dos Resultados
+# O comando 'gtkwave' abre a ferramenta de visualização de formas de onda
+# para analisar o arquivo 'waveform.ghw' gerado no passo anterior.
+gtkwave waveform.ghw
+
+
+# =================================================================================
+# FLUXO 2: Exemplo Alternativo (tb_porta_automatica.vhd)
+# =================================================================================
+# Este segundo bloco é um exemplo de como rodar um testbench diferente
+# com um tempo de simulação distinto.
+
+# Limpa o ambiente novamente.
+ghdl --clean
+
+# Compila a FSM e o novo testbench.
+ghdl -a porta_automatica_fsm.vhd
+ghdl -a tb_porta_automatica.vhd
+
+# Elabora o novo testbench.
+ghdl -e tb_porta_automatica
+
+# Executa a simulação com um tempo de parada mais curto, ideal para
+# testar cenários rápidos sem esperar a simulação completa.
+ghdl -r tb_porta_automatica --wave=waveform.ghw --stop-time=150ms

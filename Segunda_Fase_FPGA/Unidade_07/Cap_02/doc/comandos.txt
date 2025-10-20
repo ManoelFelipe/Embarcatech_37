@@ -1,0 +1,91 @@
+# =======================================================================================
+# Arquivo de Comandos para Simulação e Instalação
+# Projeto:      Motores Alternados
+# Ferramentas:  Icarus Verilog (iverilog) e GTKWave
+# Ambiente:     MSYS2 MinGW64 (recomendado para Windows)
+# Versão:       1.0
+# Autor:        Manoel Furtado
+# Data:         12/05/2025
+#
+# DESCRIÇÃO:
+# Este arquivo contém os comandos necessários para compilar, executar a simulação
+# e visualizar as formas de onda do projeto. Inclui também as instruções para
+# instalar as ferramentas necessárias em um ambiente MSYS2 MinGW64.
+# =======================================================================================
+
+
+# =======================================================================================
+# Seção 1: Comandos de Compilação e Simulação
+# =======================================================================================
+
+# ---------------------------------------------------------------------------------------
+# Comando Completo (Compilar, Executar e Abrir Waveform)
+# ---------------------------------------------------------------------------------------
+# O operador '&&' encadeia os comandos, garantindo que o próximo só execute se o
+# anterior for bem-sucedido.
+#
+# Passo 1: 'iverilog' compila os fontes.
+# Passo 2: 'vvp' executa a simulação.
+# Passo 3: 'gtkwave' abre o arquivo de onda gerado para análise.
+#
+iverilog -g2012 -o tb tb_motores_alternados.sv motores_alternados.sv && vvp tb && gtkwave tb_motores_alternados.vcd
+
+
+# ---------------------------------------------------------------------------------------
+# Comandos Executados Individualmente
+# ---------------------------------------------------------------------------------------
+
+# 1. Compilação com Icarus Verilog
+#    - iverilog: O compilador.
+#    - -g2012: Habilita o suporte à sintaxe do padrão SystemVerilog 2012.
+#    - -o tb:  Define 'tb' como o nome do arquivo de saída compilado.
+#    - tb_motores_alternados.sv motores_alternados.sv: Os arquivos de entrada (testbench e design).
+#
+iverilog -g2012 -o tb tb_motores_alternados.sv motores_alternados.sv
+
+# 2. Execução da Simulação
+#    - vvp: O processador Verilog (simulador) que executa o arquivo compilado.
+#    - tb:  O arquivo de saída gerado pelo passo anterior.
+#    Este comando irá gerar o arquivo 'tb_motores_alternados.vcd' conforme
+#    definido pelas diretivas $dumpfile e $dumpvars no testbench.
+#
+vvp tb
+
+# 3. Visualização das Formas de Onda
+#    - gtkwave: O programa para visualização de formas de onda.
+#    - tb_motores_alternados.vcd: O arquivo de dump (Value Change Dump) gerado
+#      pela simulação, contendo os dados dos sinais.
+#
+gtkwave tb_motores_alternados.vcd
+
+
+# =======================================================================================
+# Seção 2: Instalação das Ferramentas no MSYS2 MinGW64 (para Windows)
+# =======================================================================================
+# Os comandos a seguir devem ser executados no terminal do MSYS2 MinGW64.
+
+# 1. Atualização do Sistema
+#    Sincroniza a base de dados de pacotes e atualiza todos os pacotes instalados.
+#    É uma boa prática executar este comando antes de instalar novos programas.
+#
+pacman -Syu
+
+# 2. Instalação do Icarus Verilog
+#    Instala o compilador e simulador Icarus Verilog para a arquitetura x86_64.
+#
+pacman -S mingw-w64-x86_64-iverilog
+
+# 3. Verificação da Instalação do Icarus Verilog
+#    Exibe a versão do iverilog instalado, confirmando que a instalação foi bem-sucedida.
+#
+iverilog -v
+
+# 4. Instalação do GTKWave
+#    Instala o visualizador de formas de onda GTKWave.
+#
+pacman -S mingw-w64-x86_64-gtkwave
+
+# 5. Verificação da Instalação do GTKWave
+#    Exibe a versão do GTKWave, confirmando a instalação.
+#
+gtkwave --version

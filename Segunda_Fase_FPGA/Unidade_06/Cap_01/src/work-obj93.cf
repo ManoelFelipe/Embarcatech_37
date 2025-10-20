@@ -1,0 +1,7 @@
+v 4
+file . "tb_porta_automatica_fast.vhd" "0bda237c26091ee6acf3f7304862e13046ac129b" "20251003145029.462":
+  entity tb_porta_automatica_fast at 15( 826) + 0 on 13;
+  architecture sim of tb_porta_automatica_fast at 22( 944) + 0 on 14;
+file . "porta_automatica_fsm.vhd" "a896ef88d247b19a66b63580b24ffa12546d411e" "20251003145001.185":
+  entity porta_automatica_fsm at 14( 750) + 0 on 11;
+  architecture rtl of porta_automatica_fsm at 47( 2368) + 0 on 12;
