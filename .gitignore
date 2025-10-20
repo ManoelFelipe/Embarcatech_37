@@ -1,12 +1,63 @@
-build
+# Diretórios de build/artefatos
+build/
+**/build/
+out/
+dist/
+*.log
 
-# Ignora toda a pasta descritas a baixo
-#**/Unidade_01/Cap_06
-#**/Unidade_01/Cap_08
-#**/Unidade_01/Cap_09
-#**/Unidade_01/Cap_10
-#**/Unidade_02/Cap_01
+# ModelSim/Questa / GTKWave
+transcript
+vsim.wlf
+*.wlf
+*.vcd
+*.fst
+work/
+questa_lib/
+modelsim.ini
+vsim.dbg
 
-#**/Unidade_02/Cap_04
+# Vivado / Xilinx
+*.xpr
+*.runs/
+*.cache/
+*.hw/
+*.sim/
+*.ip_user_files/
+*.str
+*.dcp
+*.jou
+*.log
+*.rpt
+*.ltx
 
-*.zip
+# Quartus / Intel
+*.qpf
+*.qsf
+db/
+incremental_db/
+output_files/
+simulation/modelsim/
+*.sof
+*.pof
+*.jic
+
+# Altera/Intel intermediários comuns
+*.smsg
+*.chg
+
+# Arquivos temporários/comuns
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+
+# VSCode / IDEs
+.vscode/
+.idea/

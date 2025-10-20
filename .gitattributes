@@ -1,1 +1,97 @@
-*.zip filter=lfs diff=lfs merge=lfs -text
+###############################################################################
+# Normalização padrão de texto
+# - Armazena LF no repo (Unix-like)
+# - Converte para CRLF apenas em scripts .bat/.cmd no checkout no Windows
+###############################################################################
+*               text=auto eol=lf
+
+# Scripts Windows (precisam de CRLF)
+*.bat           text eol=crlf
+*.cmd           text eol=crlf
+
+# Scripts e arquivos de automação (LF)
+*.sh            text eol=lf
+*.ps1           text eol=lf
+*.tcl           text eol=lf
+*.do            text eol=lf
+Makefile        text eol=lf
+*.mk            text eol=lf
+
+###############################################################################
+# HDL / EDA (forçar LF e tratar como texto)
+###############################################################################
+*.v             text eol=lf
+*.vh            text eol=lf
+*.sv            text eol=lf
+*.vhd           text eol=lf
+*.vhdl          text eol=lf
+*.sdc           text eol=lf
+*.xdc           text eol=lf
+*.ucf           text eol=lf
+
+# Waveforms e logs de simulação
+*.vcd           text eol=lf
+*.wlf           -text
+*.fst           -text
+
+###############################################################################
+# Código / Docs (LF)
+###############################################################################
+*.c             text eol=lf
+*.h             text eol=lf
+*.cpp           text eol=lf
+*.hpp           text eol=lf
+*.py            text eol=lf
+*.md            text eol=lf
+*.txt           text eol=lf
+*.csv           text eol=lf
+*.json          text eol=lf
+*.yaml          text eol=lf
+*.yml           text eol=lf
+*.toml          text eol=lf
+*.ini           text eol=lf
+*.tex           text eol=lf
+
+###############################################################################
+# Artefatos/Projetos EDA (tratar como binário para evitar diffs ruins)
+###############################################################################
+*.qpf           -text
+*.qsf           -text
+*.qws           -text
+*.qproj         -text
+*.qip           -text
+*.xpr           -text
+*.dcp           -text
+*.ncd           -text
+*.edf           -text
+*.edn           -text
+
+###############################################################################
+# Grandes binários → Git LFS
+###############################################################################
+*.zip           filter=lfs diff=lfs merge=lfs -text
+*.7z            filter=lfs diff=lfs merge=lfs -text
+*.rar           filter=lfs diff=lfs merge=lfs -text
+*.tar           filter=lfs diff=lfs merge=lfs -text
+*.gz            filter=lfs diff=lfs merge=lfs -text
+*.bz2           filter=lfs diff=lfs merge=lfs -text
+
+# Bitstreams e arquivos de programação
+*.bit           filter=lfs diff=lfs merge=lfs -text
+*.bin           filter=lfs diff=lfs merge=lfs -text
+*.mcs           filter=lfs diff=lfs merge=lfs -text
+*.sof           filter=lfs diff=lfs merge=lfs -text
+*.rpd           filter=lfs diff=lfs merge=lfs -text
+*.jed           filter=lfs diff=lfs merge=lfs -text
+*.hex           filter=lfs diff=lfs merge=lfs -text
+*.mif           filter=lfs diff=lfs merge=lfs -text
+*.elf           filter=lfs diff=lfs merge=lfs -text
+*.exe           filter=lfs diff=lfs merge=lfs -text
+*.dll           filter=lfs diff=lfs merge=lfs -text
+
+# Mídia pesada (normalmente não precisa LFS; ative se forem muito grandes)
+*.pdf           -text
+*.png           -text
+*.jpg           -text
+*.jpeg          -text
+*.gif           -text
