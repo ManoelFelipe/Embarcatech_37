@@ -1,0 +1,63 @@
+# =========================
+#  Embarcatech_37_FPGA — .gitattributes
+# =========================
+
+# Padroniza final de linha como LF para todos os arquivos de texto
+* text=auto eol=lf
+
+# Arquivos de texto (sempre LF)
+*.v             text eol=lf
+*.sv            text eol=lf
+*.vh            text eol=lf
+*.svh           text eol=lf
+*.lpf           text eol=lf
+*.pcf           text eol=lf
+*.sdc           text eol=lf
+*.tcl           text eol=lf
+*.sh            text eol=lf
+Makefile        text eol=lf
+*.md            text eol=lf
+*.mmd           text eol=lf
+*.txt            text eol=lf
+*.tex           text eol=lf
+*.bib           text eol=lf
+*.csv           text eol=lf
+*.yml           text eol=lf
+*.yaml          text eol=lf
+*.py            text eol=lf
+
+# Scripts de Windows (se existirem) com CRLF
+*.bat           text eol=crlf
+*.cmd           text eol=crlf
+
+# Binários (não fazer diff/merge de texto)
+*.png           binary
+*.jpg           binary
+*.jpeg          binary
+*.gif           binary
+*.pdf           binary
+*.zip           binary
+*.7z            binary
+*.tar           binary
+
+# Bitstreams/arquivos de programação
+*.bit           binary
+*.svf           binary
+*.jed           binary
+*.sof           binary
+*.pof           binary
+*.jic           binary
+*.bin           binary
+*.rpd           binary
+*.mcs           binary
+*.hex           binary
+*.config        binary
+
+# Resultados de simulação binários
+*.wlf           binary
+*.vpd           binary
+*.ucdb          binary
+
+# Linguist (cosmética para estatísticas do GitHub)
+*.sv linguist-language=SystemVerilog
+*.v  linguist-language=Verilog

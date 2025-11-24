@@ -97,3 +97,14 @@ utilizando o EDA Playground e verifique os resultados da simulação no GTKWave.
 conector P3 da colorlight-i9).
   
 - **Link para o código:** [Unidade_07/Cap_02](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Segunda_Fase_FPGA/Unidade_07/Cap_02)
+
+
+### Projeto Final: Medição de Nível de Líquido
+
+- **Enunciado:** Resumo: Este projeto apresenta o desenvolvimento e implementação de um sistema automatizado de controle de nível de líquido utilizando máquina de estados finitos (FSM). \
+O sistema monitora dois reservatórios com sensores discretos de nível e controla uma bomba hidráulica e uma válvula solenóide para realizar a transferência de líquido de forma segura e eficiente. \
+A lógica de acionamento é baseada em condições de nível específicas, enquanto indicadores visuais permitem a leitura do status operacional em tempo real. \
+O protótipo demonstra a aplicação prática de lógica digital sequencial em automação, com foco em robustez, modularidade e expansão para funções avançadas, como supervisório ou integração com sensores analógicos. \
+A modelagem segue fundamentos clássicos de FSM e a implementação de hardware obedece boas práticas de projeto digital, com aderência a cenários industriais.
+  
+- **Link para o código:** [Projeto_Final](https://github.com/ManoelFelipe/Embarcatech_37/tree/main/Segunda_Fase_FPGA/Projeto_Final)

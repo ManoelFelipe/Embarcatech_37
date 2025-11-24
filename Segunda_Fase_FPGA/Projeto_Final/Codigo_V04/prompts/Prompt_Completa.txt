@@ -1,0 +1,146 @@
+Título do projeto:
+Medição de Nível de Líquido — Versão Completa (FSM Robusta, Verilog 2001)
+
+Objetivo
+Projetar e implementar um controlador digital parametrizável (FSM) para bomba hidráulica e válvula solenóide, com:
+• Histerese configurável (limiares 25/75 % por padrão)
+• Debounce/filtragem de sensores
+• Detecção de leituras inválidas e estado de FAULT com recuperação temporizada
+• Modo automático/manual (en_auto)
+• Displays (7 segmentos) e LEDs de status
+• Parametrização de polaridades e tempos derivada do clock
+
+Planta / Escopo (idêntico ao trabalho base)
+• 2 tanques (inferior e superior) com níveis discretos codificados: 0,1,2,3,4 ↔ 0 %,25 %,50 %,75 %,100 %
+• Atuadores: bomba (transfere do inferior→superior) e válvula (repõe o tanque inferior)
+• Indicação visual: LEDs e dois displays de 7 segmentos (um por tanque)
+
+Regras de Controle da Bomba (com histerese)
+• Liga quando (ambas verdadeiras):
+  - lvl_sup ≤ LVL_SUP_START (padrão: 1 → 25 %)
+  - lvl_inf ≥ LVL_INF_START (padrão: 3 → 75 %)
+• Desliga quando (qualquer verdadeira):
+  - lvl_sup ≥ LVL_SUP_STOP  (padrão: 3 → 75 %)
+  - lvl_inf ≤ LVL_INF_STOP  (padrão: 1 → 25 %)
+
+Regras de Controle da Válvula (histerese de segurança)
+• Inicialmente ABERTA
+• Fecha quando o tanque inferior atinge 100 % (LVL_INF_REFILL = 4)
+• Reabre quando o nível do tanque inferior cair abaixo de 75 % ( < 3 )
+
+Modo de Operação
+• en_auto = 1 → operação normal controlada pela FSM
+• en_auto = 0 → bomba OFF forçado (saídas seguras). A FSM mantém-se em estado seguro (IDLE) até reativação.
+
+Tratamento de Sinais / Robustez
+1) Debounce/Filtragem
+   • Aplicar filtro temporal FILTER_MS a cada leitura de lvl_inf/lvl_sup (após opcional INVERT_LEVEL_CODE)
+   • Somente atualizar o nível interno quando a mesma leitura persistir por FILTER_MS
+
+2) Leituras Inválidas e Estado de Falha (FAULT)
+   • Considerar inválido qualquer código fora de 0..4 (após inversões)
+   • Ao detectar inválido: entrar em FAULT imediatamente
+   • Em FAULT: bomba OFF; válvula permanece no último estado seguro
+   • Saída de FAULT: somente após leituras válidas por FAULT_RECOVERY_MS (janela contínua)
+   • fault = 1 durante FAULT
+
+3) Temporizações
+   • Todos os tempos derivam do clock: CLK_HZ (Hz)
+   • FILTER_TICKS  = CLK_HZ * FILTER_MS / 1000
+   • RECOV_TICKS   = CLK_HZ * FAULT_RECOVERY_MS / 1000
+
+Parâmetros (defaults sugeridos)
+• integer CLK_HZ               = 50_000_000
+• integer FILTER_MS            = 20
+• integer FAULT_RECOVERY_MS    = 200
+• integer LVL_SUP_START        = 1   // 25 %
+• integer LVL_INF_START        = 3   // 75 %
+• integer LVL_SUP_STOP         = 3   // 75 %
+• integer LVL_INF_STOP         = 1   // 25 %
+• integer LVL_INF_REFILL       = 4   // 100 %
+• bit     INVERT_LEVEL_CODE    = 1   // sensores ativos em nível baixo? se 1, inverter 0↔4, 1↔3
+• bit     SEG_ACTIVE_HIGH      = 1   // displays de 7 seg ativos em nível alto
+
+Entradas
+• clk               : clock do sistema
+• rst_n             : reset síncrono, ativo em 0
+• lvl_inf[2:0]      : nível do tanque inferior (0..4)
+• lvl_sup[2:0]      : nível do tanque superior (0..4)
+• en_auto           : 1=automático, 0=manual (bomba forçadamente OFF)
+
+Saídas
+• pump_on           : 1=liga bomba
+• solenoid_open     : 1=abre válvula
+• led_green         : 1=bomba ligada
+• led_red           : 1=válvula aberta (ou status de segurança, ver nota abaixo)
+• fault             : 1=estado de falha (opcional porém recomendado)
+• seg_inf[6:0]      : 7 segmentos do tanque inferior
+• seg_sup[6:0]      : 7 segmentos do tanque superior
+
+Mapeamento de 7 segmentos (sugestão)
+• Exibir dígitos “0..4” para níveis válidos; exibir “E” para erro/falha
+• Respeitar SEG_ACTIVE_HIGH, fornecendo tabela dupla (ativa-alta/ativa-baixa) ou função de inversão
+
+FSM — Estados e Transições (sugerida)
+• Estados: IDLE → CHECK_START → PUMPING → CHECK_STOP → IDLE; FAULT assíncrono
+  - IDLE: bomba OFF; avaliar start somente quando en_auto=1 e leituras válidas/estáveis
+  - CHECK_START: janela curta para confirmar condição de partida (após filtro)
+  - PUMPING: bomba ON; monitorar condições de parada
+  - CHECK_STOP: janela curta para confirmar condição de parada (após filtro)
+  - FAULT: bomba OFF; aguarda RECOV_TICKS de leituras válidas para retornar a IDLE
+• Transições assíncronas para FAULT ao detectar leitura inválida a qualquer momento
+• Modo manual (en_auto=0): força retorno a IDLE (bomba OFF); saída de FAULT continua igual
+
+Lógica da Válvula (saída combinada com histerese)
+• solenoid_open mantém estado interno (latch lógico):
+  - Fechar quando lvl_inf == LVL_INF_REFILL
+  - Reabrir quando lvl_inf <  LVL_INF_REFILL && lvl_inf < 3
+  - Em FAULT: preservar último estado seguro
+
+Critérios de Aceite (do que a IA deve entregar)
+1) Código
+   • rtl/pump_controller.v — Verilog 2001, comentários linha a linha onde pertinente
+   • tb/tb_pump_controller.v — testbench com clock, reset, cenários dirigidos, asserts e logs ($display)
+
+2) Diagrama e Tabelas (em docs/)
+   • fsm_diagram.mmd — diagrama Mermaid dos estados e transições
+   • tabela_transicoes.md — tabela de estados (atual/condição/próximo/saídas)
+   • tabela_sinais_parametros.md — I/O, parâmetros e descrição
+
+3) Displays e LEDs
+   • Funções/tabelas para 7 segmentos
+   • LED verde segue pump_on
+   • LED vermelho: seguir solenoid_open; em FAULT, permitir piscar no TB (opcional)
+
+4) Parametrização e Robustez
+   • Implementar INVERT_LEVEL_CODE
+   • Implementar FILTER_MS e FAULT_RECOVERY_MS convertidos para ticks
+   • Não usar delays # em RTL; temporização por contadores
+
+5) Testbench — Cobrir ao menos
+   a) Partida normal (sup≤25 %, inf≥75 %), manter PUMPING e desligar ao sup≥75 %
+   b) Desligamento por inf≤25 % durante PUMPING
+   c) Leituras inválidas (ex.: 3'b101) → entrar em FAULT; recuperação após leituras válidas por RECOV_TICKS
+   d) Modo manual: en_auto=0 em PUMPING → forçar retorno a IDLE (sem FAULT)
+   e) Debounce: sequências rápidas alternando leituras (ruído) que NÃO devem mudar estado
+   f) Válvula: fechar a 100 % do inferior, reabrir abaixo de 75 %
+
+6) README
+   • Instruções de simulação (Icarus Verilog + GTKWave)
+   • Organização de pastas e como executar TB
+   • Parâmetros e como ajustá-los
+
+Observações de Implementação
+• Reset síncrono; registradores devidamente inicializados
+• Separar lógica sequencial (estado, contadores) da combinacional (próximo estado/saídas)
+• Comentar todas as transições com a regra correspondente
+• Evitar latches acidentais; cobrir defaults em sempre_comb (ou always @*)
+• Preparar o módulo para síntese (sem tasks de delay no RTL)
+
+Arquivos esperados
+• rtl/pump_controller.v
+• tb/tb_pump_controller.v
+• docs/fsm_diagram.mmd
+• docs/tabela_transicoes.md
+• docs/tabela_sinais_parametros.md
+• docs/README.md

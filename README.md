@@ -20,8 +20,8 @@
 | Etapa | Período Oficial | Status |
 |------|------------------|:------:|
 | **Fase 1 – Sistemas Embarcados** | 22/04/2025 → 27/06/2025 | ✅ Concluído |
-| **Fase 2 – FPGA e Design Digital** | 04/08/2025 → 04/11/2026 | ⏳ Em andamento |
-| **Fase 3 – Residência / Trabalho Final** | 10/11/2025 → 22/04/2026 | ⬜ Aguardando início |
+| **Fase 2 – FPGA e Design Digital** | 04/08/2025 → 11/11/2026 | ✅ Concluído |
+| **Fase 3 – Residência / Trabalho Final** | 25/11/2025 → 25/05/2026 | ⏳ Em andamento |
 
 
 > 📌 *As datas refletem a progressão padrão estimada com base na estrutura acadêmica do programa.*
@@ -108,9 +108,14 @@ Embarcatech_37/
 │   ├── Projeto_02/
 │   └── ...
 │
-├── Segunda_Fase_FPGA/                  ⏳ Em andamento
+├── Segunda_Fase_FPGA/                  ✅ Concluído
 │   ├── Projeto_01/
 │   ├── Testbench/
 │   └── ...
+│
+│── Terceira_Fase/                      ⏳ Em andamento
+│   │─── Projeto_01    
+│   └── ...                 
+│
 │
 └── README.md  ← (Você está aqui)

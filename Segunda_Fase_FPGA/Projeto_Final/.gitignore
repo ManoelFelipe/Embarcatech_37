@@ -1,0 +1,128 @@
+# =========================
+#  Embarcatech_37_FPGA — .gitignore
+#  Toolchain: Verilog | Icarus | GTKWave | Yosys | nextpnr-ecp5 | OpenFPGALoader
+#  Vendor opcionais: ModelSim/Questa, Lattice Diamond, Intel Quartus
+# =========================
+
+# SO / IDE
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+*.bak
+~$*
+.vscode/
+.idea/
+
+# Python util scripts (se houver)
+__pycache__/
+*.pyc
+
+# -------------------------
+# Simulação (Icarus/GTKWave)
+# -------------------------
+# executáveis/artefatos
+*.out
+*.vvp
+*.vcd
+*.fst
+*.lxt
+*.ghw
+*.wdb
+*.vpd
+*.asdb
+*.log
+*.jou
+*.wlf
+*.ucdb
+*.do.history
+*.ini.backup
+*waves*.vcd
+sim/out*/
+sim/*.vvp
+sim/*.vcd
+sim/*.wlf
+sim/*.log
+
+# ModelSim/Questa (opcional)
+work/
+transcript
+vsim.wlf
+modelsim.ini
+questa.ini
+riviera/
+aldec/
+library.cfg
+*.mti
+*.vstf
+
+# -------------------------
+# Síntese/Open flow (ECP5)
+# -------------------------
+# Yosys/nextpnr/ecppack artefatos
+*.json         # netlist gerada pelo Yosys
+*.config       # ecppack
+*.bit          # bitstream
+*.svf          # JTAG programming file
+*.tim          # relatórios de timing (se grandes)
+*.rpt          # relatórios grandes (opcional ignorar)
+*.asc          # (ice40) — ignorar por segurança multiplataforma
+
+# Diretórios de build comuns
+build*/
+out*/
+output*/
+dist*/
+target*/
+pnr*/
+synth*/
+temp*/
+.tmp*/
+.cache/
+
+# Lattice Diamond (se for usar)
+_impl*/
+*.jed
+*_rmr.txt
+
+# Intel Quartus (caso apareça nos exercícios)
+db/
+incremental_db/
+output_files/
+greybox_tmp/
+*.sof
+*.pof
+*.jic
+*.smsg
+*.rpt
+*.qws
+
+# -------------------------
+# Documentos gerados/pesados
+# -------------------------
+# (Se você gerar PDFs/figs temporários; mantenha os “fontes”)
+*.aux
+*.bbl
+*.blg
+*.lof
+*.log
+*.lot
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# Zips/artefatos temporários
+*.zip
+*.7z
+*.tar
+*.tgz
+
+# -------------------------
+# Arquivos que DEVEM ficar versionados (não ignore)
+# -------------------------
+#  - Fontes HDL: *.v, *.sv, *.vh, *.svh
+#  - Restrições: *.lpf (Lattice) / *.pcf / *.sdc
+#  - Scripts: *.tcl, *.sh, Makefile
+#  - Docs: *.md, *.mmd, *.tex, *.bib, figuras (se quiser manter no repo)

@@ -1,0 +1,95 @@
+Título do projeto:
+Medição de Nível de Líquido – Versão Simplificada (FSM mínima – Verilog)
+
+Objetivo:
+Implementar um sistema digital baseado em máquina de estados finitos (FSM) para controle automático de bomba hidráulica e válvula solenóide, utilizando sensores discretos de nível em dois reservatórios (tanque inferior e tanque superior). O escopo desta versão replica somente a lógica funcional mínima descrita no projeto principal, sem modos extras, sem tratamento de falhas e sem filtros.
+
+Descrição do Sistema:
+O sistema possui dois tanques:
+• Tanque inferior
+• Tanque superior
+
+Cada tanque possui sensores que indicam os níveis: 0%, 25%, 50%, 75% e 100%, codificados de 0 a 4.
+
+A bomba transfere água do tanque inferior para o superior.
+A válvula controla a entrada de água no tanque inferior.
+
+Regras de Controle da Bomba:
+• Liga a bomba quando:
+  - Nível do tanque superior ≤ 25%
+  - Nível do tanque inferior ≥ 75%
+• Desliga a bomba quando:
+  - Nível do tanque superior ≥ 75%
+  OU
+  - Nível do tanque inferior ≤ 25%
+
+Regras de Controle da Válvula:
+• Abre quando o nível for <= 75% do tanque inferior
+• Fecha quando o tanque inferior atinge 100% (LVL_INF_REFILL)
+
+Regras Visuais (LEDs):
+• LED verde → bomba ligada (ON = 1)
+• LED vermelho → válvula aberta (ON = 1)
+
+Displays de 7 segmentos:
+• Exibem o nível atual de cada tanque com o seguinte mapeamento (sugestão):
+  0%  = 0
+  25% = 1
+  50% = 2
+  75% = 3
+  100% = 4
+
+FSM mínima (2 estados):
+• IDLE     → bomba desligada, aguardando condição de partida
+• PUMPING → bomba ligada, até ocorrer condição de parada
+
+Não incluído nesta versão:
+• Estados de falha
+• Debounce / filtragem de sensores
+• Temporizações
+• Modo manual
+• Supervisório / UART / logs
+• Exibição de códigos de erro
+
+Entradas:
+- clk: clock
+- rst_n: reset síncrono ativo em 0
+- lvl_inf[2:0]: nível do tanque inferior (0 a 4)
+- lvl_sup[2:0]: nível do tanque superior (0 a 4)
+- INVERT_LEVEL_CODE (parâmetro opcional para sensores ativos em 0)
+
+Saídas:
+- pump_on         → comando para relé da bomba
+- solenoid_open   → comando da válvula inferior
+- led_green       → indica bomba ligada
+- led_red         → indica válvula aberta
+- seg_inf[6:0]    → display nível tanque inferior
+- seg_sup[6:0]    → display nível tanque superior
+
+Entregáveis:
+1) Código-Fonte
+   - pump_controller.v (implementação FSM mínima)
+   - tb_pump_controller.v (testbench)
+
+2) Diagrama da FSM
+   - fsm_diagram.mmd (Mermaid.js – IDLE ↔ PUMPING)
+
+3) Documentação e Tabelas
+   - Tabela de transição de estados
+   - Tabela de sinais (entradas/saídas/parâmetros)
+   - README.md (descrição do projeto, simulação, estrutura)
+
+4) Testbench (mínimo obrigatório)
+   Cobrir os cenários:
+   a) Partida normal (sup ≤ 25% e inf ≥ 75%)
+   b) Desligamento por nível alto no tanque superior (sup ≥ 75%)
+   c) Desligamento por nível baixo no tanque inferior (inf ≤ 25%)
+
+   Requisitos:
+   - Usar $display para logs de eventos
+   - Usar asserts simples (ou $fatal) para validação
+   - Clock gerado no testbench
+   - Reset inicial aplicado
+
+Observação:
+Este prompt é exclusivamente para a versão simplificada. Qualquer implementação de falhas, debounce, timeout ou modo manual pertence à "Versão Completa" do projeto.

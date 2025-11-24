@@ -1,0 +1,62 @@
+# ================================
+# CLOCK 25 MHz e LED
+# ================================
+# As linhas a seguir estão comentadas (ignoradas), são apenas exemplos.
+# LOCATE    COMP "clk" SITE "P3";
+# IOBUF     PORT "clk" IO_TYPE=LVCMOS33;
+# FREQUENCY PORT "clk" 25 MHz;
+# LOCATE    COMP "led" SITE "L2";
+# IOBUF     PORT "led" IO_TYPE=LVCMOS33;
+
+# ================================
+# Entrada vinda do coletor do NPN (ativo-baixo)
+# descrever detalhes das entradas
+# ================================
+
+# Linha de exemplo comentada.
+#LOCATE COMP "input1" SITE "D1";
+# Linha de exemplo comentada. Note o PULLMODE=UP, que não queremos para o sensor.
+# IOBUF PORT "input1" IO_TYPE=LVCMOS33 PULLMODE=UP;
+
+
+# Comentário informativo
+# Entrada do coletor (ativo-baixo) - escolha o SITE correto do seu jumper
+
+# === LINHA ATIVA ===
+# Atribui (LOCATE) o componente (COMP) "sensor_col_n" do código Verilog
+# ao pino físico (SITE) "C1" do encapsulamento do FPGA.
+LOCATE COMP "sensor_col_n" SITE "C1";
+
+# === LINHA ATIVA ===
+# Define as propriedades elétricas (IOBUF) para a porta (PORT) "sensor_col_n".
+# IO_TYPE=LVCMOS33: Define o padrão de tensão como LVCMOS 3.3V.
+# PULLMODE=NONE: Desativa os resistores internos de pull-up ou pull-down do FPGA.
+# Isso é essencial, pois o estado lógico (alto/baixo) é controlado
+# puramente pelo circuito externo do transistor.
+IOBUF PORT "sensor_col_n" IO_TYPE=LVCMOS33 PULLMODE=NONE;
+
+
+# ================================
+# Saída para LED (3,3V)
+# descrever detalhes das saídas
+# ================================
+
+# Linha de exemplo comentada.
+# LOCATE COMP "output1" SITE "D1";
+# Linha de exemplo comentada.
+# IOBUF PORT "output1" IO_TYPE=LVCMOS33;
+
+# Comentário informativo
+# LED ligado ao pino D1
+
+# === LINHA ATIVA ===
+# Atribui (LOCATE) o componente (COMP) "led_d1" do código Verilog
+# ao pino físico (SITE) "D1" do FPGA.
+LOCATE COMP "led_d1" SITE "D1";
+
+# === LINHA ATIVA ===
+# Define as propriedades elétricas (IOBUF) para a porta (PORT) "led_d1".
+# IO_TYPE=LVCMOS33: Define o padrão de tensão de saída como LVCMOS 3.3V.
+# DRIVE=8: Define a capacidade de corrente de saída para 8mA.
+# SLEWRATE=FAST: Define a velocidade de transição do sinal (rápida).
+IOBUF PORT "led_d1" IO_TYPE=LVCMOS33 DRIVE=8 SLEWRATE=FAST;

@@ -1,0 +1,79 @@
+# Arquivo de Preferências (.lpf) para o Projeto Controlador de Caixa d'Água (Automático)
+# Alvo: Lattice ECP5 (ex: Colorlight-i9)
+
+# === Clock e Reset ===
+LOCATE COMP "clk" SITE "P3";
+IOBUF PORT "clk" IO_TYPE=LVCMOS33;
+FREQUENCY PORT "clk" 25.0 MHz;
+LOCATE COMP "reset" SITE "J16";
+IOBUF PORT "reset" IO_TYPE=LVCMOS33 PULLMODE=DOWN;
+
+# === Sensores da Caixa Inferior (P2) ===
+LOCATE COMP "sensores_inf[4]" SITE "K18"; # 100%
+LOCATE COMP "sensores_inf[3]" SITE "T18"; # 75%
+LOCATE COMP "sensores_inf[2]" SITE "R17"; # 50%
+LOCATE COMP "sensores_inf[1]" SITE "M17"; # 25%
+LOCATE COMP "sensores_inf[0]" SITE "U18"; # 0%
+IOBUF PORT "sensores_inf[4]" IO_TYPE=LVCMOS33 PULLMODE=UP;
+IOBUF PORT "sensores_inf[3]" IO_TYPE=LVCMOS33 PULLMODE=UP;
+IOBUF PORT "sensores_inf[2]" IO_TYPE=LVCMOS33 PULLMODE=UP;
+IOBUF PORT "sensores_inf[1]" IO_TYPE=LVCMOS33 PULLMODE=UP;
+IOBUF PORT "sensores_inf[0]" IO_TYPE=LVCMOS33 PULLMODE=UP;
+
+# === Sensores da Caixa Superior (P3) ===
+LOCATE COMP "sensores_sup[4]" SITE "D20";  # 100%
+LOCATE COMP "sensores_sup[3]" SITE "B19"; # 75%
+LOCATE COMP "sensores_sup[2]" SITE "A19"; # 50%
+LOCATE COMP "sensores_sup[1]" SITE "A18"; # 25%
+LOCATE COMP "sensores_sup[0]" SITE "C4"; # 0%
+IOBUF PORT "sensores_sup[4]" IO_TYPE=LVCMOS33 PULLMODE=UP;
+IOBUF PORT "sensores_sup[3]" IO_TYPE=LVCMOS33 PULLMODE=UP;
+IOBUF PORT "sensores_sup[2]" IO_TYPE=LVCMOS33 PULLMODE=UP;
+IOBUF PORT "sensores_sup[1]" IO_TYPE=LVCMOS33 PULLMODE=UP;
+IOBUF PORT "sensores_sup[0]" IO_TYPE=LVCMOS33 PULLMODE=UP;
+
+# === LEDs de Status ===
+LOCATE COMP "led_vermelho" SITE "G16";
+LOCATE COMP "led_verde" SITE "E18";
+IOBUF PORT "led_vermelho" IO_TYPE=LVCMOS33 DRIVE=8 SLEWRATE=FAST;
+IOBUF PORT "led_verde" IO_TYPE=LVCMOS33 DRIVE=8 SLEWRATE=FAST;
+
+# === Atuadores (P5) ===
+LOCATE COMP "bomba" SITE "H18"; # Relé da Bomba 
+LOCATE COMP "valvula" SITE "E17"; # Válvula de entrada
+IOBUF PORT "bomba" IO_TYPE=LVCMOS33 DRIVE=8 SLEWRATE=FAST; 
+IOBUF PORT "valvula" IO_TYPE=LVCMOS33 DRIVE=8 SLEWRATE=FAST;
+
+# === Display 7-Seg Caixa Inferior (P5) ===
+# Mapeamento do Verilog: [6]=g, [5]=f, [4]=e, [3]=d, [2]=c, [1]=b, [0]=a
+LOCATE COMP "display_inf[0]" SITE "E5";  # Segmento A
+LOCATE COMP "display_inf[1]" SITE "F5";  # Segmento B
+LOCATE COMP "display_inf[2]" SITE "G5";  # Segmento C
+LOCATE COMP "display_inf[3]" SITE "D18"; # Segmento D
+LOCATE COMP "display_inf[4]" SITE "F4";  # Segmento E
+LOCATE COMP "display_inf[5]" SITE "E6";  # Segmento F
+LOCATE COMP "display_inf[6]" SITE "D16"; # Segmento G
+IOBUF PORT "display_inf[0]" IO_TYPE=LVCMOS33 DRIVE=8 SLEWRATE=FAST;
+IOBUF PORT "display_inf[1]" IO_TYPE=LVCMOS33 DRIVE=8 SLEWRATE=FAST;
+IOBUF PORT "display_inf[2]" IO_TYPE=LVCMOS33 DRIVE=8 SLEWRATE=FAST;
+IOBUF PORT "display_inf[3]" IO_TYPE=LVCMOS33 DRIVE=8 SLEWRATE=FAST;
+IOBUF PORT "display_inf[4]" IO_TYPE=LVCMOS33 DRIVE=8 SLEWRATE=FAST;
+IOBUF PORT "display_inf[5]" IO_TYPE=LVCMOS33 DRIVE=8 SLEWRATE=FAST;
+IOBUF PORT "display_inf[6]" IO_TYPE=LVCMOS33 DRIVE=8 SLEWRATE=FAST;
+
+# === Display 7-Seg Caixa Superior (P4) ===
+# Mapeamento do Verilog: [6]=g, [5]=f, [4]=e, [3]=d, [2]=c, [1]=b, [0]=a
+LOCATE COMP "display_sup[0]" SITE "E1";  # Segmento A
+LOCATE COMP "display_sup[1]" SITE "E4";  # Segmento B
+LOCATE COMP "display_sup[2]" SITE "F3";  # Segmento C
+LOCATE COMP "display_sup[3]" SITE "H3";  # Segmento D
+LOCATE COMP "display_sup[4]" SITE "H5";  # Segmento E
+LOCATE COMP "display_sup[5]" SITE "F2";  # Segmento F
+LOCATE COMP "display_sup[6]" SITE "F1";  # Segmento G
+IOBUF PORT "display_sup[0]" IO_TYPE=LVCMOS33 DRIVE=8 SLEWRATE=FAST;
+IOBUF PORT "display_sup[1]" IO_TYPE=LVCMOS33 DRIVE=8 SLEWRATE=FAST;
+IOBUF PORT "display_sup[2]" IO_TYPE=LVCMOS33 DRIVE=8 SLEWRATE=FAST;
+IOBUF PORT "display_sup[3]" IO_TYPE=LVCMOS33 DRIVE=8 SLEWRATE=FAST;
+IOBUF PORT "display_sup[4]" IO_TYPE=LVCMOS33 DRIVE=8 SLEWRATE=FAST;
+IOBUF PORT "display_sup[5]" IO_TYPE=LVCMOS33 DRIVE=8 SLEWRATE=FAST;
+IOBUF PORT "display_sup[6]" IO_TYPE=LVCMOS33 DRIVE=8 SLEWRATE=FAST; # Corrigido typo iOSBUF
