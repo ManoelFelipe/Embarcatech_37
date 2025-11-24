@@ -56,7 +56,12 @@ A instituição IFMA fornece códigos-base e estruturas iniciais. Os projetos pr
 ### 🔹 **Fase 2 — FPGA e Circuitos Digitais**
 | Diretório | Conteúdo | Status |
 |-----------|---------|:------:|
-| `Segunda_Fase_FPGA/` | Projetos com Verilog, simulação em HDL, criação de testbenches, uso de ferramentas EDA, síntese lógica e desenvolvimento baseado em FPGA | ⬜ |
+| `Segunda_Fase_FPGA/` | Projetos com Verilog, simulação em HDL, criação de testbenches, uso de ferramentas EDA, síntese lógica e desenvolvimento baseado em FPGA | ✅ |
+
+### 🔹 **Fase 3 — Residência / Trabalho Final**
+| Diretório | Conteúdo | Status |
+|-----------|---------|:------:|
+| `Terceira_Fase_FPGA/` | Tema a ser definido | ⬜ |
 
 ---
 
