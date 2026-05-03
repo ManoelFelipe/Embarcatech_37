@@ -7,11 +7,6 @@
 🆔 **Matrícula:** 20251RSE.MTC0086  
 🗓️ **Período Oficial do Programa:** 22/04/2025 → 22/04/2026  
 
----
-
-## 🚧 Status do Repositório
-
-> **Em desenvolvimento contínuo** — este repositório será atualizado conforme a evolução técnica e entrega de projetos nas fases de **Sistemas Embarcados** e **FPGA**.
 
 ---
 
@@ -21,10 +16,8 @@
 |------|------------------|:------:|
 | **Fase 1 – Sistemas Embarcados** | 22/04/2025 → 27/06/2025 | ✅ Concluído |
 | **Fase 2 – FPGA e Design Digital** | 04/08/2025 → 11/11/2026 | ✅ Concluído |
-| **Fase 3 – Residência / Trabalho Final** | 25/11/2025 → 25/05/2026 | ⏳ Em andamento |
+| **Fase 3 – Residência / Trabalho Final** | 25/11/2025 → 14/05/2026 | ✅ Concluído |
 
-
-> 📌 *As datas refletem a progressão padrão estimada com base na estrutura acadêmica do programa.*
 
 ---
 
@@ -51,17 +44,17 @@ A instituição IFMA fornece códigos-base e estruturas iniciais. Os projetos pr
 ### 🔹 **Fase 1 — Sistemas Embarcados**
 | Diretório | Conteúdo | Status |
 |-----------|---------|:------:|
-| `Primeira_Fase_Sistemas_Embarcados/` | Atividades com microcontroladores, GPIO, interrupções, timers, DMA, interfaces de comunicação e periféricos | ✅ |
+| `Primeira_Fase_Sistemas_Embarcados/` | Atividades com microcontroladores, GPIO, interrupções, timers, DMA, interfaces de comunicação e periféricos | ✅ Concluído |
 
 ### 🔹 **Fase 2 — FPGA e Circuitos Digitais**
 | Diretório | Conteúdo | Status |
 |-----------|---------|:------:|
-| `Segunda_Fase_FPGA/` | Projetos com Verilog, simulação em HDL, criação de testbenches, uso de ferramentas EDA, síntese lógica e desenvolvimento baseado em FPGA | ✅ |
+| `Segunda_Fase_FPGA/` | Projetos com Verilog, simulação em HDL, criação de testbenches, uso de ferramentas EDA, síntese lógica e desenvolvimento baseado em FPGA | ✅ Concluído |
 
 ### 🔹 **Fase 3 — Residência / Trabalho Final**
 | Diretório | Conteúdo | Status |
 |-----------|---------|:------:|
-| `Terceira_Fase_FPGA/` | Tema a ser definido | ⬜ |
+| `Terceira_Fase_FPGA/` | Identifica¸c˜ao de Edifica¸c˜oes na Faixa de Servid˜ao | ✅ Concluído |
 
 ---
 
@@ -118,7 +111,7 @@ Embarcatech_37/
 │   ├── Testbench/
 │   └── ...
 │
-│── Terceira_Fase/                      ⏳ Em andamento
+│── Terceira_Fase/                      ✅ Concluído
 │   │─── Projeto_01    
 │   └── ...                 
 │
