@@ -54,7 +54,7 @@ A instituição IFMA fornece códigos-base e estruturas iniciais. Os projetos pr
 ### 🔹 **Fase 3 — Residência / Trabalho Final**
 | Diretório | Conteúdo | Status |
 |-----------|---------|:------:|
-| `Terceira_Fase_FPGA/` | Identifica¸c˜ao de Edifica¸c˜oes na Faixa de Servid˜ao | ✅ Concluído |
+| `Terceira_Fase_FPGA/` | Identificação de Edificações na Faixa de Servidão | ✅ Concluído |
 
 ---
 
